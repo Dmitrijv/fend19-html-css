@@ -1,6 +1,5 @@
 html {
   font-family: "Martel", serif;
-  font-weight: 400;
 }
 
 header {
@@ -68,8 +67,6 @@ input[type="submit"] {
   cursor: pointer;
   white-space: nowrap;
   font-size: 0.7em;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
   letter-spacing: 0.125em;
   text-transform: uppercase;
   text-decoration: none;
