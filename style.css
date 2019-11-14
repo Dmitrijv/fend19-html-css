@@ -4,7 +4,8 @@ html {
 
 header {
   background-color: #3b455e;
-  padding: 20px;
+  padding: 15px;
+  margin-bottom: 10px;
 }
 
 header > nav > ul > li > a {
@@ -12,6 +13,8 @@ header > nav > ul > li > a {
 }
 
 footer {
+  padding: 15px;
+  margin-top: 10px;
   background-color: #9c3525;
 }
 
