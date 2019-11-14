@@ -11,45 +11,38 @@
   <body>
     <header>
       <nav>
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./contact.html">Contact</a></li>
-        </ul>
+        <a href="./index.html">Blog</a>
+        <a href="./contact.html">Contact</a>
       </nav>
     </header>
+
     <main>
       <section>
         <section>
-          <img src="https://source.unsplash.com/random/400x600/?photo-of-man" alt="photo of blog owner" />
+          <h2>John Doe</h2>
+          <img src="https://source.unsplash.com/random/400x600/?man-face" alt="photo of blog owner" />
           <br />
-          <a href="mailto:dummyaddress@yahoo.com?subject=subject text">dummyaddress@yahoo.com</a>
-          <br />
-          Adress: Lorem ipsum dolor sit amet.
-          <br />
-          phone: +46 73 219 22 05
+          <a href="mailto:johndoe@mailbox.com?subject=subject text">johndoe@mailbox.com</a>
+          <address>Ipsumdolor 132, it amet 5</address>
+          +46 73 219 22 05
         </section>
       </section>
 
-      <section>
+      <section id="contactContainer">
         <h2>Contact Me</h2>
 
-        <form action="https://formspree.io/xeqqzyvj" method="POST">
+        <form action="https://formspree.io/xeqqzyvj" method="POST" id="contactMeForm">
           <label for="name">
-            Name <br />
-            <input placeholder="Your name here" type="text" id="name" name="first name"">
+            Name <input placeholder="Your name here" type="text" id="name" name="first name"">
           </label>
 
-          <br />
-
           <label for="email">
-            Email <br />
+            Email
             <input required placeholder="Email, please" stype="text" name="email address" id="email" />
           </label>
 
-          <br />
-
           <label for="message">
-            Your message <br />
+            Your message
             <textarea
               required
               name="text message"
@@ -59,15 +52,12 @@
               rows="10"
             ></textarea>
           </label>
-          <br />
-
           <button type="submit">Send</button>
         </form>
       </section>
     </main>
     <footer>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati voluptates a cum voluptatum tenetur laboriosam
-      reiciendis ab nisi, autem sapiente.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati voluptates a cum voluptatum tenetur.
     </footer>
   </body>
 </html>
