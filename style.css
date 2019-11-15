@@ -15,9 +15,17 @@ header > nav > a {
 }
 
 section {
+  margin-left: auto;
+  margin-right: auto;
   background-color: #f2f2ee;
   padding: 6px;
   color: #103742;
+}
+
+
+p#contactInfo {
+  font-size: 28px;
+  margin: 0px;
 }
 
 section#contactContainer {
@@ -52,10 +60,15 @@ h6 {
   margin: 4px;
 }
 
+.noPadding {
+  padding: 0px;
+}
+
 form input,
 form textarea,
 form select,
 form .select {
+  box-sizing: border-box;
   width: 100%;
   margin-bottom: 0.5em;
 }
