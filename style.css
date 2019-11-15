@@ -5,9 +5,14 @@ html {
 }
 
 header {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0; /* required */
+
   background-color: #3b455e;
   padding: 15px;
   margin-bottom: 1px;
+  border-bottom: 1px solid white;
 }
 
 header > nav > a {
