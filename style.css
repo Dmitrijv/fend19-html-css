@@ -22,10 +22,16 @@ section {
   color: #103742;
 }
 
-
-p#contactInfo {
-  font-size: 28px;
+#contactInfo {
+  font-size: 20px;
   margin: 0px;
+}
+
+#contactInfo > a,
+#contactInfo > address {
+  display: block;
+  padding-bottom: 8px;
+  padding-top: 2px;
 }
 
 section#contactContainer {
