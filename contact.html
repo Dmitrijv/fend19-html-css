@@ -17,47 +17,46 @@
     </header>
 
     <main>
-      <section>
-        <section class="noPadding">
+      <div class="centeredWrapper">
+        <section id="aboutMeSection">
           <h2>John Doe</h2>
-
-          <img src="https://source.unsplash.com/random/400x500/?man-face" alt="photo of blog owner" />
-
-          <div id="contactInfo">
+          <img src="https://source.unsplash.com/random/500x500/?man-face" alt="photo of blog owner" />
+          <address>
             <a href="mailto:johndoe@mailbox.com?subject=subject text">johndoe@mailbox.com</a>
-            <address>Ipsumdolor 132, it amet 5</address>
+            <br />
+            Ipsumdolor 132, it amet 5
+            <br />
             +46 73 219 22 05
-          </div>
+          </address>
         </section>
-      </section>
 
-      <section id="contactContainer">
-        <h2>Contact Me</h2>
+        <section id="contactMeSection">
+          <h2>Contact Me</h2>
+          <form action="https://formspree.io/xeqqzyvj" method="POST" id="contactMeForm">
+            <label for="name">
+              Name <input placeholder="Your name here" type="text" id="name" name="first name"">
+            </label>
 
-        <form action="https://formspree.io/xeqqzyvj" method="POST" id="contactMeForm">
-          <label for="name">
-            Name <input placeholder="Your name here" type="text" id="name" name="first name"">
-          </label>
+            <label for="email">
+              Email
+              <input required placeholder="Email, please" stype="text" name="email address" id="email" />
+            </label>
 
-          <label for="email">
-            Email
-            <input required placeholder="Email, please" stype="text" name="email address" id="email" />
-          </label>
-
-          <label for="message">
-            Your message
-            <textarea
-              required
-              name="text message"
-              placeholder="Write something nice"
-              id="message"
-              cols="30"
-              rows="10"
-            ></textarea>
-          </label>
-          <button type="submit">Send</button>
-        </form>
-      </section>
+            <label for="message">
+              Your message
+              <textarea
+                required
+                name="text message"
+                placeholder="Write something nice"
+                id="message"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </label>
+            <button type="submit">Send</button>
+          </form>
+        </section>
+      </div>
     </main>
     <footer>
       Footer, yo! Sit amet consectetur adipisicing elit. Obcaecati voluptates a cum voluptatum tenetur.
