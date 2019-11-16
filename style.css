@@ -14,7 +14,7 @@ header {
   top: 0; /* required */
   background-color: #3b455e;
   padding: 15px;
-  margin: 0px;
+  margin-bottom: -3px;
 }
 
 a {
@@ -41,39 +41,27 @@ section {
   width: 500px;
 }
 
+section#aboutMeSection {
+  padding-top: 8px;
+}
+
 section#aboutMeSection img {
-  width: fit-content;
+  margin-bottom: -6px;
 }
 
 section#contactMeSection {
   box-sizing: border-box;
-}
-
-#contactInfo {
-  box-sizing: border-box;
-  padding: 6px;
-  border: 1px solid #e3e3da;
-  font-size: 20px;
-  margin: 0px;
-}
-
-#contactInfo > a,
-#contactInfo > address {
-  display: block;
-  padding-bottom: 8px;
-  padding-top: 2px;
-}
-
-form#contactMeForm {
-  box-sizing: border-box;
-  width: 100%;
+  padding: 10px 6px 6px 6px;
+  background-color: #e3e3da;
 }
 
 address {
   box-sizing: border-box;
   color: white;
+  font-size: 16px;
   background-color: #9c3525;
   padding: 6px;
+  margin-bottom: 1px;
 }
 
 footer {
