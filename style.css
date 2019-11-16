@@ -4,6 +4,10 @@ html {
   font-family: "Open Sans", sans-serif;
 }
 
+body {
+  margin: 0px;
+}
+
 header {
   position: sticky;
   position: -webkit-sticky;
@@ -12,7 +16,6 @@ header {
   background-color: #3b455e;
   padding: 15px;
   margin-bottom: 1px;
-  border-bottom: 1px solid white;
 }
 
 header > nav > a {
