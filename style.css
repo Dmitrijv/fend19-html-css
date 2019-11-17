@@ -17,6 +17,8 @@ body {
 }
 
 .container {
+  max-width: 1100px;
+  vertical-align: middle;
   margin-right: auto;
   margin-left: auto;
   background-color: yellow;
@@ -27,7 +29,8 @@ body {
   float: left;
   max-width: 780px;
   margin-top: 30px;
-  margin-left: 100px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 p {
@@ -48,19 +51,20 @@ header {
 }
 
 aside {
-  float: left;
-  width: 25%;
   box-sizing: border-box;
+  float: left;
+  width: 100%;
+  max-width: 300px;
 
   padding-left: 10px;
   padding-right: 10px;
-  margin: 20px;
+  margin-left: 10px;
+  margin-top: 30px;
 
   background-color: #fff;
   border-radius: 3px;
   text-align: left;
-  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
-  box-shadow: 0 1px 2px 0px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
 }
 
 aside > table {
@@ -82,14 +86,10 @@ article::before {
 article > .articleHead {
   box-sizing: border-box;
   padding: 10px 0px 0px 0px;
-  margin: 0;
-  border: 0;
-  outline: 0;
 }
 
 article {
   box-sizing: border-box;
-  margin-bottom: 20px;
   max-width: 780px;
   padding-left: 20px;
   padding-right: 20px;
@@ -102,14 +102,22 @@ article {
 }
 
 article > section.articleHead > date {
-  font-size: 14px;
   font-family: Source Sans Pro, Arial, Helvetica, sans-serif;
+  font-size: 14px;
   line-height: 18px;
   color: #888;
 }
 
 article > img {
+  display: block;
+  max-width: 100%;
   width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+article + article {
+  margin-top: 20px;
 }
 
 a {
