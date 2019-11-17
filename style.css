@@ -19,22 +19,15 @@ body {
 .container {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-bottom: 50px;
-  width: 100%;
-  border: 0;
-  outline: 0;
-  text-align: center;
+  background-color: yellow;
 }
 
 .articleContainer {
-  display: block;
   box-sizing: border-box;
   float: left;
-  width: 65%;
   max-width: 780px;
-  margin-top: 20px;
+  margin-top: 30px;
+  margin-left: 100px;
 }
 
 p {
@@ -67,7 +60,7 @@ aside {
   border-radius: 3px;
   text-align: left;
   -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
-  box-shadow: 0 1px 2px 0rgba (0, 0, 0, 0.25);
+  box-shadow: 0 1px 2px 0px;
 }
 
 aside > table {
@@ -108,7 +101,7 @@ article {
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
 }
 
-article > div.articleHead > date {
+article > section.articleHead > date {
   font-size: 14px;
   font-family: Source Sans Pro, Arial, Helvetica, sans-serif;
   line-height: 18px;
@@ -136,7 +129,6 @@ section {
 
 hr {
   border: 0;
-  border-top-color: currentcolor;
   border-top-style: none;
   border-top-width: 0px;
   border-top: 1px solid #dfdfdf;
@@ -275,7 +267,6 @@ input[type="submit"] {
   letter-spacing: 0.125em;
   text-transform: uppercase;
   text-decoration: none;
-  border: 2px solid #103742;
   color: #e3e3da;
   background-color: #103742;
   padding: 0.7rem 1.2rem 0.67rem;
