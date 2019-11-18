@@ -321,6 +321,7 @@ textarea,
 textarea {
   display: block;
   max-width: 580px;
+  min-width: 10px;
 }
 
 button,
