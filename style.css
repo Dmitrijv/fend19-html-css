@@ -1,22 +1,23 @@
 html {
+  font-family: Source Sans Pro, Arial, Helvetica, sans-serif;
   font-weight: 400;
-  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
 }
 
 body {
   margin: 0px;
   background-color: rgb(239, 239, 239);
-  font-size: 14px;
-  line-height: 1;
-  font-family: Source Sans Pro, Arial, Helvetica, sans-serif;
 }
 
-/*
-.container::before {
-  content: " ";
-  display: table;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #006991;
+  font-family: BhrHeaderFont, Trebuchet MS;
 }
-*/
 
 header {
   position: sticky;
@@ -53,32 +54,36 @@ nav ul li:hover {
 .container {
   overflow: hidden;
   max-width: 1090px;
+
+  width: max-content;
+
   padding-top: 50px;
-  vertical-align: middle;
   margin-right: auto;
   margin-left: auto;
   /*background-color: yellow;*/
 }
 
-.articleContainer {
-  box-sizing: border-box;
-  float: left;
-  max-width: 780px;
-  padding-left: 10px;
-  padding-right: 10px;
+@media only screen and (max-width: 1105px) {
+  aside {
+    display: none;
+  }
 }
 
-p {
-  font-size: 12px;
-  font-family: verdana, geneva;
-  line-height: 1.4em;
-  margin: 10px 0 10px;
+aside::before {
+  z-index: 1;
+  background-color: #5e8c6e;
+  content: "";
+  display: block;
+  position: relative;
+  border-radius: 3px 3px 0 0;
+  width: calc(100% + 20px);
+  height: 3px;
+  left: -10px;
 }
 
 aside {
   box-sizing: border-box;
-  float: left;
-  width: 100%;
+  float: right;
   max-width: 300px;
 
   padding-left: 10px;
@@ -87,12 +92,34 @@ aside {
 
   background-color: #fff;
   border-radius: 3px;
-  text-align: left;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
 }
 
-aside > table {
-  padding: 0 20px;
+aside th {
+  border-bottom: 1px solid lightgray;
+  padding: 6px 6px 2px 0px;
+}
+
+aside td {
+  padding: 3px 4px 3px 0px;
+}
+
+td.textRight {
+  text-align: right;
+}
+
+th.textLeft {
+  text-align: left;
+}
+
+.articleContainer {
+  box-sizing: border-box;
+  float: left;
+  width: 100%;
+  max-width: 780px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 20px;
 }
 
 article::before {
@@ -118,6 +145,13 @@ article {
   border-radius: 3px;
   text-align: left;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
+}
+
+article p {
+  font-size: 12px;
+  font-family: verdana, geneva;
+  line-height: 1.4em;
+  margin: 10px 0 10px;
 }
 
 article > .articleMetaInfo {
@@ -155,9 +189,11 @@ article + article {
   margin-top: 20px;
 }
 
-article > strong {
+article > p > strong {
+  display: inline-block;
   font-size: 12px;
   font-family: verdana, geneva;
+  padding: 4px 0px 3px 0px;
 }
 
 a {
@@ -231,16 +267,6 @@ main {
   margin: 0px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #006991;
-  font-family: BhrHeaderFont, Trebuchet MS;
-}
-
 article > h2 {
   font-size: 21px;
   line-height: 25px;
@@ -253,11 +279,6 @@ article > h2 {
   padding: 0px;
   text-align: left;
   vertical-align: baseline;
-}
-
-.noPadding {
-  box-sizing: border-box;
-  padding: 0px;
 }
 
 form input,
@@ -316,8 +337,6 @@ input[type="submit"] {
   color: #e3e3da;
   background-color: #103742;
   padding: 0.7rem 1.2rem 0.67rem;
-  transition-property: color, border, background;
-  transition-duration: 0.1s;
-  transition-timing-function: ease-in-out;
   margin-bottom: 10px;
+  border: 0px;
 }
