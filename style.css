@@ -87,7 +87,7 @@ main {
 
 aside::before {
   z-index: 1;
-  background-color: #5e8c6e;
+  background-color: rgb(117, 146, 82);
   content: "";
   display: block;
   position: relative;
