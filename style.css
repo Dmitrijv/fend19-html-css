@@ -11,24 +11,59 @@ body {
   font-family: Source Sans Pro, Arial, Helvetica, sans-serif;
 }
 
+/*
 .container::before {
   content: " ";
   display: table;
 }
+*/
+
+header {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0; /* required */
+  background-color: #3b455e;
+  padding: 5px 10px 5px 10px;
+  margin-bottom: 1px;
+  z-index: 2;
+}
+
+nav {
+  padding: 10px;
+  z-index: 10; /* Make sure this stays on top of other stuff */
+}
+
+nav ul {
+  /* Make list less ugly */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 6px;
+}
+
+nav ul li:hover {
+  text-decoration: underline;
+  color: white;
+}
 
 .container {
-  max-width: 1100px;
+  overflow: hidden;
+  max-width: 1090px;
+  padding-top: 50px;
   vertical-align: middle;
   margin-right: auto;
   margin-left: auto;
-  background-color: yellow;
+  /*background-color: yellow;*/
 }
 
 .articleContainer {
   box-sizing: border-box;
   float: left;
   max-width: 780px;
-  margin-top: 30px;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -37,17 +72,7 @@ p {
   font-size: 12px;
   font-family: verdana, geneva;
   line-height: 1.4em;
-  margin: 3px 0 10px;
-}
-
-header {
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0; /* required */
-  background-color: #3b455e;
-  padding: 10px;
-  margin-bottom: 1px;
-  z-index: 2;
+  margin: 10px 0 10px;
 }
 
 aside {
@@ -59,7 +84,6 @@ aside {
   padding-left: 10px;
   padding-right: 10px;
   margin-left: 10px;
-  margin-top: 30px;
 
   background-color: #fff;
   border-radius: 3px;
@@ -83,11 +107,6 @@ article::before {
   left: -20px;
 }
 
-article > .articleHead {
-  box-sizing: border-box;
-  padding: 10px 0px 0px 0px;
-}
-
 article {
   box-sizing: border-box;
   max-width: 780px;
@@ -101,11 +120,27 @@ article {
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
 }
 
-article > section.articleHead > date {
+article > .articleMetaInfo {
+  color: #888;
+}
+
+article > time {
   font-family: Source Sans Pro, Arial, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: #888;
+}
+
+article > ul {
+  padding-left: 24px;
+  margin-top: 8px;
+}
+
+article > ul > li {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  line-height: 1.25;
+  margin-bottom: 5px;
 }
 
 article > img {
@@ -120,8 +155,17 @@ article + article {
   margin-top: 20px;
 }
 
+article > strong {
+  font-size: 12px;
+  font-family: verdana, geneva;
+}
+
 a {
   color: white;
+}
+
+a:not(.active) {
+  text-decoration: none;
 }
 
 section {
@@ -187,26 +231,6 @@ main {
   margin: 0px;
 }
 
-h2 {
-  font-size: 24px;
-  line-height: 25px;
-  font-weight: 500;
-
-  margin-bottom: 4px;
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-top: 0px;
-  outline-color: rgb(0, 105, 145);
-  outline-style: none;
-  outline-width: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-top: 0px;
-  text-align: left;
-  vertical-align: baseline;
-}
-
 h1,
 h2,
 h3,
@@ -215,6 +239,20 @@ h5,
 h6 {
   color: #006991;
   font-family: BhrHeaderFont, Trebuchet MS;
+}
+
+article > h2 {
+  font-size: 21px;
+  line-height: 25px;
+  font-weight: 500;
+
+  margin: 10px 0px 4px 0px;
+  outline-color: rgb(0, 105, 145);
+  outline-style: none;
+  outline-width: 0px;
+  padding: 0px;
+  text-align: left;
+  vertical-align: baseline;
 }
 
 .noPadding {
