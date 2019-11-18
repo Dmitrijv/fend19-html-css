@@ -261,8 +261,9 @@ address {
   color: white;
   font-size: 16px;
   background-color: rgb(75, 112, 30);
-  padding: 6px;
+  padding: 6px 6px 6px 12px;
   margin-bottom: 1px;
+  line-height: 26px;
 }
 
 footer {
