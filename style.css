@@ -70,6 +70,7 @@ main {
   overflow: hidden;
   max-width: 1020px;
   padding-top: 50px;
+  padding-bottom: 30px;
   margin-right: auto;
   margin-left: auto;
   /*background-color: yellow;*/
@@ -149,7 +150,7 @@ article::before {
 
 article {
   box-sizing: border-box;
-
+  max-width: 760px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 10px;
@@ -194,6 +195,15 @@ article > img {
   height: 200px;
 }
 
+article > img.aboutMeImage {
+  object-fit: cover;
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: 400px;
+  margin-bottom: 1px;
+}
+
 article + article {
   margin-top: 20px;
 }
@@ -218,12 +228,6 @@ section {
   margin-right: auto;
 }
 
-.centeredWrapper {
-  margin: 0px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 hr {
   border: 0;
   border-top-style: none;
@@ -234,18 +238,16 @@ hr {
   margin: 10px 0;
 }
 
-#contactMeSection,
-#aboutMeSection {
+.contactMeContainer,
+.contactMeContainer {
   box-sizing: border-box;
-  width: 500px;
 }
 
-section#aboutMeSection {
-  padding-top: 8px;
-}
-
-section#aboutMeSection img {
-  margin-bottom: -6px;
+main.aboutMeContainer {
+  box-sizing: border-box;
+  max-width: 640px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 section#contactMeSection {
@@ -296,9 +298,7 @@ input,
 textarea,
 .input {
   box-sizing: border-box;
-  font-size: 0.8em;
-  font-family: "Open Sans", sans-serif;
-  color: #666260;
+
   border: 1px solid rgba(0, 0, 0, 0.25);
   background: rgba(255, 255, 255, 0.4);
   padding: 0.9em;
@@ -310,12 +310,16 @@ input,
 textarea,
 .input {
   box-sizing: border-box;
-  font-size: 0.8em;
-  font-family: "Open Sans", sans-serif;
-  color: #666260;
+  font-family: Source Sans Pro, Arial, Helvetica, sans-serif;
+
   border: 1px solid rgba(0, 0, 0, 0.25);
   background: rgba(255, 255, 255, 0.4);
   text-overflow: ellipsis;
+}
+
+textarea {
+  display: block;
+  max-width: 580px;
 }
 
 button,
@@ -336,7 +340,8 @@ input[type="submit"] {
   letter-spacing: 0.125em;
   text-transform: uppercase;
   text-decoration: none;
-  color: #e3e3da;
+  color: white;
+  font-weight: bold;
   background-color: #103742;
   padding: 0.7rem 1.2rem 0.67rem;
   margin-bottom: 10px;

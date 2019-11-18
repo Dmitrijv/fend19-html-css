@@ -23,11 +23,13 @@
       </nav>
     </header>
 
-    <main>
-      <div class="centeredWrapper">
-        <section id="aboutMeSection">
+    <main class="aboutMeContainer">
+
+        <article>
           <h2>John Doe</h2>
-          <img src="https://source.unsplash.com/random/500x500/?man-face" alt="photo of blog owner" />
+
+          <img class="aboutMeImage" src="https://source.unsplash.com/random/500x500/?man-face" alt="photo of blog owner" />
+
           <address>
             <a href="mailto:johndoe@mailbox.com?subject=subject text">johndoe@mailbox.com</a>
             <br />
@@ -35,34 +37,51 @@
             <br />
             +46 73 219 22 05
           </address>
-        </section>
 
-        <section id="contactMeSection">
+          <p>
+            <strong>About Me</strong>
+            <br />
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod pariatur saepe, atque delectus reprehenderit
+            consequuntur, nostrum et obcaecati corporis est aliquam magni laborum facilis dolorum amet accusamus
+            explicabo sed aut. Quibusdam quia eius ducimus quas architecto, natus aliquam corporis distinctio libero
+            dicta magnam eos ipsam fugit beatae quidem quo reiciendis totam, vero iusto, quaerat nulla?
+          </p>
+
+          <p>
+            Obcaecati iste dolor commodi. Minima? Placeat ex vero iure quo, perferendis sapiente. Deserunt aperiam
+            laboriosam ut corporis eveniet porro sunt officiis ab vero voluptatum ullam similique quae unde eos sapiente
+            aliquam in
+          </p>
+        </article>
+
+
+        <article>
           <h2>Contact Me</h2>
-          <form action="https://formspree.io/xeqqzyvj" method="POST" id="contactMeForm">
-            <label for="name">
-              Name <input placeholder="Your name here" type="text" id="name" name="first name"">
-            </label>
+      <div class="contactMeContainer">
 
-            <label for="email">
-              Email
-              <input required placeholder="Email, please" stype="text" name="email address" id="email" />
-            </label>
+        <form action="https://formspree.io/xeqqzyvj" method="POST" id="contactMeForm">
+          <label for="name">
+            Name <input placeholder="Your name here" type="text" id="name" name="first name"">
+          </label>
 
-            <label for="message">
-              Your message
-              <textarea
-                required
-                name="text message"
-                placeholder="Write something nice"
-                id="message"
-                cols="30"
-                rows="10"
-              ></textarea>
-            </label>
-            <button type="submit">Send</button>
-          </form>
-        </section>
+          <label for="email">
+            Email
+            <input required placeholder="Email, please" stype="text" name="email address" id="email" />
+          </label>
+
+          <label for="message">
+            Your message
+            <textarea
+              required
+              name="text message"
+              placeholder="Write something nice"
+              id="message"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </label>
+          <button type="submit">Send</button>
+        </form>
       </div>
     </main>
     <footer>
