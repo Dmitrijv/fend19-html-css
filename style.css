@@ -7,7 +7,7 @@ html {
 body {
   margin: 0px;
   background-color: rgb(239, 239, 239);
-  overflow-y: scroll;
+  /*overflow-y: scroll;*/
 }
 
 h1,
@@ -67,7 +67,9 @@ nav ul li:hover {
 }
 
 main {
-  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  /*overflow: hidden;*/
   max-width: 1020px;
   padding-top: 50px;
   padding-bottom: 30px;
@@ -98,8 +100,11 @@ aside::before {
 }
 
 aside {
+  position: sticky;
+  top: 80px;
+  order: 1;
+
   box-sizing: border-box;
-  float: right;
   max-width: 300px;
 
   padding-left: 10px;
