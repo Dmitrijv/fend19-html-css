@@ -138,15 +138,20 @@ section.imageGallery {
 
 section.imageGallery div.imageRow {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
   min-width: 100%;
 }
 
-section.imageGallery div.bottomImageRow {
+div.imageRow img {
   display: flex;
-  justify-content: space-evenly;
-  min-width: 100%;
-  margin-top: 20px;
+  flex-grow: 1;
+  flex-basis: 165px;
+  max-width: 165px;
+}
+
+div.imageRow > img {
+  margin: 4vw;
 }
 
 /* --- image gallery end --- */
