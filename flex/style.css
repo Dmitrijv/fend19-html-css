@@ -12,6 +12,21 @@ img.logo {
   min-width: min-content;
 }
 
+h1 {
+  font-size: 52px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 36px;
+}
+
 /* --------- HEADER START --------- */
 
 header {
@@ -89,9 +104,16 @@ section.welcome h1 {
 section.welcome p {
   align-self: center;
   max-width: 80vw;
-  font-weight: bold;
   text-align: center;
   margin: 0;
+
+  font-size: 17px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.53;
+  letter-spacing: 0.63px;
+  text-align: center;
 }
 
 @media only screen and (min-width: 483px) {
@@ -136,6 +158,9 @@ section.imageGallery {
   padding: 0 5vw 0 5vw;
 }
 
+section.imageGallery h2 {
+  margin: 2vw 0 1vw 0;
+}
 section.imageGallery div.imageRow {
   display: flex;
   justify-content: center;
@@ -151,7 +176,7 @@ div.imageRow img {
 }
 
 div.imageRow > img {
-  margin: 4vw;
+  margin: 1vw;
 }
 
 /* --- image gallery end --- */
