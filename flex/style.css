@@ -30,13 +30,14 @@ h3 {
 /* --------- HEADER START --------- */
 
 header {
+  box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 4% 4% 0 4%;
-  min-height: 70px;
+  padding: 5vw 5vw 0 5vw;
+  min-height: 65px;
 }
 
 header > nav {
@@ -56,6 +57,7 @@ header > nav > ul {
 
 header > nav > ul > li {
   min-width: max-content;
+  font-weight: bold;
 }
 
 header > nav > ul > li + li {
@@ -63,15 +65,17 @@ header > nav > ul > li + li {
 }
 
 nav > ul > li > a {
-  color: black;
-  font-weight: bold;
   text-decoration: none;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.33px;
 }
 
-@media only screen and (min-width: 483px) {
+@media only screen and (min-width: 520px) {
   header {
     flex-direction: row;
-    padding: 0 4% 0 4%;
+    padding: 0 5vw 0 5vw;
   }
 }
 
@@ -176,7 +180,7 @@ div.imageRow img {
 }
 
 div.imageRow > img {
-  margin: 1vw;
+  margin: 1.5vw;
 }
 
 /* --- image gallery end --- */
