@@ -12,6 +12,8 @@ img.logo {
   min-width: min-content;
 }
 
+/* --------- HEADER START --------- */
+
 header {
   display: flex;
   flex-wrap: wrap;
@@ -57,3 +59,53 @@ nav > ul > li > a {
     padding: 0 4% 0 4%;
   }
 }
+
+/* --------- HEADER END --------- */
+
+/* --------- MAIN START --------- */
+main > section.welcome {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+
+  font-family: Poppins-Bold;
+
+  background-image: url("https://via.placeholder.com/1080x1920/#979797");
+
+  padding: 3%;
+  min-height: 20em;
+}
+
+section.welcome h1 {
+  text-align: center;
+  margin: 0 0 2%;
+  padding: 0;
+}
+
+section.welcome p {
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+}
+
+section.grid {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: #f8f8f8;
+}
+
+section.grid article {
+  background-color: yellow;
+}
+
+section.grid article img {
+  width: 350px;
+  height: 150px;
+}
+
+/* --------- MAIN END --------- */
