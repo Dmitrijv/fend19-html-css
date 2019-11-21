@@ -80,14 +80,22 @@ main > section.welcome {
 
 section.welcome h1 {
   text-align: center;
-  margin: 0 0 2%;
+  margin: 0;
   padding: 0;
 }
 
 section.welcome p {
+  align-self: center;
+  max-width: 80%;
   font-weight: bold;
   text-align: center;
   margin: 0;
+}
+
+@media only screen and (min-width: 483px) {
+  section.welcome p {
+    max-width: 45%;
+  }
 }
 
 section.grid {
