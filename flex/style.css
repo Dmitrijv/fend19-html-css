@@ -51,7 +51,7 @@ nav > ul > li > a {
   text-decoration: none;
 }
 
-@media only screen and (min-width: 415px) {
+@media only screen and (min-width: 483px) {
   header {
     flex-direction: row;
     padding: 0 4% 0 4%;
