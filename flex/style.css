@@ -150,7 +150,7 @@ main > section.welcome {
   text-align: center;
 
   /* background-image: url("https://via.placeholder.com/1080x1920/#979797"); */
-  background-image: url("https://source.unsplash.com/random/1080x1920/?ocean");
+  background-image: url("https://source.unsplash.com/random/1080x1920/?night");
   background-repeat: no-repeat;
   background-size: 100%;
 
@@ -287,13 +287,16 @@ section.imageGallery div.imageRow {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  min-width: 100%;
+  margin: auto;
+  max-width: 1340px;
 }
 
 div.imageRow img {
   object-fit: cover;
   display: flex;
   flex-basis: 165px;
+  margin: 12px;
+  object-fit: contain;
 }
 
 div.imageRow > img {
