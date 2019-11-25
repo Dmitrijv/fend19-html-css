@@ -149,13 +149,13 @@ main > section.welcome {
   flex-direction: column;
   text-align: center;
 
-  /* background-image: url("https://via.placeholder.com/1080x1920/#979797"); */
-  background-image: url("https://source.unsplash.com/random/1080x1920/?random");
+  background-image: url("https://via.placeholder.com/1080x1920/#979797");
+  /* background-image: url("https://source.unsplash.com/random/1080x1920/?fire"); */
   background-repeat: no-repeat;
   background-size: 100%;
 
   padding: 5vw;
-  min-height: 45vh;
+  min-height: 50vh;
 
   color: black;
   -webkit-text-fill-color: white; /* Will override color (regardless of order) */
