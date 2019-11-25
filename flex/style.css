@@ -303,7 +303,48 @@ div.imageRow > img {
 /* --- GALLERY end --- */
 
 /* --- GRID SECTION start --- */
+section.gridSection {
+  display: grid;
+  box-sizing: border-box;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
 
+  /* You can name areas to whatever you want. In this case, it's quite verbose since we have a lot of columns. Consider using nested grid or named grid gutters instead once your template gets too unwieldy. */
+  grid-template-areas:
+    "topGridAside"
+    "topGridImageBlock";
+}
+
+section.gridSection section.topGrid {
+  box-sizing: border-box;
+  padding: 12vw;
+  /* background-color: #f8f8f8; */
+  background-color: yellow;
+}
+
+section.topGrid {
+  max-width: 100vw;
+}
+
+section.topGrid aside {
+  grid-area: topGridAside;
+  box-sizing: border-box;
+  max-width: 100vw;
+  /* background: darkred; */
+}
+
+section.topGrid section.imageBlock {
+  display: grid;
+  justify-items: center;
+  grid-gap: 2vw;
+  grid-area: topGridImageBlock;
+  background: teal;
+}
+
+.imageBlock img {
+  object-fit: cover;
+  width: 100%;
+}
 /* --- GRID SECTION end --- */
 
 /* --------- MAIN END --------- */
