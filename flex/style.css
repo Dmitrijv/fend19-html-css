@@ -54,10 +54,6 @@ nav > ul > li + li {
 
 nav > ul > li > a {
   text-decoration: none;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: 1.33px;
   color: black;
 }
 
@@ -305,6 +301,10 @@ div.imageRow > img {
 }
 
 /* --- GALLERY end --- */
+
+/* --- GRID SECTION start --- */
+
+/* --- GRID SECTION end --- */
 
 /* --------- MAIN END --------- */
 
