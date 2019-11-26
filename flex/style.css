@@ -459,6 +459,7 @@ section.bottomGrid {
   max-width: 100vw;
   max-height: max-content;
   background-color: #f8f8f8;
+  overflow: hidden;
 }
 
 section.bottomGrid img {
@@ -482,6 +483,7 @@ section.imageBlockRight {
   grid-area: imageBlockRight;
   display: grid;
   grid-gap: 2vw;
+
   grid-template-columns: auto auto;
   grid-template-rows: auto auto auto;
   grid-template-areas:
@@ -493,8 +495,9 @@ section.imageBlockRight {
 section.bottomGrid aside {
   grid-area: bottomGridAside;
   justify-content: center;
+  padding: 15%;
+  box-sizing: border-box;
   background: white;
-  padding: 13%;
 }
 
 img#bottomGridImg1 {
@@ -526,6 +529,22 @@ img#bottomGridImg8 {
 }
 
 @media only screen and (min-width: 900px) {
+  section.bottomGrid {
+    display: grid;
+    grid-template-columns: 45vw 10vw 45vw;
+    grid-template-rows: auto;
+    grid-template-areas: "imageBlockLeft bottomGridAside imageBlockRight";
+    align-items: center;
+    justify-items: center;
+    box-sizing: border-box;
+    max-width: 100vw;
+    max-height: max-content;
+    background-color: #f8f8f8;
+  }
+  section.bottomGrid aside {
+    margin: -15vw;
+    z-index: 100;
+  }
 }
 /* -- BOTTOM GRID end -- */
 
