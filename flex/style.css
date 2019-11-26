@@ -304,47 +304,87 @@ div.imageRow > img {
 
 /* --- GRID SECTION start --- */
 section.gridSection {
-  display: grid;
   box-sizing: border-box;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr;
+}
 
-  /* You can name areas to whatever you want. In this case, it's quite verbose since we have a lot of columns. Consider using nested grid or named grid gutters instead once your template gets too unwieldy. */
-  grid-template-areas:
-    "topGridAside"
-    "topGridImageBlock";
+section.gridSection .imageBlock img {
+  object-fit: cover;
+  max-width: 100%;
 }
 
 section.gridSection section.topGrid {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "topGridAside"
+    "topGridImageBlock";
   box-sizing: border-box;
-  padding: 12vw;
-  /* background-color: #f8f8f8; */
-  background-color: yellow;
-}
-
-section.topGrid {
+  grid-gap: 5vw;
   max-width: 100vw;
+  grid-template-rows: auto;
+  padding: 5vw;
+  background-color: #f8f8f8;
 }
 
 section.topGrid aside {
+  display: grid;
+  align-self: start;
   grid-area: topGridAside;
-  box-sizing: border-box;
   max-width: 100vw;
-  /* background: darkred; */
+  /* background: blueviolet; */
 }
 
 section.topGrid section.imageBlock {
   display: grid;
+  grid-area: topGridImageBlock;
   justify-items: center;
   grid-gap: 2vw;
-  grid-area: topGridImageBlock;
-  background: teal;
+  /* background: teal; */
 }
 
-.imageBlock img {
-  object-fit: cover;
-  width: 100%;
+img#topGridImg1 {
+  grid-area: topGridImg1;
 }
+img#topGridImg2 {
+  grid-area: topGridImg2;
+}
+img#topGridImg3 {
+  grid-area: topGridImg3;
+}
+img#topGridImg4 {
+  grid-area: topGridImg4;
+}
+
+@media only screen and (min-width: 410px) {
+}
+
+@media only screen and (min-width: 750px) {
+  section.gridSection section.topGrid {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "topGridAside topGridImageBlock";
+    background: red;
+  }
+  section.topGrid section.imageBlock {
+    background: orange;
+    grid-gap: 1vw;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "topGridImg1 topGridImg2 topGridImg4"
+      "topGridImg3 topGridImg3 topGridImg4";
+  }
+  img#topGridImg3 {
+    grid-column: span 2;
+  }
+  img#topGridImg4 {
+    grid-row: span 2;
+  }
+}
+
+/* -- TOP GRID end -- */
+
 /* --- GRID SECTION end --- */
 
 /* --------- MAIN END --------- */
