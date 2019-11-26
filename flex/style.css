@@ -333,6 +333,7 @@ section.topGrid aside {
   display: grid;
   align-self: center;
   grid-area: topGridAside;
+  max-width: 90vw;
 }
 
 section.topGrid section.imageBlock {
@@ -350,6 +351,7 @@ section.topGrid section.imageBlock {
 
 section.imageBlock img {
   align-self: stretch;
+  max-width: 100%;
 }
 
 img#topGridImg1 {
@@ -433,7 +435,7 @@ section.midGrid aside h4 {
   margin-bottom: 4px;
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 1090px) {
   section.midGrid {
     grid-template-columns: auto;
     grid-template-rows: auto auto;
@@ -459,19 +461,34 @@ section.bottomGrid {
   background-color: #f8f8f8;
 }
 
+section.bottomGrid img {
+  align-self: stretch;
+  max-width: 100%;
+}
+
 section.imageBlockLeft {
   grid-area: imageBlockLeft;
-  background: yellow;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-gap: 2vw;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
   grid-template-areas:
-    "bottomGridImg1 bottomGridImg2"
+    "bottomGridImg1 bottomGridImg3"
+    "bottomGridImg1 bottomGridImg4"
     "bottomGridImg2 bottomGridImg4";
-  align-items: center;
+  padding: 5vw;
 }
 section.imageBlockRight {
   grid-area: imageBlockRight;
+  display: grid;
+  grid-gap: 2vw;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "bottomGridImg5 bottomGridImg7"
+    "bottomGridImg6 bottomGridImg7"
+    "bottomGridImg6 bottomGridImg8";
+  padding: 5vw;
 }
 section.bottomGrid aside {
   grid-area: bottomGridAside;
@@ -505,7 +522,7 @@ img#bottomGridImg7 {
   grid-area: bottomGridImg7;
 }
 img#bottomGridImg8 {
-  grid-area: bottomGridImg9;
+  grid-area: bottomGridImg8;
 }
 
 @media only screen and (min-width: 900px) {
