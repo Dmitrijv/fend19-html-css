@@ -312,24 +312,26 @@ section.gridSection .imageBlock img {
   max-width: 100%;
 }
 
-section.gridSection section.topGrid {
+/* --- TOP GRID start --- */
+section.topGrid {
   display: grid;
-  grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
   grid-template-areas:
     "topGridAside"
     "topGridImageBlock";
+  align-items: center;
+  justify-items: center;
   box-sizing: border-box;
   grid-gap: 5vw;
   max-width: 100vw;
-  grid-template-rows: auto;
   padding: 5vw;
   background-color: #f8f8f8;
 }
 
 section.topGrid aside {
   display: grid;
-  align-self: start;
+  align-self: center;
   grid-area: topGridAside;
   max-width: 100vw;
   /* background: blueviolet; */
@@ -338,9 +340,20 @@ section.topGrid aside {
 section.topGrid section.imageBlock {
   display: grid;
   grid-area: topGridImageBlock;
-  justify-items: center;
   grid-gap: 2vw;
+  width: 100%;
+  max-width: max-content;
+  grid-template-rows: auto auto auto auto;
+  grid-template-columns: auto;
+  grid-template-areas:
+    "topGridImg1 topGridImg2 topGridImg4"
+    "topGridImg3 topGridImg3 topGridImg4";
+  /* background: orange; */
   /* background: teal; */
+}
+
+section.imageBlock img {
+  align-self: stretch;
 }
 
 img#topGridImg1 {
@@ -356,34 +369,76 @@ img#topGridImg4 {
   grid-area: topGridImg4;
 }
 
-@media only screen and (min-width: 410px) {
-}
-
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 900px) {
   section.gridSection section.topGrid {
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto;
     grid-template-areas: "topGridAside topGridImageBlock";
-    background: red;
   }
   section.topGrid section.imageBlock {
-    background: orange;
-    grid-gap: 1vw;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto auto;
     grid-template-areas:
       "topGridImg1 topGridImg2 topGridImg4"
       "topGridImg3 topGridImg3 topGridImg4";
+    align-content: space-between;
   }
   img#topGridImg3 {
+    width: 100%;
     grid-column: span 2;
   }
   img#topGridImg4 {
+    height: 100%;
     grid-row: span 2;
   }
 }
-
 /* -- TOP GRID end -- */
+
+/* -- MID GRID start -- */
+section.midGrid {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "midGridImg"
+    "midGridAside";
+  align-items: center;
+  justify-items: center;
+  box-sizing: border-box;
+  max-width: 100vw;
+  max-height: max-content;
+  background-color: #ffffff;
+}
+
+section.midGrid img {
+  grid-area: midGridImg;
+  object-fit: cover;
+  max-width: 100%;
+}
+
+section.midGrid aside {
+  grid-area: midGridAside;
+  display: grid;
+  align-self: center;
+  max-width: 100vw;
+  padding: 10%;
+}
+
+section.midGrid aside h4 {
+  margin-bottom: 4px;
+}
+
+@media only screen and (min-width: 900px) {
+  section.midGrid {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "midGridImg midGridAside";
+  }
+}
+/* -- MID GRID end -- */
+
+/* -- BOTTOM GRID start -- */
+/* -- BOTTOM GRID end -- */
 
 /* --- GRID SECTION end --- */
 
