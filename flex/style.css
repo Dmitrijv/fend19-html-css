@@ -121,37 +121,64 @@ main > section.welcome {
   background-position: center;
 
   padding: 5vw;
-  min-height: 70vh;
-
+  height: 70vh;
+  /* background-image: radial-gradient(circle at 50% 0, #394951, #0c202a 74%); */
   color: black;
-  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 0.01px;
-  -webkit-text-stroke-color: black;
 }
 
-section.welcome h1 {
+div.welcomeImageContainer {
+  display: block;
+  position: absolute;
+  height: 100%;
+
+  background-image: url("https://cdn.zeplin.io/5c8a58e74e90c024d1785415/assets/C6371149-1110-4456-804B-04A056B3F8C1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  overflow: hidden;
+  z-index: 1;
+  opacity: 0.6;
+}
+
+div.welcomeMessageContainer {
+  z-index: 2;
+}
+
+div.welcomeMessageContainer h1 {
+  z-index: 3;
   text-align: center;
   margin: 0;
   padding: 0;
+  font-family: Poppins;
+  font-size: 52px;
+  font-weight: bold;
+  color: #ff8673;
 }
 
-section.welcome p {
+div.welcomeMessageContainer p {
+  z-index: 3;
   align-self: center;
   max-width: 80vw;
-  text-align: center;
   margin: 0;
+  text-align: center;
 
-  font-size: 17px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 25px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
-  line-height: 1.53;
-  letter-spacing: 0.63px;
-  text-align: center;
+  line-height: 1.04;
+  letter-spacing: 0.92px;
+  color: #f0f0f0;
 }
 
-@media only screen and (min-width: 540px) {
-  section.welcome p {
+@media only screen and (min-width: 740px) {
+  main > section.welcome {
+    justify-content: left;
+  }
+  div.welcomeMessageContainer h1,
+  div.welcomeMessageContainer p {
     max-width: 45vw;
   }
 }
