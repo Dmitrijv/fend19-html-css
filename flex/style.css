@@ -123,7 +123,6 @@ main > section.welcome {
 
   padding: 5vw;
   height: 70vh;
-  /* background-image: radial-gradient(circle at 50% 0, #394951, #0c202a 74%); */
   color: black;
 }
 
@@ -160,7 +159,6 @@ div.welcomeMessageContainer h1 {
 div.welcomeMessageContainer p {
   z-index: 3;
   align-self: center;
-  max-width: 80vw;
   margin: 0;
   text-align: center;
 
