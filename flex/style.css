@@ -115,7 +115,8 @@ main > section.welcome {
   flex-direction: column;
   text-align: center;
 
-  background-image: url("https://cdn.zeplin.io/5c8a58e74e90c024d1785415/assets/C6371149-1110-4456-804B-04A056B3F8C1.png");
+  background-image: radial-gradient(circle at 50% 0, rgba(57, 73, 81, 0.5), rgba(12, 32, 42, 0.5) 75%),
+    url("https://cdn.zeplin.io/5c8a58e74e90c024d1785415/assets/C6371149-1110-4456-804B-04A056B3F8C1.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -173,13 +174,13 @@ div.welcomeMessageContainer p {
   color: #f0f0f0;
 }
 
-@media only screen and (min-width: 740px) {
+@media only screen and (min-width: 750px) {
   main > section.welcome {
     justify-content: left;
   }
   div.welcomeMessageContainer h1,
   div.welcomeMessageContainer p {
-    max-width: 45vw;
+    max-width: 40vw;
   }
 }
 
