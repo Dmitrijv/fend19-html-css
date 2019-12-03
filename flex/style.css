@@ -107,9 +107,6 @@ header {
 
 /* --- WELCOME start --- */
 main > section.welcome {
-  object-fit: cover;
-
-  box-sizing: border-box;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -121,43 +118,24 @@ main > section.welcome {
   background-repeat: no-repeat;
   background-position: center;
 
+  min-height: max-content;
+
   padding: 5vw;
-  height: 70vh;
   color: black;
 }
 
-div.welcomeImageContainer {
-  display: block;
-  position: absolute;
-  height: 100%;
-
-  background-image: url("https://cdn.zeplin.io/5c8a58e74e90c024d1785415/assets/C6371149-1110-4456-804B-04A056B3F8C1.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-
-  overflow: hidden;
-  z-index: 1;
-  opacity: 0.6;
-}
-
-div.welcomeMessageContainer {
-  z-index: 2;
-}
-
 div.welcomeMessageContainer h1 {
-  z-index: 3;
   text-align: center;
   margin: 0;
   padding: 0;
   font-family: Poppins;
   font-size: 52px;
   font-weight: bold;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   color: #ff8673;
 }
 
 div.welcomeMessageContainer p {
-  z-index: 3;
   align-self: center;
   margin: 0;
   text-align: center;
@@ -175,6 +153,7 @@ div.welcomeMessageContainer p {
 @media only screen and (min-width: 750px) {
   main > section.welcome {
     justify-content: left;
+    min-height: 45vh;
   }
   div.welcomeMessageContainer h1,
   div.welcomeMessageContainer p {
