@@ -535,10 +535,10 @@ section.poleSection img {
   height: 100%;
 }
 
-section.bottomGrid {
+section.complexGallery {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "imageBlockLeft" "bottomGridAside" "imageBlockRight";
+      grid-template-areas: "imageBlock-Left" "complexGalleryText" "imageBlock-Right";
   grid-gap: 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -549,12 +549,12 @@ section.bottomGrid {
 }
 
 @media only screen and (min-width: 1020px) {
-  section.bottomGrid {
-        grid-template-areas: "imageBlockLeft bottomGridAside imageBlockRight";
+  section.complexGallery {
+        grid-template-areas: "imageBlock-Left complexGalleryText imageBlock-Right";
   }
 }
 
-section.bottomGrid img {
+section.complexGallery img {
   -o-object-fit: cover;
      object-fit: cover;
   -ms-flex-item-align: stretch;
@@ -563,7 +563,7 @@ section.bottomGrid img {
   max-width: 100%;
 }
 
-section.imageBlockLeft, section.imageBlockRight {
+section.imageBlock-Left, section.imageBlock-Right {
   display: -ms-grid;
   display: grid;
   grid-gap: 2vw;
@@ -573,24 +573,24 @@ section.imageBlockLeft, section.imageBlockRight {
       grid-template-rows: auto auto auto;
 }
 
-section.imageBlockLeft {
+section.imageBlock-Left {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  grid-area: imageBlockLeft;
-      grid-template-areas: "bottomGridImg2 bottomGridImg3";
+  grid-area: imageBlock-Left;
+      grid-template-areas: "complexGallery-LeftBlock-ImgSquare1 complexGallery-LeftBlock-ImgSquare2";
 }
 
-section.imageBlockRight {
+section.imageBlock-Right {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
-  grid-area: imageBlockRight;
-      grid-template-areas: "bottomGridImg5 bottomGridImg8";
+  grid-area: imageBlock-Right;
+      grid-template-areas: "complexGallery-RightBlock-ImgSquare1 complexGallery-RightBlock-ImgSquare2";
 }
 
-div.bottomGridText {
+div.complexGalleryText {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
-  grid-area: bottomGridAside;
+  grid-area: complexGalleryText;
   padding: 4vw;
   max-width: 65vw;
   -webkit-box-sizing: border-box;
@@ -601,18 +601,18 @@ div.bottomGridText {
 }
 
 @media only screen and (min-width: 1020px) {
-  div.bottomGridText {
+  div.complexGalleryText {
     max-width: 40vw;
     margin: -4vw;
   }
 }
 
-div.bottomGridText p {
+div.complexGalleryText p {
   font-size: 16px;
   color: white;
 }
 
-div.bottomGridText h4 {
+div.complexGalleryText h4 {
   font-size: 24px;
   font-weight: bold;
   letter-spacing: 0.22px;
@@ -620,69 +620,69 @@ div.bottomGridText h4 {
   color: #ffaf89;
 }
 
-.bottomGridLeftBlockTallImg1 {
+.complexGallery-RightBlock-TallImg1 {
   display: none;
-  grid-area: bottomGridLeftBlockTallImg1;
+  grid-area: complexGallery-RightBlock-TallImg1;
 }
 
-.bottomGridImg2 {
+.complexGallery-RightBlock-TallImg2 {
+  display: none;
+  grid-area: complexGallery-RightBlock-TallImg2;
+}
+
+.complexGallery-RightBlock-ImgSquare1 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  grid-area: bottomGridImg2;
+  grid-area: complexGallery-RightBlock-ImgSquare1;
 }
 
-.bottomGridImg3 {
+.complexGallery-RightBlock-ImgSquare2 {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
-  grid-area: bottomGridImg3;
+  grid-area: complexGallery-RightBlock-ImgSquare2;
 }
 
-.bottomGridLeftBlockTallImg2 {
-  display: none;
-  grid-area: bottomGridLeftBlockTallImg2;
-}
-
-.bottomGridImg5 {
+.complexGallery-LeftBlock-ImgSquare1 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  grid-area: bottomGridImg5;
+  grid-area: complexGallery-LeftBlock-ImgSquare1;
 }
 
-.bottomGridImg6 {
+.complexGallery-LeftBlock-TallImg1 {
   display: none;
-  grid-area: bottomGridImg6;
+  grid-area: complexGallery-LeftBlock-TallImg1;
 }
 
-.bottomGridImg7 {
+.complexGallery-LeftBlock-TallImg2 {
   display: none;
-  grid-area: bottomGridImg7;
+  grid-area: complexGallery-LeftBlock-TallImg2;
 }
 
-.bottomGridImg8 {
+.complexGallery-LeftBlock-ImgSquare2 {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
-  grid-area: bottomGridImg8;
+  grid-area: complexGallery-LeftBlock-ImgSquare2;
 }
 
 @media only screen and (min-width: 1020px) {
-  section.bottomGrid img {
+  section.complexGallery img {
     width: 100%;
   }
-  .bottomGridLeftBlockTallImg1,
-  .bottomGridLeftBlockTallImg2,
-  .bottomGridImg6,
-  .bottomGridImg7 {
+  .complexGallery-LeftBlock-TallImg1,
+  .complexGallery-LeftBlock-TallImg2,
+  .complexGallery-RightBlock-TallImg1,
+  .complexGallery-RightBlock-TallImg2 {
     display: block;
   }
-  section.imageBlockLeft {
+  section.imageBlock-Left {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-        grid-template-areas: "bottomGridLeftBlockTallImg1 bottomGridImg3" "bottomGridLeftBlockTallImg1 bottomGridLeftBlockTallImg2" "bottomGridImg2 bottomGridLeftBlockTallImg2";
+        grid-template-areas: "complexGallery-LeftBlock-TallImg1    complexGallery-LeftBlock-ImgSquare2" "complexGallery-LeftBlock-TallImg1    complexGallery-LeftBlock-TallImg2" "complexGallery-LeftBlock-ImgSquare1  complexGallery-LeftBlock-TallImg2";
   }
-  section.imageBlockRight {
+  section.imageBlock-Right {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-        grid-template-areas: "bottomGridImg5 bottomGridImg7" "bottomGridImg6 bottomGridImg7" "bottomGridImg6 bottomGridImg8";
+        grid-template-areas: "complexGallery-RightBlock-ImgSquare1  complexGallery-RightBlock-TallImg2" "complexGallery-RightBlock-TallImg1    complexGallery-RightBlock-TallImg2" "complexGallery-RightBlock-TallImg1    complexGallery-RightBlock-ImgSquare2";
   }
 }
 

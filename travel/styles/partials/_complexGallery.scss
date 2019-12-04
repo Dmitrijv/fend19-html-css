@@ -1,0 +1,130 @@
+$breakpoint-complexGallerySection: 1020px;
+
+section.complexGallery {
+  display: grid;
+  grid-template-areas:
+    "imageBlock-Left"
+    "complexGalleryText"
+    "imageBlock-Right";
+  grid-gap: 0;
+  align-items: center;
+  justify-items: center;
+  padding: 5vw;
+  background-color: white;
+
+  @media only screen and (min-width: $breakpoint-complexGallerySection) {
+    grid-template-areas: "imageBlock-Left complexGalleryText imageBlock-Right";
+  }
+
+  img {
+    object-fit: cover;
+    align-self: stretch;
+    max-width: 100%;
+  }
+}
+
+%image-block-mobile {
+  display: grid;
+  grid-gap: 2vw;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
+}
+
+section.imageBlock-Left {
+  @extend %image-block-mobile;
+  grid-area: imageBlock-Left;
+  grid-template-areas: "complexGallery-LeftBlock-ImgSquare1 complexGallery-LeftBlock-ImgSquare2";
+}
+
+section.imageBlock-Right {
+  @extend %image-block-mobile;
+  grid-area: imageBlock-Right;
+  grid-template-areas: "complexGallery-RightBlock-ImgSquare1 complexGallery-RightBlock-ImgSquare2";
+}
+
+div.complexGalleryText {
+  grid-area: complexGalleryText;
+  padding: 4vw;
+  max-width: 65vw;
+  box-sizing: border-box;
+  background-color: #9aa5aa;
+
+  margin: -25vw -10vw -25vw -10vw;
+  z-index: 500;
+
+  @media only screen and (min-width: $breakpoint-complexGallerySection) {
+    max-width: 40vw;
+    margin: -4vw;
+  }
+
+  p {
+    font-size: 16px;
+    color: white;
+  }
+
+  h4 {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0.22px;
+    margin-top: 0;
+    color: #ffaf89;
+  }
+}
+
+.complexGallery-RightBlock-TallImg1 {
+  display: none;
+  grid-area: complexGallery-RightBlock-TallImg1;
+}
+.complexGallery-RightBlock-TallImg2 {
+  display: none;
+  grid-area: complexGallery-RightBlock-TallImg2;
+}
+.complexGallery-RightBlock-ImgSquare1 {
+  grid-area: complexGallery-RightBlock-ImgSquare1;
+}
+.complexGallery-RightBlock-ImgSquare2 {
+  grid-area: complexGallery-RightBlock-ImgSquare2;
+}
+
+.complexGallery-LeftBlock-ImgSquare1 {
+  grid-area: complexGallery-LeftBlock-ImgSquare1;
+}
+.complexGallery-LeftBlock-TallImg1 {
+  display: none;
+  grid-area: complexGallery-LeftBlock-TallImg1;
+}
+.complexGallery-LeftBlock-TallImg2 {
+  display: none;
+  grid-area: complexGallery-LeftBlock-TallImg2;
+}
+.complexGallery-LeftBlock-ImgSquare2 {
+  grid-area: complexGallery-LeftBlock-ImgSquare2;
+}
+
+@media only screen and (min-width: $breakpoint-complexGallerySection) {
+  section.complexGallery img {
+    width: 100%;
+  }
+  .complexGallery-LeftBlock-TallImg1,
+  .complexGallery-LeftBlock-TallImg2,
+  .complexGallery-RightBlock-TallImg1,
+  .complexGallery-RightBlock-TallImg2 {
+    display: block;
+  }
+
+  section.imageBlock-Left {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "complexGallery-LeftBlock-TallImg1    complexGallery-LeftBlock-ImgSquare2"
+      "complexGallery-LeftBlock-TallImg1    complexGallery-LeftBlock-TallImg2"
+      "complexGallery-LeftBlock-ImgSquare1  complexGallery-LeftBlock-TallImg2";
+  }
+
+  section.imageBlock-Right {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "complexGallery-RightBlock-ImgSquare1  complexGallery-RightBlock-TallImg2"
+      "complexGallery-RightBlock-TallImg1    complexGallery-RightBlock-TallImg2"
+      "complexGallery-RightBlock-TallImg1    complexGallery-RightBlock-ImgSquare2";
+  }
+}
