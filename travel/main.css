@@ -529,6 +529,8 @@ section.poleSection img {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: poleSectionImg;
+  -ms-grid-column-align: left;
+      justify-self: left;
   -o-object-fit: cover;
      object-fit: cover;
   max-width: 100%;
