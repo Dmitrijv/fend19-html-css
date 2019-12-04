@@ -1,6 +1,8 @@
 @import "../mixins/mixins";
 @import "navigation";
 
+$breakpoint-header: 565px;
+
 header {
   box-sizing: border-box;
   display: flex;
