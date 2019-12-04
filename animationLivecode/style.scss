@@ -1,0 +1,13 @@
+body {
+  background-color: black;
+}
+
+@mixin square-size($size) {
+  width: $size;
+  height: $size;
+}
+
+.ripple {
+  &-item {
+  }
+}

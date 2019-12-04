@@ -8,12 +8,10 @@ section.bottomGrid {
   align-items: center;
   justify-items: center;
   padding: 5vw;
+  background-color: white;
 
   @media only screen and (min-width: 1020px) {
-    display: grid;
     grid-template-areas: "imageBlockLeft bottomGridAside imageBlockRight";
-    background-color: #f8f8f8;
-    padding: 5vw;
   }
 
   img {
@@ -52,6 +50,8 @@ div.bottomGridText {
   z-index: 500;
 
   @media only screen and (min-width: 1020px) {
+    // position: absolute;
+    max-width: 40vw;
     margin: -4vw;
   }
 
@@ -100,7 +100,7 @@ div.bottomGridText {
 
 @media only screen and (min-width: 1020px) {
   section.bottomGrid img {
-    max-width: 195px;
+    width: 100%;
   }
   .bottomGridLeftBlockTallImg1,
   .bottomGridLeftBlockTallImg2,
@@ -110,6 +110,7 @@ div.bottomGridText {
   }
 
   section.imageBlockLeft {
+    grid-template-columns: 1fr 1fr;
     grid-template-areas:
       "bottomGridLeftBlockTallImg1 bottomGridImg3"
       "bottomGridLeftBlockTallImg1 bottomGridLeftBlockTallImg2"
@@ -117,6 +118,7 @@ div.bottomGridText {
   }
 
   section.imageBlockRight {
+    grid-template-columns: 1fr 1fr;
     grid-template-areas:
       "bottomGridImg5 bottomGridImg7"
       "bottomGridImg6 bottomGridImg7"

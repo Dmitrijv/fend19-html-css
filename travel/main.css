@@ -552,15 +552,12 @@ section.bottomGrid {
           align-items: center;
   justify-items: center;
   padding: 5vw;
+  background-color: white;
 }
 
 @media only screen and (min-width: 1020px) {
   section.bottomGrid {
-    display: -ms-grid;
-    display: grid;
         grid-template-areas: "imageBlockLeft bottomGridAside imageBlockRight";
-    background-color: #f8f8f8;
-    padding: 5vw;
   }
 }
 
@@ -616,6 +613,7 @@ div.bottomGridText {
 
 @media only screen and (min-width: 1020px) {
   div.bottomGridText {
+    max-width: 40vw;
     margin: -4vw;
   }
 }
@@ -679,7 +677,7 @@ div.bottomGridText h4 {
 
 @media only screen and (min-width: 1020px) {
   section.bottomGrid img {
-    max-width: 195px;
+    width: 100%;
   }
   .bottomGridLeftBlockTallImg1,
   .bottomGridLeftBlockTallImg2,
@@ -688,9 +686,13 @@ div.bottomGridText h4 {
     display: block;
   }
   section.imageBlockLeft {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-areas: "bottomGridLeftBlockTallImg1 bottomGridImg3" "bottomGridLeftBlockTallImg1 bottomGridLeftBlockTallImg2" "bottomGridImg2 bottomGridLeftBlockTallImg2";
   }
   section.imageBlockRight {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-areas: "bottomGridImg5 bottomGridImg7" "bottomGridImg6 bottomGridImg7" "bottomGridImg6 bottomGridImg8";
   }
 }
