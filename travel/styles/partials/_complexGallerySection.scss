@@ -21,21 +21,22 @@ section.bottomGrid {
   }
 }
 
-section.imageBlockLeft {
-  grid-area: imageBlockLeft;
+%image-block-mobile {
   display: grid;
   grid-gap: 2vw;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto auto;
+}
+
+section.imageBlockLeft {
+  @extend %image-block-mobile;
+  grid-area: imageBlockLeft;
   grid-template-areas: "bottomGridImg2 bottomGridImg3";
 }
 
 section.imageBlockRight {
+  @extend %image-block-mobile;
   grid-area: imageBlockRight;
-  display: grid;
-  grid-gap: 2vw;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto auto;
   grid-template-areas: "bottomGridImg5 bottomGridImg8";
 }
 

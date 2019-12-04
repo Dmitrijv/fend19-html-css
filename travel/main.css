@@ -563,10 +563,7 @@ section.bottomGrid img {
   max-width: 100%;
 }
 
-section.imageBlockLeft {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: imageBlockLeft;
+section.imageBlockLeft, section.imageBlockRight {
   display: -ms-grid;
   display: grid;
   grid-gap: 2vw;
@@ -574,6 +571,12 @@ section.imageBlockLeft {
       grid-template-columns: auto auto;
   -ms-grid-rows: auto auto auto;
       grid-template-rows: auto auto auto;
+}
+
+section.imageBlockLeft {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: imageBlockLeft;
       grid-template-areas: "bottomGridImg2 bottomGridImg3";
 }
 
@@ -581,13 +584,6 @@ section.imageBlockRight {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: imageBlockRight;
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 2vw;
-  -ms-grid-columns: auto auto;
-      grid-template-columns: auto auto;
-  -ms-grid-rows: auto auto auto;
-      grid-template-rows: auto auto auto;
       grid-template-areas: "bottomGridImg5 bottomGridImg8";
 }
 

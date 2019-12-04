@@ -31,15 +31,15 @@ body {
 
 h1 {
   font-size: 52px;
-  @extend %general-heading;
+  @extend %common-heading;
 }
 
 h2 {
   font-size: 48px;
-  @extend %general-heading;
+  @extend %common-heading;
 }
 
 h3 {
   font-size: 36px;
-  @extend %general-heading;
+  @extend %common-heading;
 }
