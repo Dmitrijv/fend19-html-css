@@ -1,3 +1,5 @@
+$breakpoint-complexGallerySection: 1020px;
+
 section.bottomGrid {
   display: grid;
   grid-template-areas:
@@ -10,7 +12,7 @@ section.bottomGrid {
   padding: 5vw;
   background-color: white;
 
-  @media only screen and (min-width: 1020px) {
+  @media only screen and (min-width: $breakpoint-complexGallerySection) {
     grid-template-areas: "imageBlockLeft bottomGridAside imageBlockRight";
   }
 
@@ -50,8 +52,7 @@ div.bottomGridText {
   margin: -25vw -10vw -25vw -10vw;
   z-index: 500;
 
-  @media only screen and (min-width: 1020px) {
-    // position: absolute;
+  @media only screen and (min-width: $breakpoint-complexGallerySection) {
     max-width: 40vw;
     margin: -4vw;
   }
@@ -99,7 +100,7 @@ div.bottomGridText {
   grid-area: bottomGridImg8;
 }
 
-@media only screen and (min-width: 1020px) {
+@media only screen and (min-width: $breakpoint-complexGallerySection) {
   section.bottomGrid img {
     width: 100%;
   }
