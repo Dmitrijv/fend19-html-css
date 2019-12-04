@@ -47,7 +47,7 @@ div.complexGalleryText {
   padding: 4vw;
   max-width: 65vw;
   box-sizing: border-box;
-  background-color: #9aa5aa;
+  background-color: $color--complexGalleryText-background;
 
   margin: -25vw -10vw -25vw -10vw;
   z-index: 500;
@@ -67,7 +67,7 @@ div.complexGalleryText {
     font-weight: bold;
     letter-spacing: 0.22px;
     margin-top: 0;
-    color: #ffaf89;
+    color: $color--complexGalleryText-heading;
   }
 }
 
