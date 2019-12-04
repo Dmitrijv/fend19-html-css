@@ -1,0 +1,94 @@
+section.roadSection {
+  display: grid;
+  grid-template-areas:
+    "roadSectionAside"
+    "roadSectionImageBlock";
+  align-items: center;
+  justify-items: center;
+  grid-gap: 5vw;
+  max-width: 100vw;
+  padding: 2vw 5vw 5vw 5vw;
+
+  section.imageBlock img {
+    object-fit: cover;
+    max-width: 100%;
+    height: 100%;
+  }
+
+  @media only screen and (min-width: $breakpoint-roadSection) {
+    grid-template-areas: "roadSectionAside roadSectionImageBlock";
+  }
+}
+
+section.roadSection aside {
+  grid-area: roadSectionAside;
+  max-width: 90vw;
+
+  h4 {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0.22px;
+    margin-bottom: 0;
+    color: #9d5c5f;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.38;
+    letter-spacing: 0.59px;
+  }
+
+  @media only screen and (min-width: $breakpoint-roadSection) {
+    max-width: 30vw;
+  }
+}
+
+section.imageBlock {
+  display: grid;
+  grid-area: roadSectionImageBlock;
+  grid-gap: 2vw;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "roadSectionImgSquare1 roadSectionImgSquare2"
+    "roadSectionImgHorizontal roadSectionImgHorizontal";
+  max-width: 90vw;
+
+  @media only screen and (min-width: $breakpoint-roadSection) {
+    justify-self: right;
+    max-width: 45vw;
+    grid-template-columns: 12vw 12vw 12vw;
+    grid-template-rows: 12vw 12vw;
+    grid-template-areas:
+      "roadSectionImgSquare1 roadSectionImgSquare2 roadSectionImgVertical"
+      "roadSectionImgHorizontal roadSectionImgHorizontal roadSectionImgVertical";
+  }
+}
+
+img.roadSectionImgSquare1 {
+  grid-area: roadSectionImgSquare1;
+  width: 100%;
+}
+img.roadSectionImgSquare2 {
+  grid-area: roadSectionImgSquare2;
+  width: 100%;
+}
+img.roadSectionImgHorizontal {
+  grid-area: roadSectionImgHorizontal;
+  width: 100%;
+  grid-column: span 2;
+  @media only screen and (min-width: $breakpoint-roadSection) {
+    width: 100%;
+    grid-column: span 2;
+  }
+}
+
+img.roadSectionImgVertical {
+  display: none;
+  @media only screen and (min-width: $breakpoint-roadSection) {
+    display: block;
+    grid-area: roadSectionImgVertical;
+    height: 100%;
+    grid-row: span 2;
+  }
+}

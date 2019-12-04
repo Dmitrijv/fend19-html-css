@@ -1,0 +1,44 @@
+@import "styles/variables/variables";
+@import "styles/mixins/mixins";
+
+@import "styles/partials/header";
+@import "styles/partials/welcome";
+@import "styles/partials/promos";
+@import "styles/partials/footGallery";
+
+@import "styles/partials/roadSection";
+@import "styles/partials/poleSection";
+@import "styles/partials/complexGallerySection";
+
+@import "styles/partials/footer";
+
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: $color--site-background;
+  margin: 0px;
+}
+
+.logo {
+  font-family: "Unica One";
+  line-height: 50%;
+  font-size: 26px;
+  color: $color--logo-text;
+}
+
+h1 {
+  font-size: 52px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 36px;
+  font-weight: bold;
+}

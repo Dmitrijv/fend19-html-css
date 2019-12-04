@@ -1,0 +1,36 @@
+section.footGallery {
+  box-sizing: border-box;
+  background-color: $color--dark-section-background;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 4vw 5vw 5vw 5vw;
+
+  h3 {
+    color: $color--dark-section-heading;
+    margin: 0vw 0 0.5vw 0;
+  }
+}
+
+div.imageRow {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+  max-width: 1340px;
+
+  img {
+    object-fit: cover;
+    display: flex;
+    width: 165px;
+    max-width: 100%;
+    margin: 12px;
+    object-fit: contain;
+    margin: 1.5vw;
+    @media only screen and (max-width: $breakpoint-footGallery) {
+      max-width: 31%;
+      margin: 1px;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+footer {
+  background-color: $color--footer-background;
+  min-height: 7.5vw;
+  padding: 4vh 4vw 1vh 4vw;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
