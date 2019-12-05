@@ -325,16 +325,14 @@ div.imageRow {
 }
 
 div.imageRow img {
-  -o-object-fit: cover;
-     object-fit: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 165px;
+  -o-object-fit: cover;
+     object-fit: cover;
   max-width: 100%;
   margin: 12px;
-  -o-object-fit: contain;
-     object-fit: contain;
   margin: 1.5vw;
 }
 
