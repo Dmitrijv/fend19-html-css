@@ -2,13 +2,12 @@ $breakpoint-promos: 740px;
 $breakpoint-promoItem: 900px;
 
 section.promos {
-  box-sizing: border-box;
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
   flex-direction: column;
-  padding: 2vw 5vw 5vw 5vw;
+  padding: 2vw 10vw 5vw 10vw;
   background-color: #f8f8f8;
 
   h2,
@@ -23,19 +22,17 @@ section.promoItem > aside > h3 {
 
 section.promoItem {
   @media screen and (min-width: $breakpoint-promoItem) {
-    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
-    max-height: 360px;
+    max-height: 35vh;
   }
 
   img {
     object-fit: cover;
     object-position: center;
-    width: 100%;
-    max-height: 50vw;
+
     @media screen and (min-width: $breakpoint-promoItem) {
-      max-width: 49%;
+      max-width: 48%;
     }
   }
 
@@ -70,11 +67,5 @@ section.promoItem {
   }
   .promoItem + .promoItem {
     margin-top: 2vw;
-  }
-}
-
-@media only screen and (max-width: 740px) {
-  section.promoItem {
-    flex-direction: column;
   }
 }

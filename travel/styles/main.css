@@ -169,8 +169,6 @@ section.welcome .welcomeMessageContainer p {
 }
 
 section.promos {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -185,7 +183,7 @@ section.promos {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 2vw 5vw 5vw 5vw;
+  padding: 2vw 10vw 5vw 10vw;
   background-color: #f8f8f8;
 }
 
@@ -200,15 +198,13 @@ section.promoItem > aside > h3 {
 
 @media screen and (min-width: 900px) {
   section.promoItem {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    max-height: 360px;
+    max-height: 35vh;
   }
 }
 
@@ -217,13 +213,11 @@ section.promoItem img {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
-  width: 100%;
-  max-height: 50vw;
 }
 
 @media screen and (min-width: 900px) {
   section.promoItem img {
-    max-width: 49%;
+    max-width: 48%;
   }
 }
 
@@ -276,15 +270,6 @@ section.promoItem p {
   }
   .promoItem + .promoItem {
     margin-top: 2vw;
-  }
-}
-
-@media only screen and (max-width: 740px) {
-  section.promoItem {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
 }
 
