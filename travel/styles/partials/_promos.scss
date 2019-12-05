@@ -9,7 +9,6 @@ section.promos {
   flex-direction: column;
   padding: 5vw;
   background-color: #f8f8f8;
-  border: 1px red solid;
   h2,
   h3 {
     color: $color--bright-section-heading;
@@ -21,10 +20,19 @@ section.promoItem > aside > h3 {
 }
 
 section.promoItem {
+  display: flex;
   text-align: center;
-
+  flex-direction: column;
+  width: 100%;
   @media screen and (min-width: $breakpoint-promoItem) {
-    display: flex;
+    flex-direction: row;
+  }
+
+  .imageWrapper {
+    @media screen and (min-width: $breakpoint-promoItem) {
+      max-height: fit-content;
+      max-width: 43vw;
+    }
   }
 
   img {
@@ -39,13 +47,12 @@ section.promoItem {
   }
 
   aside {
-    margin: 5vw;
-
     display: flex;
     justify-content: center;
     flex-direction: column;
-    max-width: 100%;
+    padding: 5vw;
     @media screen and (min-width: $breakpoint-promoItem) {
+      max-width: 40vw;
     }
   }
 
@@ -62,6 +69,14 @@ section.promoItem {
 }
 
 @media screen and (min-width: $breakpoint-promoItem) {
+  .promoItem:nth-of-type(odd) aside {
+    padding: 5vw 5vw 5vw 10vw;
+  }
+
+  .promoItem:nth-of-type(even) aside {
+    padding: 5vw 10vw 5vw 5vw;
+  }
+
   .promoItem:nth-of-type(odd) {
     flex-direction: row-reverse;
   }

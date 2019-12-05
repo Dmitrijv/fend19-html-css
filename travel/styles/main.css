@@ -185,7 +185,6 @@ section.promos {
           flex-direction: column;
   padding: 5vw;
   background-color: #f8f8f8;
-  border: 1px red solid;
 }
 
 section.promos h2,
@@ -198,14 +197,32 @@ section.promoItem > aside > h3 {
 }
 
 section.promoItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
 }
 
 @media screen and (min-width: 900px) {
   section.promoItem {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  section.promoItem .imageWrapper {
+    max-height: -webkit-fit-content;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
+    max-width: 43vw;
   }
 }
 
@@ -226,7 +243,6 @@ section.promoItem img {
 }
 
 section.promoItem aside {
-  margin: 5vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -237,7 +253,13 @@ section.promoItem aside {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 100%;
+  padding: 5vw;
+}
+
+@media screen and (min-width: 900px) {
+  section.promoItem aside {
+    max-width: 40vw;
+  }
 }
 
 section.promoItem p {
@@ -255,6 +277,12 @@ section.promoItem p {
 }
 
 @media screen and (min-width: 900px) {
+  .promoItem:nth-of-type(odd) aside {
+    padding: 5vw 5vw 5vw 10vw;
+  }
+  .promoItem:nth-of-type(even) aside {
+    padding: 5vw 10vw 5vw 5vw;
+  }
   .promoItem:nth-of-type(odd) {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
