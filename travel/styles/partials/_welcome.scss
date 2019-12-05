@@ -16,6 +16,8 @@ section.welcome {
   min-height: 65vh;
   padding: 5vw;
 
+  transition: all 200ms ease-in;
+
   @media only screen and (min-width: $breakpoint-welcome) {
     justify-content: left;
   }

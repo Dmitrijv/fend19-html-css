@@ -1,17 +1,16 @@
 $breakpoint-nav: 400px;
 
-nav {
+.nav {
   font-size: 16px;
   display: flex;
   align-items: center;
 
-  ul {
+  &__ul {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     list-style: none;
     padding: 0px;
-
     @media only screen and (max-width: $breakpoint-nav) {
       justify-content: space-evenly;
       align-items: center;
@@ -19,12 +18,12 @@ nav {
     }
   }
 
-  li {
+  &__ul__li {
     min-width: max-content;
     font-weight: bold;
   }
 
-  li + li {
+  &__ul__li + &__ul__li {
     margin-left: 40px;
 
     @media only screen and (max-width: $breakpoint-nav) {
@@ -32,7 +31,8 @@ nav {
     }
   }
 
-  li > a {
+  &__ul__li__a,
+  &__ul__li__a--active {
     text-decoration: none;
     color: $color--nav-text;
   }

@@ -1,18 +1,18 @@
-@import "styles/variables/variables";
-@import "styles/extends/extends";
-@import "styles/mixins/mixins";
+@import "variables/variables";
+@import "extends/extends";
+@import "mixins/mixins";
 
-@import "styles/partials/header";
+@import "partials/header";
 
-@import "styles/partials/welcome";
-@import "styles/partials/promos";
-@import "styles/partials/footGallery";
+@import "partials/welcome";
+@import "partials/promos";
+@import "partials/footGallery";
 
-@import "styles/partials/road";
-@import "styles/partials/pole";
-@import "styles/partials/complexGallery";
+@import "partials/road";
+@import "partials/pole";
+@import "partials/complexGallery";
 
-@import "styles/partials/footer";
+@import "partials/footer";
 
 html {
   font-family: "Poppins", sans-serif;
@@ -25,7 +25,6 @@ body {
 
 .logo {
   font-family: "Unica One";
-  line-height: 50%;
   font-size: 26px;
   color: $color--logo-text;
 }
