@@ -7,9 +7,9 @@ section.promos {
   text-align: center;
   justify-content: center;
   flex-direction: column;
-  padding: 2vw 10vw 5vw 10vw;
+  padding: 5vw;
   background-color: #f8f8f8;
-
+  border: 1px red solid;
   h2,
   h3 {
     color: $color--bright-section-heading;
@@ -21,41 +21,41 @@ section.promoItem > aside > h3 {
 }
 
 section.promoItem {
+  text-align: center;
+
   @media screen and (min-width: $breakpoint-promoItem) {
     display: flex;
-    justify-content: space-between;
-    max-height: 35vh;
   }
 
   img {
     object-fit: cover;
     object-position: center;
-
+    width: 100%;
+    max-height: 45vh;
     @media screen and (min-width: $breakpoint-promoItem) {
-      max-width: 48%;
+      min-height: 100%;
+      min-width: 40vw;
     }
   }
 
   aside {
-    box-sizing: border-box;
+    margin: 5vw;
+
     display: flex;
     justify-content: center;
     flex-direction: column;
     max-width: 100%;
     @media screen and (min-width: $breakpoint-promoItem) {
-      max-width: 49%;
     }
   }
 
   p {
-    box-sizing: border-box;
     padding: 0 5vw 0 5vw;
     margin-top: 0;
     line-height: 1.63;
     font-size: 16px;
     letter-spacing: 0.59px;
     @media screen and (min-width: 900px) {
-      box-sizing: border-box;
       padding: 0 5vw 0 5vw;
     }
   }
