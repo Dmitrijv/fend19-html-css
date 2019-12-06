@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "AEAA,AAAA,MAAM,CAAC;EACL,MAAM,EAAE,IAAI;EACZ,gBAAgB,EDFS,OAAO;CCGjC;;ACHD,AAAA,MAAM,CAAC;EACL,MAAM,EAAE,IAAI;EACZ,gBAAgB,EFDS,OAAO;CEEjC",
+    "sources": [
+        "main.scss",
+        "variable/_variables.scss",
+        "partial/_header.scss",
+        "partial/_footer.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
