@@ -1,4 +1,10 @@
 footer {
   height: 30vh;
+  color: white;
   background-color: $color--footer-background;
+}
+
+footer > h1 {
+  text-align: center;
+  font-weight: bold;
 }
