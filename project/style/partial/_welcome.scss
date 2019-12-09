@@ -23,16 +23,20 @@ section.welcome {
   max-width: fit-content;
   text-align: center;
   align-self: center;
+  padding: 0 5vw 0 5vw;
 }
 
 .welcome > .welcomeMessage > h1 {
   font-size: 60px;
-  color: white;
   border-bottom: 6px solid white;
+  margin-bottom: 2vh;
+  color: white;
 }
 
 .welcome > .welcomeMessage > p {
   font-weight: bold;
   color: #436dac;
   font-size: 40px;
+  padding: 0;
+  margin: 0;
 }
