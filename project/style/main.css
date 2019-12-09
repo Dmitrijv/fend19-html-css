@@ -4,8 +4,8 @@ header {
 }
 
 footer {
-  height: 30vh;
-  padding: 10vh 0 10vh 0;
+  max-height: 30vh;
+  padding: 10vh 5vw 10vh 5vw;
   color: white;
   background-color: #2c4f80;
   text-align: center;
@@ -13,7 +13,8 @@ footer {
 
 footer > h1 {
   margin: 0;
-  padding: 0;
+  padding: 1%;
+  font-family: Poppins;
   font-weight: bold;
 }
 
