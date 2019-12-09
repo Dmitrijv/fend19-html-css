@@ -1,13 +1,12 @@
 section.welcome {
   display: flex;
+  flex-direction: column;
   justify-content: center;
 
-  height: 100vh;
+  height: calc(100vh - #{$height--header});
   max-width: 100vw;
 
-  background-color: gray;
-
-  // background: linear-gradient(to bottom, #c15555, #240202), url("/project/image/page-1/mars.jpg");
+  background-color: gray; /* fallback color if image fails to load */
 
   background: linear-gradient(to bottom, rgba(193, 85, 85, 0.7), rgba(36, 2, 2, 0.7)),
     url("/project/image/page-1/mars.jpg");
@@ -18,9 +17,12 @@ section.welcome {
 }
 
 .welcome > .welcomeMessage {
-  width: 30vw;
-  height: fit-content;
-  background: gray;
+  // max-width: 420px;
+  // height: fit-content;
+  // background: gray;
+  max-width: fit-content;
+  text-align: center;
+  align-self: center;
 }
 
 .welcome > .welcomeMessage > h1 {

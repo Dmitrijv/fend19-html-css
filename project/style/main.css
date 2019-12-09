@@ -24,12 +24,17 @@ section.welcome {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100vh;
+  height: calc(100vh - 10vh);
   max-width: 100vw;
   background-color: gray;
+  /* fallback color if image fails to load */
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(193, 85, 85, 0.7)), to(rgba(36, 2, 2, 0.7))), url("/project/image/page-1/mars.jpg");
   background: linear-gradient(to bottom, rgba(193, 85, 85, 0.7), rgba(36, 2, 2, 0.7)), url("/project/image/page-1/mars.jpg");
   background-size: cover;
@@ -38,11 +43,13 @@ section.welcome {
 }
 
 .welcome > .welcomeMessage {
-  width: 30vw;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  background: gray;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .welcome > .welcomeMessage > h1 {
