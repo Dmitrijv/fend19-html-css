@@ -2,9 +2,15 @@ footer {
   height: 30vh;
   color: white;
   background-color: $color--footer-background;
+  text-align: center;
 }
 
 footer > h1 {
-  text-align: center;
   font-weight: bold;
+}
+
+footer a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #f97c7c;
 }
