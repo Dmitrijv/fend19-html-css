@@ -7,3 +7,16 @@
 // @import "partial/welcome";
 
 @import "partial/footer";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+img {
+  max-width: 100vw;
+  object-fit: cover;
+}
