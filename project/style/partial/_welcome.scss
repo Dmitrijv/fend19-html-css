@@ -1,25 +1,27 @@
+$breakpoint-welcome: 420px;
+
 section.welcome {
   display: flex;
   flex-direction: column;
   justify-content: center;
 
-  height: calc(100vh - #{$height--header});
+  height: calc(100vh - #{$height--header-mobile});
   max-width: 100vw;
 
   background-color: gray; /* fallback color if image fails to load */
-
   background: linear-gradient(to bottom, rgba(193, 85, 85, 0.7), rgba(36, 2, 2, 0.7)),
     url("/project/image/page-1/mars.jpg");
-
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+
+  @media only screen and (min-width: $breakpoint-welcome) {
+    flex-direction: row;
+    height: calc(100vh - #{$height--header-desktop});
+  }
 }
 
 .welcome > .welcomeMessage {
-  // max-width: 420px;
-  // height: fit-content;
-  // background: gray;
   max-width: fit-content;
   text-align: center;
   align-self: center;
