@@ -13,4 +13,21 @@ footer > h1 {
   text-align: center;
   font-weight: bold;
 }
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 /*# sourceMappingURL=main.css.map */
