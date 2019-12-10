@@ -6,16 +6,18 @@ header {
   height: $height--header-mobile;
   background-color: $color--header-background;
 
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+
   padding: 0 5vw 0 5vw;
   min-height: 65px;
+
   background-color: $color--header-background;
 
-  box-shadow: inset 0px -5px 1.5px -5px black;
+  // box-shadow: inset 0px -5px 1.5px -5px black;
+  // transition: all 200ms ease-in;
 
   z-index: 999;
 
