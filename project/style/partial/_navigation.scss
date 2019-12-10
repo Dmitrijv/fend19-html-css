@@ -17,9 +17,10 @@ nav {
     }
   }
 
-  ul > li {
+  ul li {
     min-width: max-content;
     font-weight: bold;
+    padding-bottom: 3px;
   }
 
   li + li {
@@ -40,7 +41,8 @@ nav {
     color: white;
   }
 
-  ul li a:hover {
+  ul li:hover:not(.active) {
+    padding-bottom: 1px;
     border-bottom: 2px solid white;
   }
 }

@@ -1,0 +1,74 @@
+$breakpoint-closestNeighbourSection: 820px;
+
+section.closestNeighbour {
+  background-color: #f1f1f1;
+  padding: 5vw;
+
+  section.closestNeighbourGrid {
+    display: grid;
+    grid-template-areas:
+      "whyMars"
+      "justMoveIn"
+      "sustainableSun";
+    grid-gap: 2.5vw;
+
+    @media only screen and (min-width: $breakpoint-closestNeighbourSection) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: auto auto;
+      grid-template-areas:
+        "whyMars whyMars whyMars sustainableSun"
+        "justMoveIn justMoveIn justMoveIn sustainableSun";
+    }
+  }
+
+  h2 {
+    color: #2c4f80;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+  }
+}
+
+section.whyMars {
+  grid-area: whyMars;
+  //   background-color: red;
+}
+
+section.justMoveIn {
+  grid-area: justMoveIn;
+  //   background-color: brown;
+}
+
+section.sustainableSun {
+  grid-area: sustainableSun;
+  //   background-color: yellow;
+}
+
+section.gridSection article {
+  padding: 2.5vw;
+  font-size: 16px;
+
+  h3 {
+    font-size: 24px;
+    color: #e32700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.92;
+    letter-spacing: 0.89px;
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.38;
+    letter-spacing: 0.59px;
+  }
+}
+
+.horizontalArticle {
+  display: flex;
+  align-items: center;
+  .imageWrapper {
+    max-width: 43vw;
+  }
+}
