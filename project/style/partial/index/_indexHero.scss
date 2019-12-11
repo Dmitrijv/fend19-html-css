@@ -1,0 +1,28 @@
+$breakpoint-planetbMessage: 420px;
+$padding-top-planetbMessage: 8vh;
+
+section.hero.indexHero {
+  background-image: linear-gradient(to bottom, rgba(193, 85, 85, 0.7), rgba(36, 2, 2, 0.7)),
+    url("/project/image/page-1/mars.jpg");
+}
+
+section.hero > div.gradientDark {
+  @media only screen and (min-width: $breakpoint-planetbMessage) {
+    clip-path: ellipse(78% 55% at 64% 15%);
+    top: calc(#{$height--header-desktop});
+  }
+}
+
+section.hero > div.gradientBright {
+  @media only screen and (min-width: $breakpoint-planetbMessage) {
+    clip-path: ellipse(79% 58% at 64% 15%);
+    top: calc(#{$height--header-desktop});
+  }
+}
+
+section.hero > div.indexMessage {
+  max-width: 450px;
+  h1 {
+    width: 95%;
+  }
+}

@@ -1,3 +1,9 @@
+.horizontalGridSection, .verticalGridSection {
+  background-color: white;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(161, 161, 161, 0.5);
+          box-shadow: 0 2px 4px 0 rgba(161, 161, 161, 0.5);
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -165,7 +171,114 @@ header img.logo {
   height: 50px;
 }
 
-section.welcome {
+nav {
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media only screen and (max-width: 300px) {
+  nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+nav ul li {
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  font-weight: bold;
+  padding-bottom: 3px;
+}
+
+nav li + li {
+  margin: 0 0 0 4vw;
+}
+
+@media only screen and (max-width: 300px) {
+  nav li + li {
+    margin: 4vw 0 0 0;
+  }
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li.active {
+  border-bottom: 2px solid red;
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li:hover:not(.active) {
+  padding-bottom: 1px;
+  border-bottom: 2px solid white;
+}
+
+header {
+  height: 16vh;
+  background-color: #051b39;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 0 5vw 0 5vw;
+  min-height: 65px;
+  background-color: #051b39;
+  z-index: 999;
+}
+
+@media only screen and (min-width: 420px) {
+  header {
+    height: 8vh;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+header img.logo {
+  height: 50px;
+}
+
+section.hero {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -185,8 +298,6 @@ section.welcome {
     right   0 18 43   00122B
     left    5 27 57   051B39
   */
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(193, 85, 85, 0.7)), to(rgba(36, 2, 2, 0.7))), url("/project/image/page-1/mars.jpg");
-  background-image: linear-gradient(to bottom, rgba(193, 85, 85, 0.7), rgba(36, 2, 2, 0.7)), url("/project/image/page-1/mars.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -194,45 +305,12 @@ section.welcome {
 }
 
 @media only screen and (min-width: 420px) {
-  section.welcome {
+  section.hero {
     height: calc(100vh - 8vh);
   }
 }
 
-section.welcome > div.welcomeMessage {
-  text-align: center;
-  max-width: 500px;
-  z-index: 999;
-  margin: 5vw;
-}
-
-@media only screen and (min-width: 420px) {
-  section.welcome > div.welcomeMessage {
-    margin: 8vw;
-  }
-}
-
-section.welcome > div.welcomeMessage h1 {
-  font-size: 60px;
-  letter-spacing: 2.22px;
-  margin: 0 0 2vh 0;
-  border-bottom: 6px solid white;
-  color: white;
-  text-align: left;
-  width: 95%;
-}
-
-section.welcome > div.welcomeMessage p {
-  text-align: left;
-  font-weight: bold;
-  color: #436dac;
-  font-size: 40px;
-  letter-spacing: 1.48px;
-  padding: 0;
-  margin: 0;
-}
-
-section.welcome > div.gradientDark {
+section.hero > div.gradientDark {
   position: absolute;
   width: 100vw;
   height: 90vh;
@@ -244,15 +322,7 @@ section.welcome > div.gradientDark {
   z-index: 5;
 }
 
-@media only screen and (min-width: 420px) {
-  section.welcome > div.gradientDark {
-    -webkit-clip-path: ellipse(78% 55% at 64% 15%);
-            clip-path: ellipse(78% 55% at 64% 15%);
-    top: calc(8vh);
-  }
-}
-
-section.welcome > div.gradientBright {
+section.hero > div.gradientBright {
   position: absolute;
   width: 100vw;
   height: 90vh;
@@ -264,12 +334,86 @@ section.welcome > div.gradientBright {
   top: calc(16vh);
 }
 
+section.hero > div.heroMessage {
+  text-align: center;
+  max-width: 450px;
+  z-index: 999;
+  margin: 5vw;
+}
+
 @media only screen and (min-width: 420px) {
-  section.welcome > div.gradientBright {
+  section.hero > div.heroMessage {
+    margin: 8vw;
+  }
+}
+
+section.hero > div.heroMessage h1 {
+  font-size: 60px;
+  letter-spacing: 2.22px;
+  margin: 0 0 2vh 0;
+  border-bottom: 6px solid white;
+  color: white;
+  text-align: left;
+}
+
+section.hero > div.heroMessage p {
+  text-align: left;
+  font-weight: bold;
+  color: #436dac;
+  font-size: 40px;
+  letter-spacing: 1.48px;
+  padding: 0;
+  margin: 0;
+}
+
+footer {
+  max-height: 30vh;
+  padding: 10vh 5vw 10vh 5vw;
+  color: white;
+  background-color: #2c4f80;
+  text-align: center;
+}
+
+footer > h1 {
+  margin: 0 0 1% 0;
+  padding: 0;
+  font-family: Poppins;
+  font-weight: bold;
+}
+
+footer a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #f97c7c;
+}
+
+section.hero.indexHero {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(193, 85, 85, 0.7)), to(rgba(36, 2, 2, 0.7))), url("/project/image/page-1/mars.jpg");
+  background-image: linear-gradient(to bottom, rgba(193, 85, 85, 0.7), rgba(36, 2, 2, 0.7)), url("/project/image/page-1/mars.jpg");
+}
+
+@media only screen and (min-width: 420px) {
+  section.hero > div.gradientDark {
+    -webkit-clip-path: ellipse(78% 55% at 64% 15%);
+            clip-path: ellipse(78% 55% at 64% 15%);
+    top: calc(8vh);
+  }
+}
+
+@media only screen and (min-width: 420px) {
+  section.hero > div.gradientBright {
     -webkit-clip-path: ellipse(79% 58% at 64% 15%);
             clip-path: ellipse(79% 58% at 64% 15%);
     top: calc(8vh);
   }
+}
+
+section.hero > div.indexMessage {
+  max-width: 450px;
+}
+
+section.hero > div.indexMessage h1 {
+  width: 95%;
 }
 
 section.newSkySection {
@@ -476,24 +620,12 @@ section.closestNeighbour article button:hover {
   color: white;
 }
 
-footer {
-  max-height: 30vh;
-  padding: 10vh 5vw 10vh 5vw;
-  color: white;
-  background-color: #2c4f80;
-  text-align: center;
+section.hero.faqHero {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(193, 85, 85, 0.7)), to(rgba(36, 2, 2, 0.7))), url("/project/image/page-2/hero-2.jpg");
+  background-image: linear-gradient(to bottom, rgba(193, 85, 85, 0.7), rgba(36, 2, 2, 0.7)), url("/project/image/page-2/hero-2.jpg");
 }
 
-footer > h1 {
-  margin: 0 0 1% 0;
-  padding: 0;
-  font-family: Poppins;
-  font-weight: bold;
-}
-
-footer a {
-  text-decoration: none;
-  font-weight: bold;
-  color: #f97c7c;
+section.hero > div.faqMessage {
+  max-width: 510px;
 }
 /*# sourceMappingURL=main.css.map */

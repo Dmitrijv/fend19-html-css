@@ -1,11 +1,15 @@
 @import "variable/variables";
-// @import "styles/extends/extends";
-// @import "styles/mixins/mixins";
+@import "extend/extends";
 
 @import "partial/base";
 
 @import "partial/header";
-@import "partial/welcome";
-@import "partial/newSkySection";
-@import "partial/closestNeighbourSection";
+@import "partial/hero";
 @import "partial/footer";
+
+@import "partial/index/indexHero";
+@import "partial/index/newSkySection";
+@import "partial/index/neighbourGridSection";
+
+@import "partial/faq/faqHero";
+@import "partial/faq/faqGridSection";
