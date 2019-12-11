@@ -1,0 +1,116 @@
+$breakpoint-faqGrid: 920px;
+$breakpoint-faqArticleReverse: 1300px;
+
+section.faqSection {
+  background-color: $color--graySection-background;
+
+  section.faqGrid {
+    display: grid;
+    grid-gap: 2vw;
+
+    grid-template-areas:
+      "whyMove"
+      "risks"
+      "purpose"
+      "timeToTravel";
+
+    @media only screen and (min-width: $breakpoint-faqGrid) {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto auto auto;
+      grid-template-areas:
+        "whyMove risks risks"
+        "whyMove purpose purpose"
+        "timeToTravel timeToTravel timeToTravel";
+    }
+  }
+
+  h2 {
+    color: $color--section-heading1;
+    font-size: 36px;
+    font-weight: 800;
+    letter-spacing: 1.33px;
+    text-align: center;
+    padding: 4vw 0 4vw 0;
+    margin: 0;
+  }
+}
+
+section.faqGrid article {
+  font-size: 16px;
+  padding: 10vw;
+
+  @media only screen and (min-width: $breakpoint-faqGrid) {
+    padding: 5vw;
+  }
+
+  h3 {
+    margin-top: 0;
+    font-size: 24px;
+    color: $color--article-heading;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.92;
+    letter-spacing: 0.89px;
+    font-weight: 500;
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.38;
+    letter-spacing: 0.59px;
+  }
+
+  li {
+    font-weight: bold;
+    line-height: 1.75;
+  }
+}
+
+section.faqGrid .horizontalGridSection {
+  flex-direction: column-reverse;
+  @media only screen and (min-width: $breakpoint-faqArticleReverse) {
+    flex-direction: row;
+    min-height: 50vh;
+  }
+}
+
+section.faqGrid .verticalGridSection {
+  .imageContainer {
+    max-height: 40%;
+  }
+}
+
+section.whyMove {
+  grid-area: whyMove;
+}
+
+section.risks {
+  grid-area: risks;
+  article {
+    max-width: 1000px;
+  }
+  p:last-child {
+    font-weight: normal;
+    color: #323232;
+  }
+}
+
+section.purpose {
+  grid-area: purpose;
+  .imageContainer {
+    min-width: 55%;
+    background-image: url("/project/image/page-2/nicolas-lobos.jpg");
+    @media only screen and (max-width: $breakpoint-faqArticleReverse) {
+      max-height: 30%;
+    }
+  }
+}
+
+section.timeToTravel {
+  grid-area: timeToTravel;
+  box-shadow: 0 0 1px 0 rgba(161, 161, 161, 0.5); /* remove bottom shadow for last grid element */
+  .imageContainer {
+    background-image: radial-gradient(circle at 50% 39%, #072142, #00132c 101%);
+  }
+}

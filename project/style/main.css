@@ -445,9 +445,9 @@ section.closestNeighbourGrid .horizontalGridSection {
 @media only screen and (min-width: 1300px) {
   section.closestNeighbourGrid .horizontalGridSection {
     -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
   }
   section.closestNeighbourGrid .horizontalGridSection article {
     max-width: 55%;
@@ -519,5 +519,142 @@ section.faqHero > div.faqMessage {
 
 section.faqHero > div.faqMessage h1 {
   padding-bottom: 3vh;
+}
+
+section.faqSection {
+  background-color: #f1f1f1;
+}
+
+section.faqSection section.faqGrid {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 2vw;
+      grid-template-areas: "whyMove" "risks" "purpose" "timeToTravel";
+}
+
+@media only screen and (min-width: 920px) {
+  section.faqSection section.faqGrid {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: auto auto auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "whyMove risks risks" "whyMove purpose purpose" "timeToTravel timeToTravel timeToTravel";
+  }
+}
+
+section.faqSection h2 {
+  color: #2c4f80;
+  font-size: 36px;
+  font-weight: 800;
+  letter-spacing: 1.33px;
+  text-align: center;
+  padding: 4vw 0 4vw 0;
+  margin: 0;
+}
+
+section.faqGrid article {
+  font-size: 16px;
+  padding: 10vw;
+}
+
+@media only screen and (min-width: 920px) {
+  section.faqGrid article {
+    padding: 5vw;
+  }
+}
+
+section.faqGrid article h3 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #e32700;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.92;
+  letter-spacing: 0.89px;
+  font-weight: 500;
+}
+
+section.faqGrid article p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.38;
+  letter-spacing: 0.59px;
+}
+
+section.faqGrid article li {
+  font-weight: bold;
+  line-height: 1.75;
+}
+
+section.faqGrid .horizontalGridSection {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+@media only screen and (min-width: 1300px) {
+  section.faqGrid .horizontalGridSection {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    min-height: 50vh;
+  }
+}
+
+section.faqGrid .verticalGridSection .imageContainer {
+  max-height: 40%;
+}
+
+section.whyMove {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: whyMove;
+}
+
+section.risks {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: risks;
+}
+
+section.risks article {
+  max-width: 1000px;
+}
+
+section.risks p:last-child {
+  font-weight: normal;
+  color: #323232;
+}
+
+section.purpose {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: purpose;
+}
+
+section.purpose .imageContainer {
+  min-width: 55%;
+  background-image: url("/project/image/page-2/nicolas-lobos.jpg");
+}
+
+@media only screen and (max-width: 1300px) {
+  section.purpose .imageContainer {
+    max-height: 30%;
+  }
+}
+
+section.timeToTravel {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: timeToTravel;
+  -webkit-box-shadow: 0 0 1px 0 rgba(161, 161, 161, 0.5);
+          box-shadow: 0 0 1px 0 rgba(161, 161, 161, 0.5);
+  /* remove bottom shadow for last grid element */
+}
+
+section.timeToTravel .imageContainer {
+  background-image: radial-gradient(circle at 50% 39%, #072142, #00132c 101%);
 }
 /*# sourceMappingURL=main.css.map */

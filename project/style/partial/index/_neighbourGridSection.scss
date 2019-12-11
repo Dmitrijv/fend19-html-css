@@ -59,7 +59,7 @@ section.sustainableSun {
 section.closestNeighbourGrid .horizontalGridSection {
   flex-direction: column;
   @media only screen and (min-width: $breakpoint-closestNeighbourArticle) {
-    flex-direction: row;
+    flex-direction: row-reverse;
     article {
       max-width: 55%;
     }
