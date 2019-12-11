@@ -21,8 +21,13 @@ img {
           box-shadow: 0 2px 4px 0 rgba(161, 161, 161, 0.5);
 }
 
-.imageWrapper {
-  content: "";
+.imageContainer {
+  content: " ";
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 nav {
@@ -242,9 +247,8 @@ section.welcome > div.gradientBright {
 section.newSkySection {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: auto auto;
-      grid-template-rows: auto auto;
       grid-template-areas: "newSkySectionAside" "newSkySectionImg";
+  grid-gap: 2vw;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -254,6 +258,7 @@ section.newSkySection {
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
   max-width: 100vw;
+  min-height: 500px;
   background-color: white;
 }
 
@@ -263,10 +268,19 @@ section.newSkySection {
     -webkit-box-direction: initial;
         -ms-flex-direction: initial;
             flex-direction: initial;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 0.8fr 1fr;
+        grid-template-columns: 0.8fr 1fr;
         grid-template-areas: "newSkySectionImg newSkySectionAside";
   }
+}
+
+section.newSkySection div.imageContainer {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: newSkySectionImg;
+  min-height: 45vh;
+  background-image: url("/project/image/page-1/nightSky.jpeg");
+  background-position: top;
 }
 
 section.newSkySection aside {
@@ -297,18 +311,6 @@ section.newSkySection aside a {
   text-decoration: none;
   font-weight: bold;
   color: #e32700;
-}
-
-section.newSkySection img {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: newSkySectionImg;
-  -ms-grid-column-align: left;
-      justify-self: left;
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-  height: 100%;
 }
 
 section.closestNeighbour {

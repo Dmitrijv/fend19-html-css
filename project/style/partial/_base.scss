@@ -18,8 +18,11 @@ img {
   box-shadow: 0 2px 4px 0 rgba(161, 161, 161, 0.5);
 }
 
-.imageWrapper {
-  // height: min-content;
-  // width: 100%;
-  content: "";
+.imageContainer {
+  content: " ";
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
