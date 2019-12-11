@@ -24,7 +24,7 @@ section.newSkySection {
     grid-template-areas: "newSkySectionImg newSkySectionAside";
   }
 
-  div.imageContainer.newSkyImage {
+  div.imageContainer {
     grid-area: newSkySectionImg;
     min-height: 45vh;
     background-image: url("/project/image/page-1/nightSky.jpeg");
