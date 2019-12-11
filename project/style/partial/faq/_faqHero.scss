@@ -7,4 +7,7 @@ section.faqHero {
 
 section.faqHero > div.faqMessage {
   max-width: 520px;
+  h1 {
+    padding-bottom: 3vh;
+  }
 }
