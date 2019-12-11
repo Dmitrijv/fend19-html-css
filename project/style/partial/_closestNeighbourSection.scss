@@ -2,7 +2,7 @@ $breakpoint-closestNeighbourSection: 920px;
 $breakpoint-closestNeighbourArticle: 1300px; /* article direction reverse */
 
 section.closestNeighbour {
-  background-color: #f1f1f1;
+  background-color: $color--graySection-background;
   padding: 5vw;
 
   section.closestNeighbourGrid {
@@ -25,7 +25,7 @@ section.closestNeighbour {
   }
 
   h2 {
-    color: #2c4f80;
+    color: $color--section-heading1;
     font-size: 36px;
     font-weight: 800;
     letter-spacing: 1.33px;
