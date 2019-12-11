@@ -1,60 +1,94 @@
-$breakpoint-closestNeighbourSection: 820px;
+$breakpoint-closestNeighbourSection: 920px;
+$breakpoint-closestNeighbourArticle: 1300px; /* article direction reverse */
 
 section.closestNeighbour {
   background-color: #f1f1f1;
   padding: 5vw;
 
   section.closestNeighbourGrid {
+    min-height: 90vh;
+
     display: grid;
+    grid-gap: 2vw;
+
     grid-template-areas:
       "whyMars"
       "justMoveIn"
       "sustainableSun";
-    grid-gap: 2.5vw;
 
     @media only screen and (min-width: $breakpoint-closestNeighbourSection) {
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-template-rows: auto auto;
+      grid-template-columns: 1fr 1fr 0.8fr;
       grid-template-areas:
-        "whyMars whyMars whyMars sustainableSun"
-        "justMoveIn justMoveIn justMoveIn sustainableSun";
+        "whyMars whyMars sustainableSun"
+        "justMoveIn justMoveIn sustainableSun";
     }
   }
 
   h2 {
     color: #2c4f80;
-    text-align: center;
     font-size: 36px;
-    font-weight: bold;
+    font-weight: 800;
+    letter-spacing: 1.33px;
+    text-align: center;
   }
 }
 
 section.whyMars {
   grid-area: whyMars;
-  //   background-color: red;
+  .imageContainer {
+    background-size: 50%;
+    background-image: url("/project/image/page-1/planet-red.png");
+  }
 }
 
 section.justMoveIn {
   grid-area: justMoveIn;
-  //   background-color: brown;
+  .imageContainer {
+    background-image: url("/project/image/page-1/base.jpg");
+  }
 }
 
 section.sustainableSun {
   grid-area: sustainableSun;
-  //   background-color: yellow;
+  .imageContainer {
+    background-size: 50%;
+    background-image: url("/project/image/page-1/solar.png");
+  }
 }
 
-section.gridSection article {
-  padding: 2.5vw;
+section.closestNeighbourGrid .horizontalGridSection {
+  flex-direction: column;
+  @media only screen and (min-width: $breakpoint-closestNeighbourArticle) {
+    flex-direction: row;
+    article {
+      max-width: 55%;
+    }
+  }
+}
+
+section.closestNeighbourGrid .verticalGridSection {
+  .imageContainer {
+    max-height: 40%;
+  }
+}
+
+section.closestNeighbourGrid article {
   font-size: 16px;
+  padding: 5vw;
+
+  @media only screen and (min-width: $breakpoint-closestNeighbourSection) {
+    padding: 3vw;
+  }
 
   h3 {
+    margin-top: 0;
     font-size: 24px;
-    color: #e32700;
+    color: $color--article-heading;
     font-stretch: normal;
     font-style: normal;
     line-height: 0.92;
     letter-spacing: 0.89px;
+    font-weight: 500;
   }
 
   p {
@@ -65,10 +99,25 @@ section.gridSection article {
   }
 }
 
-.horizontalArticle {
-  display: flex;
-  align-items: center;
-  .imageWrapper {
-    max-width: 43vw;
-  }
+section.closestNeighbour article button {
+  cursor: pointer;
+  text-decoration: none;
+  transition-duration: 0.2s;
+  padding: 10px 27px;
+
+  background-color: $color--button-background;
+  color: $color--button-text;
+
+  border: solid 1px $color--button-border;
+  border-radius: 10px;
+
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.52px;
+}
+
+section.closestNeighbour article button:hover {
+  background-color: $color--button-background-hover;
+  color: $color--button-text-hover;
 }

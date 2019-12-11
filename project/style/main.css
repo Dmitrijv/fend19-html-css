@@ -15,19 +15,47 @@ img {
      object-fit: cover;
 }
 
-.gridSection {
+.horizontalGridSection, .verticalGridSection {
   background-color: white;
   -webkit-box-shadow: 0 2px 4px 0 rgba(161, 161, 161, 0.5);
           box-shadow: 0 2px 4px 0 rgba(161, 161, 161, 0.5);
 }
 
+.horizontalGridSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.verticalGridSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .imageContainer {
   content: " ";
   height: 100%;
+  min-height: 30vh;
   width: 100%;
+  min-width: 30vh;
   background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 nav {
@@ -274,7 +302,7 @@ section.newSkySection {
   }
 }
 
-section.newSkySection div.imageContainer {
+section.newSkySection div.imageContainer.newSkyImage {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: newSkySectionImg;
@@ -313,33 +341,34 @@ section.newSkySection aside a {
   color: #e32700;
 }
 
+/* article direction reverse */
 section.closestNeighbour {
   background-color: #f1f1f1;
   padding: 5vw;
 }
 
 section.closestNeighbour section.closestNeighbourGrid {
+  min-height: 90vh;
   display: -ms-grid;
   display: grid;
+  grid-gap: 2vw;
       grid-template-areas: "whyMars" "justMoveIn" "sustainableSun";
-  grid-gap: 2.5vw;
 }
 
-@media only screen and (min-width: 820px) {
+@media only screen and (min-width: 920px) {
   section.closestNeighbour section.closestNeighbourGrid {
-    -ms-grid-columns: 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    -ms-grid-rows: auto auto;
-        grid-template-rows: auto auto;
-        grid-template-areas: "whyMars whyMars whyMars sustainableSun" "justMoveIn justMoveIn justMoveIn sustainableSun";
+    -ms-grid-columns: 1fr 1fr 0.8fr;
+        grid-template-columns: 1fr 1fr 0.8fr;
+        grid-template-areas: "whyMars whyMars sustainableSun" "justMoveIn justMoveIn sustainableSun";
   }
 }
 
 section.closestNeighbour h2 {
   color: #2c4f80;
-  text-align: center;
   font-size: 36px;
-  font-weight: bold;
+  font-weight: 800;
+  letter-spacing: 1.33px;
+  text-align: center;
 }
 
 section.whyMars {
@@ -348,10 +377,19 @@ section.whyMars {
   grid-area: whyMars;
 }
 
+section.whyMars .imageContainer {
+  background-size: 50%;
+  background-image: url("/project/image/page-1/planet-red.png");
+}
+
 section.justMoveIn {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: justMoveIn;
+}
+
+section.justMoveIn .imageContainer {
+  background-image: url("/project/image/page-1/base.jpg");
 }
 
 section.sustainableSun {
@@ -360,38 +398,82 @@ section.sustainableSun {
   grid-area: sustainableSun;
 }
 
-section.gridSection article {
-  padding: 2.5vw;
-  font-size: 16px;
+section.sustainableSun .imageContainer {
+  background-size: 50%;
+  background-image: url("/project/image/page-1/solar.png");
 }
 
-section.gridSection article h3 {
+section.closestNeighbourGrid .horizontalGridSection {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media only screen and (min-width: 1300px) {
+  section.closestNeighbourGrid .horizontalGridSection {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  section.closestNeighbourGrid .horizontalGridSection article {
+    max-width: 55%;
+  }
+}
+
+section.closestNeighbourGrid .verticalGridSection .imageContainer {
+  max-height: 40%;
+}
+
+section.closestNeighbourGrid article {
+  font-size: 16px;
+  padding: 5vw;
+}
+
+@media only screen and (min-width: 920px) {
+  section.closestNeighbourGrid article {
+    padding: 3vw;
+  }
+}
+
+section.closestNeighbourGrid article h3 {
+  margin-top: 0;
   font-size: 24px;
   color: #e32700;
   font-stretch: normal;
   font-style: normal;
   line-height: 0.92;
   letter-spacing: 0.89px;
+  font-weight: 500;
 }
 
-section.gridSection article p {
+section.closestNeighbourGrid article p {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.38;
   letter-spacing: 0.59px;
 }
 
-.horizontalArticle {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+section.closestNeighbour article button {
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  padding: 10px 27px;
+  background-color: white;
+  color: #2c4f80;
+  border: solid 1px #2c4f80;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.52px;
 }
 
-.horizontalArticle .imageWrapper {
-  max-width: 43vw;
+section.closestNeighbour article button:hover {
+  background-color: #008cba;
+  color: white;
 }
 
 footer {
