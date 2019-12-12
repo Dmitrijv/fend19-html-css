@@ -927,7 +927,6 @@ label[for="motivation"] {
   -ms-grid-row: 6;
   -ms-grid-column: 1;
   grid-area: motivationInput;
-  background-color: red;
 }
 
 button.sendJoinRequestButton {
