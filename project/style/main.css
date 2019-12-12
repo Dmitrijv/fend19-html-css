@@ -270,6 +270,16 @@ header img.logo {
 }
 
 footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   max-height: 30vh;
   padding: 10vh 5vw 10vh 5vw;
   color: white;
@@ -277,7 +287,11 @@ footer {
   text-align: center;
 }
 
-footer > h1 {
+footer p {
+  margin-bottom: 0;
+}
+
+footer h1 {
   margin: 0 0 1% 0;
   padding: 0;
   font-family: Poppins;
@@ -445,9 +459,9 @@ section.closestNeighbourGrid .horizontalGridSection {
 @media only screen and (min-width: 1300px) {
   section.closestNeighbourGrid .horizontalGridSection {
     -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   section.closestNeighbourGrid .horizontalGridSection article {
     max-width: 55%;
@@ -542,13 +556,20 @@ section.faqSection section.faqGrid {
   }
 }
 
+@media only screen and (min-width: 1300px) {
+  section.faqSection section.faqGrid {
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+  }
+}
+
 section.faqSection h2 {
   color: #2c4f80;
   font-size: 36px;
   font-weight: 800;
   letter-spacing: 1.33px;
   text-align: center;
-  padding: 4vw 0 4vw 0;
+  padding: 5vw 0 5vw 0;
   margin: 0;
 }
 
@@ -591,6 +612,9 @@ section.faqGrid .horizontalGridSection {
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media only screen and (min-width: 1300px) {
@@ -601,6 +625,12 @@ section.faqGrid .horizontalGridSection {
             flex-direction: row;
     min-height: 50vh;
   }
+}
+
+section.faqGrid .verticalGridSection {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 section.faqGrid .verticalGridSection .imageContainer {
@@ -621,6 +651,7 @@ section.risks {
 
 section.risks article {
   max-width: 1000px;
+  margin-right: auto;
 }
 
 section.risks p:last-child {
@@ -639,12 +670,6 @@ section.purpose .imageContainer {
   background-image: url("/project/image/page-2/nicolas-lobos.jpg");
 }
 
-@media only screen and (max-width: 1300px) {
-  section.purpose .imageContainer {
-    max-height: 30%;
-  }
-}
-
 section.timeToTravel {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
@@ -655,6 +680,113 @@ section.timeToTravel {
 }
 
 section.timeToTravel .imageContainer {
+  min-height: 300px;
   background-image: radial-gradient(circle at 50% 39%, #072142, #00132c 101%);
+}
+
+@media only screen and (min-width: 1300px) {
+  section.timeToTravel .imageContainer {
+    max-width: 60vh;
+  }
+}
+
+div.solarSystem {
+  position: relative;
+}
+
+div.solarSystem .mars {
+  position: absolute;
+  top: calc(50% - 15px);
+  left: calc(50% - 15px);
+  width: 30px;
+  height: 30px;
+  background-image: url("/project/image/page-2/planets/mars.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-animation-name: highOrbit;
+          animation-name: highOrbit;
+  -webkit-animation-duration: 11s;
+          animation-duration: 11s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+div.solarSystem .sun {
+  position: absolute;
+  top: calc(50% - 24px);
+  left: calc(50% - 24px);
+  width: 48px;
+  height: 48px;
+  background-image: url("/project/image/page-2/planets/sun.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+div.solarSystem .earth {
+  position: absolute;
+  top: calc(50% - 15px);
+  left: calc(50% - 15px);
+  width: 30px;
+  height: 30px;
+  background-image: url("/project/image/page-2/planets/earth.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-animation-name: lowOrbit;
+          animation-name: lowOrbit;
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@-webkit-keyframes highOrbit {
+  from {
+    -webkit-transform: rotate(0deg) translateX(-120px) rotate(0deg);
+            transform: rotate(0deg) translateX(-120px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translateX(-120px) rotate(-360deg);
+            transform: rotate(360deg) translateX(-120px) rotate(-360deg);
+  }
+}
+
+@keyframes highOrbit {
+  from {
+    -webkit-transform: rotate(0deg) translateX(-120px) rotate(0deg);
+            transform: rotate(0deg) translateX(-120px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translateX(-120px) rotate(-360deg);
+            transform: rotate(360deg) translateX(-120px) rotate(-360deg);
+  }
+}
+
+@-webkit-keyframes lowOrbit {
+  from {
+    -webkit-transform: rotate(0deg) translateX(70px) rotate(0deg);
+            transform: rotate(0deg) translateX(70px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translateX(70px) rotate(-360deg);
+            transform: rotate(360deg) translateX(70px) rotate(-360deg);
+  }
+}
+
+@keyframes lowOrbit {
+  from {
+    -webkit-transform: rotate(0deg) translateX(70px) rotate(0deg);
+            transform: rotate(0deg) translateX(70px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translateX(70px) rotate(-360deg);
+            transform: rotate(360deg) translateX(70px) rotate(-360deg);
+  }
 }
 /*# sourceMappingURL=main.css.map */

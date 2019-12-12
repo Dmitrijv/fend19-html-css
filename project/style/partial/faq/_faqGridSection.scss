@@ -22,6 +22,10 @@ section.faqSection {
         "whyMove purpose purpose"
         "timeToTravel timeToTravel timeToTravel";
     }
+
+    @media only screen and (min-width: $breakpoint-faqArticleReverse) {
+      grid-template-columns: auto auto auto;
+    }
   }
 
   h2 {
@@ -30,7 +34,7 @@ section.faqSection {
     font-weight: 800;
     letter-spacing: 1.33px;
     text-align: center;
-    padding: 4vw 0 4vw 0;
+    padding: 5vw 0 5vw 0;
     margin: 0;
   }
 }
@@ -69,6 +73,8 @@ section.faqGrid article {
 
 section.faqGrid .horizontalGridSection {
   flex-direction: column-reverse;
+  justify-content: center;
+
   @media only screen and (min-width: $breakpoint-faqArticleReverse) {
     flex-direction: row;
     min-height: 50vh;
@@ -76,6 +82,7 @@ section.faqGrid .horizontalGridSection {
 }
 
 section.faqGrid .verticalGridSection {
+  justify-content: center;
   .imageContainer {
     max-height: 40%;
   }
@@ -89,6 +96,7 @@ section.risks {
   grid-area: risks;
   article {
     max-width: 1000px;
+    margin-right: auto;
   }
   p:last-child {
     font-weight: normal;
@@ -101,16 +109,86 @@ section.purpose {
   .imageContainer {
     min-width: 55%;
     background-image: url("/project/image/page-2/nicolas-lobos.jpg");
-    @media only screen and (max-width: $breakpoint-faqArticleReverse) {
-      max-height: 30%;
-    }
   }
 }
 
 section.timeToTravel {
   grid-area: timeToTravel;
+
   box-shadow: 0 0 1px 0 rgba(161, 161, 161, 0.5); /* remove bottom shadow for last grid element */
   .imageContainer {
+    min-height: 300px;
     background-image: radial-gradient(circle at 50% 39%, #072142, #00132c 101%);
+    @media only screen and (min-width: $breakpoint-faqArticleReverse) {
+      max-width: 60vh;
+    }
+  }
+}
+
+div.solarSystem {
+  position: relative;
+
+  .mars {
+    position: absolute;
+    top: calc(50% - 15px);
+    left: calc(50% - 15px);
+    width: 30px;
+    height: 30px;
+    background-image: url("/project/image/page-2/planets/mars.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    animation-name: highOrbit;
+    animation-duration: 11s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  .sun {
+    position: absolute;
+    top: calc(50% - 24px);
+    left: calc(50% - 24px);
+
+    width: 48px;
+    height: 48px;
+    background-image: url("/project/image/page-2/planets/sun.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .earth {
+    position: absolute;
+    top: calc(50% - 15px);
+    left: calc(50% - 15px);
+
+    width: 30px;
+    height: 30px;
+    background-image: url("/project/image/page-2/planets/earth.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    animation-name: lowOrbit;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  @keyframes highOrbit {
+    from {
+      transform: rotate(0deg) translateX(-120px) rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg) translateX(-120px) rotate(-360deg);
+    }
+  }
+
+  @keyframes lowOrbit {
+    from {
+      transform: rotate(0deg) translateX(70px) rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg) translateX(70px) rotate(-360deg);
+    }
   }
 }
