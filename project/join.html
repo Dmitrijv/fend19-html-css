@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="style/main.css" />
+    <title>Mars One</title>
+  </head>
+
+  <body>
+    <header>
+      <img src="image/logo.png" class="logo" alt="logo" />
+      <nav>
+        <ul>
+          <li>
+            <a href="./index.html">Mars One</a>
+          </li>
+          <li>
+            <a href="./faq.html">FAQ</a>
+          </li>
+          <li class="active">
+            <a href="./">Join the Crew</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="faqHero">
+        <div class="heroMessage faqMessage">
+          <h1>
+            Be brave, join <br />
+            the journey!
+          </h1>
+          <p>Be one of the next heroes in space</p>
+        </div>
+        <div class="gradientDark"></div>
+        <div class="gradientBright"></div>
+      </section>
+
+      <section class="joinSection">
+        <h2>Join us in the mission</h2>
+        <p>Be part of the mission. Send us your motivation of why just you should be the next space traveler</p>
+
+        <form action="https://formspree.io/xeqqzyvj" method="POST" id="contactMeForm">
+          <label for="firstName">
+            First name <input placeholder="Han Solo" type="text" id="name" name="first name" />
+          </label>
+
+          <label for="lastName"> Last name <input type="text" id="name" name="first name" /> </label>
+
+          <label for="dateOfBirth"> Date of Birth <input type="text" id="name" name="first name" /> </label>
+
+          <label for="professional"> Professional <input type="text" id="name" name="first name" /> </label>
+
+          <label for="primeskill"> Prime skill <input type="text" id="name" name="first name" /> </label>
+
+          <label for="motivation">
+            Motivation
+            <textarea required name="text message" id="message" cols="30" rows="10"></textarea>
+          </label>
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <h1>Mars One</h1>
+      <p>This site is made for educational purpose and is based on the real <a href="./">Mars One</a> project.</p>
+    </footer>
+  </body>
+</html>
