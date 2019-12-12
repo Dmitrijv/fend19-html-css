@@ -1,6 +1,8 @@
 section.joinSection {
   text-align: center;
 
+  padding: 5vw 10vw 5vw 10vw;
+
   h2 {
     font-size: 36px;
     font-weight: bold;
@@ -19,4 +21,62 @@ section.joinSection {
 
 section.joinSection form {
   display: grid;
+  grid-gap: 3vw;
+  grid-template-areas:
+    "firstNameInput"
+    "lastNameInput"
+    "dateOfBirthInput"
+    "professionalInput"
+    "primeskillInput"
+    "motivationInput"
+    "sendButton";
+
+  box-shadow: 0 4px 15px 0 rgba(185, 185, 185, 0.5);
+}
+
+section.joinSection input {
+  color: #2c4f80;
+}
+
+section.joinSection input {
+  padding: 10px 27px;
+  border-radius: 5px;
+  border: solid 1px #2c4f80;
+}
+
+label[for="firstName"] {
+  grid-area: firstNameInput;
+  // color: #2c4f80;
+}
+
+label[for="lastName"] {
+  grid-area: firstNameInput;
+}
+
+label[for="dateOfBirth"] {
+  grid-area: dateOfBirthInput;
+}
+
+label[for="professional"] {
+  grid-area: professionalInput;
+}
+
+label[for="primeskill"] {
+  grid-area: primeskillInput;
+}
+
+label[for="motivation"] {
+  grid-area: motivationInput;
+  background-color: red;
+}
+
+button.sendJoinRequestButton {
+  grid-area: sendButton;
+}
+
+section.joinSection button {
+  @extend %blue-button;
+  max-width: 128px;
+  margin-left: auto;
+  margin-right: auto;
 }

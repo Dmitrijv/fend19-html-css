@@ -9,6 +9,27 @@
           box-shadow: 0 2px 4px 0 rgba(161, 161, 161, 0.5);
 }
 
+section.closestNeighbour article button, section.joinSection button {
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  padding: 10px 27px;
+  background-color: white;
+  color: #2c4f80;
+  border: solid 1px #2c4f80;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.52px;
+}
+
+section.closestNeighbour article button:hover, section.joinSection button:hover {
+  background-color: #008cba;
+  color: white;
+}
+
 section.indexHero, section.faqHero {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -71,6 +92,46 @@ section.indexHero div.topGradientDark, section.faqHero div.topGradientDark {
 
 @media only screen and (min-width: 420px) {
   section.indexHero div.topGradientDark, section.faqHero div.topGradientDark {
+    -webkit-clip-path: ellipse(78% 55% at 64% 15%);
+            clip-path: ellipse(78% 55% at 64% 15%);
+    top: 8vh;
+  }
+}
+
+section.indexHero div.bottomGradientBright, section.faqHero div.bottomGradientBright {
+  position: absolute;
+  width: 100vw;
+  height: 90vh;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(94, 152, 226, 0.7)), to(rgba(21, 52, 98, 0.7)));
+  background: linear-gradient(to left, rgba(94, 152, 226, 0.7), rgba(21, 52, 98, 0.7));
+  z-index: 1;
+  -webkit-clip-path: ellipse(120% 65% at 50% 20%);
+          clip-path: ellipse(120% 65% at 50% 20%);
+  top: 16vh;
+}
+
+@media only screen and (min-width: 420px) {
+  section.indexHero div.bottomGradientBright, section.faqHero div.bottomGradientBright {
+    -webkit-clip-path: ellipse(79% 58% at 64% 15%);
+            clip-path: ellipse(79% 58% at 64% 15%);
+    top: 8vh;
+  }
+}
+
+section.indexHero div.bottomGradientDark, section.faqHero div.bottomGradientDark {
+  position: absolute;
+  width: 100vw;
+  height: 90vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00122b), to(#0a2f63));
+  background: linear-gradient(top, #00122b, #0a2f63);
+  z-index: 2;
+  -webkit-clip-path: ellipse(120% 60% at 50% 20%);
+          clip-path: ellipse(120% 60% at 50% 20%);
+  top: 16vh;
+}
+
+@media only screen and (min-width: 420px) {
+  section.indexHero div.bottomGradientDark, section.faqHero div.bottomGradientDark {
     -webkit-clip-path: ellipse(78% 55% at 64% 15%);
             clip-path: ellipse(78% 55% at 64% 15%);
     top: 8vh;
@@ -501,27 +562,6 @@ section.closestNeighbourGrid article p {
   letter-spacing: 0.59px;
 }
 
-section.closestNeighbour article button {
-  cursor: pointer;
-  text-decoration: none;
-  -webkit-transition-duration: 0.2s;
-          transition-duration: 0.2s;
-  padding: 10px 27px;
-  background-color: white;
-  color: #2c4f80;
-  border: solid 1px #2c4f80;
-  border-radius: 10px;
-  text-align: center;
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0.52px;
-}
-
-section.closestNeighbour article button:hover {
-  background-color: #008cba;
-  color: white;
-}
-
 section.faqHero {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(193, 85, 85, 0.7)), to(rgba(36, 2, 2, 0.7))), url("/project/image/page-2/hero-2.jpg");
   background-image: linear-gradient(to bottom, rgba(193, 85, 85, 0.7), rgba(36, 2, 2, 0.7)), url("/project/image/page-2/hero-2.jpg");
@@ -816,6 +856,7 @@ div.solarSystem .earthOrbit {
 
 section.joinSection {
   text-align: center;
+  padding: 5vw 10vw 5vw 10vw;
 }
 
 section.joinSection h2 {
@@ -836,5 +877,68 @@ section.joinSection p {
 section.joinSection form {
   display: -ms-grid;
   display: grid;
+  grid-gap: 3vw;
+      grid-template-areas: "firstNameInput" "lastNameInput" "dateOfBirthInput" "professionalInput" "primeskillInput" "motivationInput" "sendButton";
+  -webkit-box-shadow: 0 4px 15px 0 rgba(185, 185, 185, 0.5);
+          box-shadow: 0 4px 15px 0 rgba(185, 185, 185, 0.5);
+}
+
+section.joinSection input {
+  color: #2c4f80;
+}
+
+section.joinSection input {
+  padding: 10px 27px;
+  border-radius: 5px;
+  border: solid 1px #2c4f80;
+}
+
+label[for="firstName"] {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: firstNameInput;
+}
+
+label[for="lastName"] {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: firstNameInput;
+}
+
+label[for="dateOfBirth"] {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: dateOfBirthInput;
+}
+
+label[for="professional"] {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: professionalInput;
+}
+
+label[for="primeskill"] {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: primeskillInput;
+}
+
+label[for="motivation"] {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: motivationInput;
+  background-color: red;
+}
+
+button.sendJoinRequestButton {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  grid-area: sendButton;
+}
+
+section.joinSection button {
+  max-width: 128px;
+  margin-left: auto;
+  margin-right: auto;
 }
 /*# sourceMappingURL=main.css.map */
