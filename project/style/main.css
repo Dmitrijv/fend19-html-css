@@ -37,7 +37,7 @@ section.indexHero, section.faqHero {
   }
 }
 
-section.indexHero div.gradientBright, section.faqHero div.gradientBright {
+section.indexHero div.topGradientBright, section.faqHero div.topGradientBright {
   position: absolute;
   width: 100vw;
   height: 90vh;
@@ -50,14 +50,14 @@ section.indexHero div.gradientBright, section.faqHero div.gradientBright {
 }
 
 @media only screen and (min-width: 420px) {
-  section.indexHero div.gradientBright, section.faqHero div.gradientBright {
+  section.indexHero div.topGradientBright, section.faqHero div.topGradientBright {
     -webkit-clip-path: ellipse(79% 58% at 64% 15%);
             clip-path: ellipse(79% 58% at 64% 15%);
     top: 8vh;
   }
 }
 
-section.indexHero div.gradientDark, section.faqHero div.gradientDark {
+section.indexHero div.topGradientDark, section.faqHero div.topGradientDark {
   position: absolute;
   width: 100vw;
   height: 90vh;
@@ -70,7 +70,7 @@ section.indexHero div.gradientDark, section.faqHero div.gradientDark {
 }
 
 @media only screen and (min-width: 420px) {
-  section.indexHero div.gradientDark, section.faqHero div.gradientDark {
+  section.indexHero div.topGradientDark, section.faqHero div.topGradientDark {
     -webkit-clip-path: ellipse(78% 55% at 64% 15%);
             clip-path: ellipse(78% 55% at 64% 15%);
     top: 8vh;
@@ -695,6 +695,7 @@ div.solarSystem {
 }
 
 div.solarSystem .mars {
+  z-index: 2;
   position: absolute;
   top: calc(50% - 15px);
   left: calc(50% - 15px);
@@ -714,6 +715,17 @@ div.solarSystem .mars {
           animation-timing-function: linear;
 }
 
+div.solarSystem .marsOrbit {
+  z-index: 1;
+  position: absolute;
+  top: calc(50% - 120px);
+  left: calc(50% - 120px);
+  border: 1px dashed grey;
+  border-radius: 100%;
+  height: 240px;
+  width: 240px;
+}
+
 div.solarSystem .sun {
   position: absolute;
   top: calc(50% - 24px);
@@ -727,6 +739,7 @@ div.solarSystem .sun {
 }
 
 div.solarSystem .earth {
+  z-index: 2;
   position: absolute;
   top: calc(50% - 15px);
   left: calc(50% - 15px);
@@ -744,6 +757,17 @@ div.solarSystem .earth {
           animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
+}
+
+div.solarSystem .earthOrbit {
+  z-index: 1;
+  position: absolute;
+  top: calc(50% - 70px);
+  left: calc(50% - 70px);
+  height: 140px;
+  width: 140px;
+  border: 1px dashed grey;
+  border-radius: 100%;
 }
 
 @-webkit-keyframes highOrbit {

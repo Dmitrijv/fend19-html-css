@@ -25,7 +25,7 @@ $breakpoint-hero-message: 550px;
     height: calc(100vh - #{$height--header-desktop});
   }
 
-  div.gradientBright {
+  div.topGradientBright {
     position: absolute;
     width: 100vw;
     height: 90vh;
@@ -41,7 +41,7 @@ $breakpoint-hero-message: 550px;
     }
   }
 
-  div.gradientDark {
+  div.topGradientDark {
     position: absolute;
     width: 100vw;
     height: 90vh;
