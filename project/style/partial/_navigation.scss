@@ -20,7 +20,7 @@ nav {
   ul li {
     min-width: max-content;
     font-weight: bold;
-    padding-bottom: 3px;
+    padding-bottom: 2px;
   }
 
   li + li {
@@ -36,13 +36,14 @@ nav {
   }
 
   ul li.active {
+    padding-bottom: 0px;
     border-bottom: 2px solid red;
     text-decoration: none;
     color: white;
   }
 
   ul li:hover:not(.active) {
-    padding-bottom: 1px;
+    padding-bottom: 0px;
     border-bottom: 2px solid white;
   }
 }
