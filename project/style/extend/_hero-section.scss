@@ -5,9 +5,6 @@ $breakpoint-hero-message: 550px;
   display: flex;
   flex-direction: row;
 
-  justify-content: flex-end;
-  align-items: flex-start;
-
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -54,17 +51,18 @@ $breakpoint-hero-message: 550px;
   div.bottomGradientBright {
     position: absolute;
     width: 100vw;
-    height: 90vh;
-    background: linear-gradient(to left, rgba(94, 152, 226, 0.7), rgba(21, 52, 98, 0.7));
+
+    height: calc(100vh - #{$height--header-mobile});
     z-index: 1;
 
-    clip-path: ellipse(77% 55% at 22% 100%);
-    // clip-path: ellipse(120% 65% at 50% 20%);
+    background-image: linear-gradient(183deg, rgba(94, 152, 226, 0.7) 60%, rgba(21, 52, 98, 0.7));
+
+    clip-path: circle(84.3% at 50% 75%);
     top: $height--header-mobile;
 
     @media only screen and (min-width: $breakpoint-hero) {
-      clip-path: ellipse(77% 55% at 22% 100%);
-      // clip-path: ellipse(79% 58% at 64% 15%);
+      height: calc(100vh - #{$height--header-desktop});
+      clip-path: ellipse(80% 53% at 22% 90%);
       top: $height--header-desktop;
     }
   }
@@ -72,15 +70,19 @@ $breakpoint-hero-message: 550px;
   div.bottomGradientDark {
     position: absolute;
     width: 100vw;
-    height: 90vh;
-    background: linear-gradient(top, #00122b, #0a2f63);
+    height: calc(100vh - #{$height--header-mobile});
     z-index: 2;
 
-    clip-path: ellipse(77% 49% at 22% 100%);
+    background-image: linear-gradient(183deg, #00122b 60%, #0a2f63);
+
+    // background: linear-gradient(top, #00122b, #0a2f63);
+
+    clip-path: circle(84.3% at 50% 80%);
     top: $height--header-mobile;
 
     @media only screen and (min-width: $breakpoint-hero) {
-      clip-path: ellipse(77% 49% at 22% 100%);
+      height: calc(100vh - #{$height--header-desktop});
+      clip-path: ellipse(80% 53% at 22% 93%);
       top: $height--header-desktop;
     }
   }
@@ -89,11 +91,6 @@ $breakpoint-hero-message: 550px;
     text-align: center;
     max-width: 450px;
     z-index: 3;
-
-    margin: 5vh 5vw 5vh 5vw;
-    @media only screen and (min-width: $breakpoint-hero-message) {
-      margin: 12vh 15vw 0 15vw;
-    }
 
     h1 {
       font-size: 60px;

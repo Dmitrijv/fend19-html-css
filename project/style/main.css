@@ -214,12 +214,6 @@ section.indexHero, section.faqHero, section.joinHero {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -277,19 +271,19 @@ section.indexHero div.topGradientDark, section.faqHero div.topGradientDark, sect
 section.indexHero div.bottomGradientBright, section.faqHero div.bottomGradientBright, section.joinHero div.bottomGradientBright {
   position: absolute;
   width: 100vw;
-  height: 90vh;
-  background: -webkit-gradient(linear, right top, left top, from(rgba(94, 152, 226, 0.7)), to(rgba(21, 52, 98, 0.7)));
-  background: linear-gradient(to left, rgba(94, 152, 226, 0.7), rgba(21, 52, 98, 0.7));
+  height: calc(100vh - 16vh);
   z-index: 1;
-  -webkit-clip-path: ellipse(77% 55% at 22% 100%);
-          clip-path: ellipse(77% 55% at 22% 100%);
+  background-image: linear-gradient(183deg, rgba(94, 152, 226, 0.7) 60%, rgba(21, 52, 98, 0.7));
+  -webkit-clip-path: circle(84.3% at 50% 75%);
+          clip-path: circle(84.3% at 50% 75%);
   top: 16vh;
 }
 
 @media only screen and (min-width: 420px) {
   section.indexHero div.bottomGradientBright, section.faqHero div.bottomGradientBright, section.joinHero div.bottomGradientBright {
-    -webkit-clip-path: ellipse(77% 55% at 22% 100%);
-            clip-path: ellipse(77% 55% at 22% 100%);
+    height: calc(100vh - 8vh);
+    -webkit-clip-path: ellipse(80% 53% at 22% 90%);
+            clip-path: ellipse(80% 53% at 22% 90%);
     top: 8vh;
   }
 }
@@ -297,19 +291,19 @@ section.indexHero div.bottomGradientBright, section.faqHero div.bottomGradientBr
 section.indexHero div.bottomGradientDark, section.faqHero div.bottomGradientDark, section.joinHero div.bottomGradientDark {
   position: absolute;
   width: 100vw;
-  height: 90vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(#00122b), to(#0a2f63));
-  background: linear-gradient(top, #00122b, #0a2f63);
+  height: calc(100vh - 16vh);
   z-index: 2;
-  -webkit-clip-path: ellipse(77% 49% at 22% 100%);
-          clip-path: ellipse(77% 49% at 22% 100%);
+  background-image: linear-gradient(183deg, #00122b 60%, #0a2f63);
+  -webkit-clip-path: circle(84.3% at 50% 80%);
+          clip-path: circle(84.3% at 50% 80%);
   top: 16vh;
 }
 
 @media only screen and (min-width: 420px) {
   section.indexHero div.bottomGradientDark, section.faqHero div.bottomGradientDark, section.joinHero div.bottomGradientDark {
-    -webkit-clip-path: ellipse(77% 49% at 22% 100%);
-            clip-path: ellipse(77% 49% at 22% 100%);
+    height: calc(100vh - 8vh);
+    -webkit-clip-path: ellipse(80% 53% at 22% 93%);
+            clip-path: ellipse(80% 53% at 22% 93%);
     top: 8vh;
   }
 }
@@ -318,13 +312,6 @@ section.indexHero div.heroMessage, section.faqHero div.heroMessage, section.join
   text-align: center;
   max-width: 450px;
   z-index: 3;
-  margin: 5vh 5vw 5vh 5vw;
-}
-
-@media only screen and (min-width: 550px) {
-  section.indexHero div.heroMessage, section.faqHero div.heroMessage, section.joinHero div.heroMessage {
-    margin: 12vh 15vw 0 15vw;
-  }
 }
 
 section.indexHero div.heroMessage h1, section.faqHero div.heroMessage h1, section.joinHero div.heroMessage h1 {
@@ -346,12 +333,25 @@ section.indexHero div.heroMessage p, section.faqHero div.heroMessage p, section.
 }
 
 section.indexHero {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(193, 85, 85, 0.7)), to(rgba(36, 2, 2, 0.7))), url("/project/image/page-1/mars.jpg");
   background-image: linear-gradient(to bottom, rgba(193, 85, 85, 0.7), rgba(36, 2, 2, 0.7)), url("/project/image/page-1/mars.jpg");
 }
 
 section.indexHero > div.indexMessage {
   max-width: 450px;
+  margin: 5vh 5vw 5vh 5vw;
+}
+
+@media only screen and (min-width: 550px) {
+  section.indexHero > div.indexMessage {
+    margin: 12vh 15vw 0 15vw;
+  }
 }
 
 section.indexHero > div.indexMessage h1 {
@@ -571,12 +571,6 @@ section.indexHero, section.faqHero, section.joinHero {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -634,19 +628,19 @@ section.indexHero div.topGradientDark, section.faqHero div.topGradientDark, sect
 section.indexHero div.bottomGradientBright, section.faqHero div.bottomGradientBright, section.joinHero div.bottomGradientBright {
   position: absolute;
   width: 100vw;
-  height: 90vh;
-  background: -webkit-gradient(linear, right top, left top, from(rgba(94, 152, 226, 0.7)), to(rgba(21, 52, 98, 0.7)));
-  background: linear-gradient(to left, rgba(94, 152, 226, 0.7), rgba(21, 52, 98, 0.7));
+  height: calc(100vh - 16vh);
   z-index: 1;
-  -webkit-clip-path: ellipse(77% 55% at 22% 100%);
-          clip-path: ellipse(77% 55% at 22% 100%);
+  background-image: linear-gradient(183deg, rgba(94, 152, 226, 0.7) 60%, rgba(21, 52, 98, 0.7));
+  -webkit-clip-path: circle(84.3% at 50% 75%);
+          clip-path: circle(84.3% at 50% 75%);
   top: 16vh;
 }
 
 @media only screen and (min-width: 420px) {
   section.indexHero div.bottomGradientBright, section.faqHero div.bottomGradientBright, section.joinHero div.bottomGradientBright {
-    -webkit-clip-path: ellipse(77% 55% at 22% 100%);
-            clip-path: ellipse(77% 55% at 22% 100%);
+    height: calc(100vh - 8vh);
+    -webkit-clip-path: ellipse(80% 53% at 22% 90%);
+            clip-path: ellipse(80% 53% at 22% 90%);
     top: 8vh;
   }
 }
@@ -654,19 +648,19 @@ section.indexHero div.bottomGradientBright, section.faqHero div.bottomGradientBr
 section.indexHero div.bottomGradientDark, section.faqHero div.bottomGradientDark, section.joinHero div.bottomGradientDark {
   position: absolute;
   width: 100vw;
-  height: 90vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(#00122b), to(#0a2f63));
-  background: linear-gradient(top, #00122b, #0a2f63);
+  height: calc(100vh - 16vh);
   z-index: 2;
-  -webkit-clip-path: ellipse(77% 49% at 22% 100%);
-          clip-path: ellipse(77% 49% at 22% 100%);
+  background-image: linear-gradient(183deg, #00122b 60%, #0a2f63);
+  -webkit-clip-path: circle(84.3% at 50% 80%);
+          clip-path: circle(84.3% at 50% 80%);
   top: 16vh;
 }
 
 @media only screen and (min-width: 420px) {
   section.indexHero div.bottomGradientDark, section.faqHero div.bottomGradientDark, section.joinHero div.bottomGradientDark {
-    -webkit-clip-path: ellipse(77% 49% at 22% 100%);
-            clip-path: ellipse(77% 49% at 22% 100%);
+    height: calc(100vh - 8vh);
+    -webkit-clip-path: ellipse(80% 53% at 22% 93%);
+            clip-path: ellipse(80% 53% at 22% 93%);
     top: 8vh;
   }
 }
@@ -675,13 +669,6 @@ section.indexHero div.heroMessage, section.faqHero div.heroMessage, section.join
   text-align: center;
   max-width: 450px;
   z-index: 3;
-  margin: 5vh 5vw 5vh 5vw;
-}
-
-@media only screen and (min-width: 550px) {
-  section.indexHero div.heroMessage, section.faqHero div.heroMessage, section.joinHero div.heroMessage {
-    margin: 12vh 15vw 0 15vw;
-  }
 }
 
 section.indexHero div.heroMessage h1, section.faqHero div.heroMessage h1, section.joinHero div.heroMessage h1 {
@@ -703,12 +690,25 @@ section.indexHero div.heroMessage p, section.faqHero div.heroMessage p, section.
 }
 
 section.faqHero {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(193, 85, 85, 0.7)), to(rgba(36, 2, 2, 0.7))), url("/project/image/page-2/hero-2.jpg");
   background-image: linear-gradient(to bottom, rgba(193, 85, 85, 0.7), rgba(36, 2, 2, 0.7)), url("/project/image/page-2/hero-2.jpg");
 }
 
 section.faqHero > div.faqMessage {
   max-width: 520px;
+  margin: 5vh 5vw 5vh 5vw;
+}
+
+@media only screen and (min-width: 550px) {
+  section.faqHero > div.faqMessage {
+    margin: 12vh 15vw 0 15vw;
+  }
 }
 
 section.faqHero > div.faqMessage h1 {
@@ -1002,12 +1002,6 @@ section.indexHero, section.faqHero, section.joinHero {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -1065,19 +1059,19 @@ section.indexHero div.topGradientDark, section.faqHero div.topGradientDark, sect
 section.indexHero div.bottomGradientBright, section.faqHero div.bottomGradientBright, section.joinHero div.bottomGradientBright {
   position: absolute;
   width: 100vw;
-  height: 90vh;
-  background: -webkit-gradient(linear, right top, left top, from(rgba(94, 152, 226, 0.7)), to(rgba(21, 52, 98, 0.7)));
-  background: linear-gradient(to left, rgba(94, 152, 226, 0.7), rgba(21, 52, 98, 0.7));
+  height: calc(100vh - 16vh);
   z-index: 1;
-  -webkit-clip-path: ellipse(77% 55% at 22% 100%);
-          clip-path: ellipse(77% 55% at 22% 100%);
+  background-image: linear-gradient(183deg, rgba(94, 152, 226, 0.7) 60%, rgba(21, 52, 98, 0.7));
+  -webkit-clip-path: circle(84.3% at 50% 75%);
+          clip-path: circle(84.3% at 50% 75%);
   top: 16vh;
 }
 
 @media only screen and (min-width: 420px) {
   section.indexHero div.bottomGradientBright, section.faqHero div.bottomGradientBright, section.joinHero div.bottomGradientBright {
-    -webkit-clip-path: ellipse(77% 55% at 22% 100%);
-            clip-path: ellipse(77% 55% at 22% 100%);
+    height: calc(100vh - 8vh);
+    -webkit-clip-path: ellipse(80% 53% at 22% 90%);
+            clip-path: ellipse(80% 53% at 22% 90%);
     top: 8vh;
   }
 }
@@ -1085,19 +1079,19 @@ section.indexHero div.bottomGradientBright, section.faqHero div.bottomGradientBr
 section.indexHero div.bottomGradientDark, section.faqHero div.bottomGradientDark, section.joinHero div.bottomGradientDark {
   position: absolute;
   width: 100vw;
-  height: 90vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(#00122b), to(#0a2f63));
-  background: linear-gradient(top, #00122b, #0a2f63);
+  height: calc(100vh - 16vh);
   z-index: 2;
-  -webkit-clip-path: ellipse(77% 49% at 22% 100%);
-          clip-path: ellipse(77% 49% at 22% 100%);
+  background-image: linear-gradient(183deg, #00122b 60%, #0a2f63);
+  -webkit-clip-path: circle(84.3% at 50% 80%);
+          clip-path: circle(84.3% at 50% 80%);
   top: 16vh;
 }
 
 @media only screen and (min-width: 420px) {
   section.indexHero div.bottomGradientDark, section.faqHero div.bottomGradientDark, section.joinHero div.bottomGradientDark {
-    -webkit-clip-path: ellipse(77% 49% at 22% 100%);
-            clip-path: ellipse(77% 49% at 22% 100%);
+    height: calc(100vh - 8vh);
+    -webkit-clip-path: ellipse(80% 53% at 22% 93%);
+            clip-path: ellipse(80% 53% at 22% 93%);
     top: 8vh;
   }
 }
@@ -1106,13 +1100,6 @@ section.indexHero div.heroMessage, section.faqHero div.heroMessage, section.join
   text-align: center;
   max-width: 450px;
   z-index: 3;
-  margin: 5vh 5vw 5vh 5vw;
-}
-
-@media only screen and (min-width: 550px) {
-  section.indexHero div.heroMessage, section.faqHero div.heroMessage, section.joinHero div.heroMessage {
-    margin: 12vh 15vw 0 15vw;
-  }
 }
 
 section.indexHero div.heroMessage h1, section.faqHero div.heroMessage h1, section.joinHero div.heroMessage h1 {
@@ -1134,17 +1121,28 @@ section.indexHero div.heroMessage p, section.faqHero div.heroMessage p, section.
 }
 
 section.joinHero {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(193, 85, 85, 0.7)), to(rgba(36, 2, 2, 0.7))), url("/project/image/page-3/hero-3.jpg");
   background-image: linear-gradient(to bottom, rgba(193, 85, 85, 0.7), rgba(36, 2, 2, 0.7)), url("/project/image/page-3/hero-3.jpg");
 }
 
-section.indexHero > div.indexMessage {
-  max-width: 450px;
+section.joinHero div.heroMessage {
+  margin: 2vh 5vw 2vh 5vw;
 }
 
-section.indexHero > div.indexMessage h1 {
-  padding-bottom: 2vh;
-  max-width: 95%;
+@media only screen and (min-width: 550px) {
+  section.joinHero div.heroMessage {
+    margin: 12vh;
+  }
 }
 
 section.joinSection {
@@ -1153,6 +1151,7 @@ section.joinSection {
 }
 
 section.joinSection h2 {
+  padding-top: 4vh;
   font-size: 36px;
   font-weight: bold;
   color: #e32700;
