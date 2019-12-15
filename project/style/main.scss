@@ -1,6 +1,4 @@
 @import "variable/variables";
-@import "extend/extends";
-
 @import "partial/base";
 
 @import "partial/header";
@@ -13,4 +11,5 @@
 @import "partial/faq/faqHero";
 @import "partial/faq/faqGridSection";
 
-@import "partial/join/joinSection";
+@import "partial/join/joinHero";
+@import "partial/join/joinFormSection";

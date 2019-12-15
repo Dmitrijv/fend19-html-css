@@ -1,1 +1,16 @@
-//clip-path: ellipse(77% 49% at 22% 100%);
+@import "../../extend/hero-section";
+
+section.joinHero {
+  @extend %hero-section;
+
+  background-image: linear-gradient(to bottom, rgba(193, 85, 85, 0.7), rgba(36, 2, 2, 0.7)),
+    url("/project/image/page-3/hero-3.jpg");
+}
+
+section.indexHero > div.indexMessage {
+  max-width: 450px;
+  h1 {
+    padding-bottom: 2vh;
+    max-width: 95%;
+  }
+}

@@ -21,7 +21,7 @@ section.joinSection {
 
 section.joinSection form {
   display: grid;
-  grid-gap: 3vw;
+  grid-gap: 2vw;
   grid-template-areas:
     "firstNameInput"
     "lastNameInput"
@@ -46,27 +46,36 @@ section.joinSection input {
 
 label[for="firstName"] {
   grid-area: firstNameInput;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  background: red;
   // color: #2c4f80;
 }
 
 label[for="lastName"] {
-  grid-area: firstNameInput;
+  grid-area: lastNameInput;
+  background: green;
 }
 
 label[for="dateOfBirth"] {
   grid-area: dateOfBirthInput;
+  background: yellow;
 }
 
 label[for="professional"] {
   grid-area: professionalInput;
+  background: orange;
 }
 
 label[for="primeskill"] {
   grid-area: primeskillInput;
+  background: blue;
 }
 
 label[for="motivation"] {
   grid-area: motivationInput;
+  background: brown;
 }
 
 button.sendJoinRequestButton {

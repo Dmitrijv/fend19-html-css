@@ -1,0 +1,22 @@
+%blue-button {
+  cursor: pointer;
+  text-decoration: none;
+  transition-duration: 0.2s;
+  padding: 10px 27px;
+
+  background-color: $color--button-background;
+  color: $color--button-text;
+
+  border: solid 1px $color--button-border;
+  border-radius: 10px;
+
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.52px;
+}
+
+%blue-button:hover {
+  background-color: $color--button-background-hover;
+  color: $color--button-text-hover;
+}

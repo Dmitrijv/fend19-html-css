@@ -1,4 +1,4 @@
-$breakpoint-planetbMessage: 420px;
+@import "../../extend/hero-section";
 
 section.indexHero {
   @extend %hero-section;

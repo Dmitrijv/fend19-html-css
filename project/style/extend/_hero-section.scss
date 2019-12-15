@@ -1,31 +1,3 @@
-%grid-section {
-  background-color: white;
-  box-shadow: 0 2px 4px 0 rgba(161, 161, 161, 0.5);
-}
-
-%blue-button {
-  cursor: pointer;
-  text-decoration: none;
-  transition-duration: 0.2s;
-  padding: 10px 27px;
-
-  background-color: $color--button-background;
-  color: $color--button-text;
-
-  border: solid 1px $color--button-border;
-  border-radius: 10px;
-
-  text-align: center;
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0.52px;
-}
-
-%blue-button:hover {
-  background-color: $color--button-background-hover;
-  color: $color--button-text-hover;
-}
-
 $breakpoint-hero: 420px;
 $breakpoint-hero-message: 550px;
 
@@ -86,11 +58,13 @@ $breakpoint-hero-message: 550px;
     background: linear-gradient(to left, rgba(94, 152, 226, 0.7), rgba(21, 52, 98, 0.7));
     z-index: 1;
 
-    clip-path: ellipse(120% 65% at 50% 20%);
+    clip-path: ellipse(77% 55% at 22% 100%);
+    // clip-path: ellipse(120% 65% at 50% 20%);
     top: $height--header-mobile;
 
     @media only screen and (min-width: $breakpoint-hero) {
-      clip-path: ellipse(79% 58% at 64% 15%);
+      clip-path: ellipse(77% 55% at 22% 100%);
+      // clip-path: ellipse(79% 58% at 64% 15%);
       top: $height--header-desktop;
     }
   }
@@ -102,11 +76,11 @@ $breakpoint-hero-message: 550px;
     background: linear-gradient(top, #00122b, #0a2f63);
     z-index: 2;
 
-    clip-path: ellipse(120% 60% at 50% 20%);
+    clip-path: ellipse(77% 49% at 22% 100%);
     top: $height--header-mobile;
 
     @media only screen and (min-width: $breakpoint-hero) {
-      clip-path: ellipse(78% 55% at 64% 15%);
+      clip-path: ellipse(77% 49% at 22% 100%);
       top: $height--header-desktop;
     }
   }
