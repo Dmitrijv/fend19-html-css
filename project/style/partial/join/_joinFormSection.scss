@@ -1,6 +1,7 @@
+$breakpoint-joinForm: 920px;
+
 section.joinSection {
   text-align: center;
-
   padding: 5vw 10vw 5vw 10vw;
 
   h2 {
@@ -32,6 +33,35 @@ section.joinSection form {
     "sendButton";
 
   box-shadow: 0 4px 15px 0 rgba(185, 185, 185, 0.5);
+
+  @media only screen and (min-width: $breakpoint-joinForm) {
+    grid-template-columns: 1.5fr 1.5fr 1fr;
+    grid-template-areas:
+      "firstNameInput lastNameInput dateOfBirthInput"
+      "professionalInput primeskillInput ."
+      "motivationInput motivationInput motivationInput"
+      "motivationInput motivationInput motivationInput"
+      ". sendButton .";
+  }
+
+  input,
+  textarea {
+    margin-top: 6px;
+  }
+
+  textarea {
+    max-width: 100%;
+    min-height: 30vh;
+  }
+
+  label {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    text-align: left;
+    font-size: 14px;
+    color: #2c4f80;
+  }
 }
 
 section.joinSection input {
@@ -44,47 +74,37 @@ section.joinSection input {
   border: solid 1px #2c4f80;
 }
 
-label[for="firstName"] {
-  grid-area: firstNameInput;
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  background: red;
-  // color: #2c4f80;
-}
-
-label[for="lastName"] {
-  grid-area: lastNameInput;
-  background: green;
-}
-
-label[for="dateOfBirth"] {
-  grid-area: dateOfBirthInput;
-  background: yellow;
-}
-
-label[for="professional"] {
-  grid-area: professionalInput;
-  background: orange;
-}
-
-label[for="primeskill"] {
-  grid-area: primeskillInput;
-  background: blue;
-}
-
-label[for="motivation"] {
-  grid-area: motivationInput;
-  background: brown;
-}
-
-button.sendJoinRequestButton {
-  grid-area: sendButton;
-}
-
 section.joinSection button {
   @extend %blue-button;
   max-width: 128px;
   margin-left: auto;
   margin-right: auto;
+}
+
+label[for="firstName"] {
+  grid-area: firstNameInput;
+}
+
+label[for="lastName"] {
+  grid-area: lastNameInput;
+}
+
+label[for="dateOfBirth"] {
+  grid-area: dateOfBirthInput;
+}
+
+label[for="professional"] {
+  grid-area: professionalInput;
+}
+
+label[for="primeskill"] {
+  grid-area: primeskillInput;
+}
+
+label[for="motivation"] {
+  grid-area: motivationInput;
+}
+
+button.sendJoinRequestButton {
+  grid-area: sendButton;
 }

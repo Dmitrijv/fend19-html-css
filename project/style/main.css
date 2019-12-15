@@ -1176,6 +1176,38 @@ section.joinSection form {
           box-shadow: 0 4px 15px 0 rgba(185, 185, 185, 0.5);
 }
 
+@media only screen and (min-width: 920px) {
+  section.joinSection form {
+    -ms-grid-columns: 1.5fr 1.5fr 1fr;
+        grid-template-columns: 1.5fr 1.5fr 1fr;
+        grid-template-areas: "firstNameInput lastNameInput dateOfBirthInput" "professionalInput primeskillInput ." "motivationInput motivationInput motivationInput" "motivationInput motivationInput motivationInput" ". sendButton .";
+  }
+}
+
+section.joinSection form input,
+section.joinSection form textarea {
+  margin-top: 6px;
+}
+
+section.joinSection form textarea {
+  max-width: 100%;
+  min-height: 30vh;
+}
+
+section.joinSection form label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 100%;
+  text-align: left;
+  font-size: 14px;
+  color: #2c4f80;
+}
+
 section.joinSection input {
   color: #2c4f80;
 }
@@ -1186,65 +1218,51 @@ section.joinSection input {
   border: solid 1px #2c4f80;
 }
 
+section.joinSection button {
+  max-width: 128px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 label[for="firstName"] {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: firstNameInput;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: left;
-  background: red;
 }
 
 label[for="lastName"] {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: lastNameInput;
-  background: green;
 }
 
 label[for="dateOfBirth"] {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: dateOfBirthInput;
-  background: yellow;
 }
 
 label[for="professional"] {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: professionalInput;
-  background: orange;
 }
 
 label[for="primeskill"] {
   -ms-grid-row: 5;
   -ms-grid-column: 1;
   grid-area: primeskillInput;
-  background: blue;
 }
 
 label[for="motivation"] {
   -ms-grid-row: 6;
   -ms-grid-column: 1;
   grid-area: motivationInput;
-  background: brown;
 }
 
 button.sendJoinRequestButton {
   -ms-grid-row: 7;
   -ms-grid-column: 1;
   grid-area: sendButton;
-}
-
-section.joinSection button {
-  max-width: 128px;
-  margin-left: auto;
-  margin-right: auto;
 }
 /*# sourceMappingURL=main.css.map */
