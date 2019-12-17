@@ -475,7 +475,7 @@ section.closestNeighbour section.closestNeighbourGrid {
       grid-template-areas: "whyMars" "justMoveIn" "sustainableSun";
 }
 
-@media only screen and (min-width: 920px) {
+@media only screen and (min-width: 1025px) {
   section.closestNeighbour section.closestNeighbourGrid {
     -ms-grid-columns: 1fr 1fr 0.8fr;
         grid-template-columns: 1fr 1fr 0.8fr;
@@ -551,7 +551,7 @@ section.closestNeighbourGrid article {
   padding: 5vw;
 }
 
-@media only screen and (min-width: 920px) {
+@media only screen and (min-width: 1025px) {
   section.closestNeighbourGrid article {
     padding: 3vw;
   }
