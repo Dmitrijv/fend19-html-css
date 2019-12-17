@@ -50,7 +50,7 @@ $breakpoint-hero-message: 520px;
 
   div.bottomGradientBright {
     position: absolute;
-    width: 100vw;
+    width: 100%;
 
     height: calc(100vh - #{$height--header-mobile});
     z-index: 1;
@@ -69,7 +69,7 @@ $breakpoint-hero-message: 520px;
 
   div.bottomGradientDark {
     position: absolute;
-    width: 100vw;
+    width: 100%;
     height: calc(100vh - #{$height--header-mobile});
     z-index: 2;
 

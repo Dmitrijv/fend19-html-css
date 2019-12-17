@@ -1,11 +1,11 @@
-@mixin centered-orbit($color, $radius) {
-  border: 1px dashed #{$color};
-  border-radius: 100%;
+@mixin planet-icon($radius) {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
   position: absolute;
   top: calc(50% - #{$radius});
   left: calc(50% - #{$radius});
-
   width: calc(2 * #{$radius});
   height: calc(2 * #{$radius});
 }

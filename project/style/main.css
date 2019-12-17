@@ -270,7 +270,7 @@ section.indexHero div.topGradientDark, section.faqHero div.topGradientDark, sect
 
 section.indexHero div.bottomGradientBright, section.faqHero div.bottomGradientBright, section.joinHero div.bottomGradientBright {
   position: absolute;
-  width: 100vw;
+  width: 100%;
   height: calc(100vh - 16vh);
   z-index: 1;
   background-image: linear-gradient(183deg, rgba(94, 152, 226, 0.7) 60%, rgba(21, 52, 98, 0.7));
@@ -290,7 +290,7 @@ section.indexHero div.bottomGradientBright, section.faqHero div.bottomGradientBr
 
 section.indexHero div.bottomGradientDark, section.faqHero div.bottomGradientDark, section.joinHero div.bottomGradientDark {
   position: absolute;
-  width: 100vw;
+  width: 100%;
   height: calc(100vh - 16vh);
   z-index: 2;
   background-image: linear-gradient(183deg, #00122b 60%, #0a2f63);
@@ -639,7 +639,7 @@ section.indexHero div.topGradientDark, section.faqHero div.topGradientDark, sect
 
 section.indexHero div.bottomGradientBright, section.faqHero div.bottomGradientBright, section.joinHero div.bottomGradientBright {
   position: absolute;
-  width: 100vw;
+  width: 100%;
   height: calc(100vh - 16vh);
   z-index: 1;
   background-image: linear-gradient(183deg, rgba(94, 152, 226, 0.7) 60%, rgba(21, 52, 98, 0.7));
@@ -659,7 +659,7 @@ section.indexHero div.bottomGradientBright, section.faqHero div.bottomGradientBr
 
 section.indexHero div.bottomGradientDark, section.faqHero div.bottomGradientDark, section.joinHero div.bottomGradientDark {
   position: absolute;
-  width: 100vw;
+  width: 100%;
   height: calc(100vh - 16vh);
   z-index: 2;
   background-image: linear-gradient(183deg, #00122b 60%, #0a2f63);
@@ -896,82 +896,6 @@ div.solarSystem {
   position: relative;
 }
 
-div.solarSystem .mars {
-  z-index: 2;
-  position: absolute;
-  top: calc(50% - 15px);
-  left: calc(50% - 15px);
-  width: 30px;
-  height: 30px;
-  background-image: url("/project/image/page-2/planets/mars.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  -webkit-animation-name: highOrbit;
-          animation-name: highOrbit;
-  -webkit-animation-duration: 11s;
-          animation-duration: 11s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-}
-
-div.solarSystem .marsOrbit {
-  z-index: 1;
-  position: absolute;
-  top: calc(50% - 120px);
-  left: calc(50% - 120px);
-  border: 1px dashed grey;
-  border-radius: 100%;
-  height: 240px;
-  width: 240px;
-}
-
-div.solarSystem .sun {
-  position: absolute;
-  top: calc(50% - 24px);
-  left: calc(50% - 24px);
-  width: 48px;
-  height: 48px;
-  background-image: url("/project/image/page-2/planets/sun.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-div.solarSystem .earth {
-  z-index: 2;
-  position: absolute;
-  top: calc(50% - 15px);
-  left: calc(50% - 15px);
-  width: 30px;
-  height: 30px;
-  background-image: url("/project/image/page-2/planets/earth.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  -webkit-animation-name: lowOrbit;
-          animation-name: lowOrbit;
-  -webkit-animation-duration: 7s;
-          animation-duration: 7s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-}
-
-div.solarSystem .earthOrbit {
-  z-index: 1;
-  position: absolute;
-  top: calc(50% - 70px);
-  left: calc(50% - 70px);
-  height: 140px;
-  width: 140px;
-  border: 1px dashed grey;
-  border-radius: 100%;
-}
-
 @-webkit-keyframes highOrbit {
   from {
     -webkit-transform: rotate(0deg) translateX(-120px) rotate(0deg);
@@ -1014,6 +938,82 @@ div.solarSystem .earthOrbit {
     -webkit-transform: rotate(360deg) translateX(70px) rotate(-360deg);
             transform: rotate(360deg) translateX(70px) rotate(-360deg);
   }
+}
+
+div.solarSystem .mars {
+  z-index: 2;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: calc(50% - 15px);
+  left: calc(50% - 15px);
+  width: calc(2 * 15px);
+  height: calc(2 * 15px);
+  background-image: url("/project/image/page-2/planets/mars.png");
+  -webkit-animation-name: highOrbit;
+          animation-name: highOrbit;
+  -webkit-animation-duration: 11s;
+          animation-duration: 11s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+div.solarSystem .marsOrbit {
+  z-index: 1;
+  border: 1px dashed grey;
+  border-radius: 100%;
+  position: absolute;
+  top: calc(50% - 120px);
+  left: calc(50% - 120px);
+  width: calc(2 * 120px);
+  height: calc(2 * 120px);
+}
+
+div.solarSystem .sun {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: calc(50% - 24px);
+  left: calc(50% - 24px);
+  width: calc(2 * 24px);
+  height: calc(2 * 24px);
+  background-image: url("/project/image/page-2/planets/sun.png");
+}
+
+div.solarSystem .earth {
+  z-index: 2;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: calc(50% - 15px);
+  left: calc(50% - 15px);
+  width: calc(2 * 15px);
+  height: calc(2 * 15px);
+  background-image: url("/project/image/page-2/planets/earth.png");
+  -webkit-animation-name: lowOrbit;
+          animation-name: lowOrbit;
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+div.solarSystem .earthOrbit {
+  z-index: 1;
+  border: 1px dashed grey;
+  border-radius: 100%;
+  position: absolute;
+  top: calc(50% - 70px);
+  left: calc(50% - 70px);
+  width: calc(2 * 70px);
+  height: calc(2 * 70px);
 }
 
 section.indexHero, section.faqHero, section.joinHero {
@@ -1080,7 +1080,7 @@ section.indexHero div.topGradientDark, section.faqHero div.topGradientDark, sect
 
 section.indexHero div.bottomGradientBright, section.faqHero div.bottomGradientBright, section.joinHero div.bottomGradientBright {
   position: absolute;
-  width: 100vw;
+  width: 100%;
   height: calc(100vh - 16vh);
   z-index: 1;
   background-image: linear-gradient(183deg, rgba(94, 152, 226, 0.7) 60%, rgba(21, 52, 98, 0.7));
@@ -1100,7 +1100,7 @@ section.indexHero div.bottomGradientBright, section.faqHero div.bottomGradientBr
 
 section.indexHero div.bottomGradientDark, section.faqHero div.bottomGradientDark, section.joinHero div.bottomGradientDark {
   position: absolute;
-  width: 100vw;
+  width: 100%;
   height: calc(100vh - 16vh);
   z-index: 2;
   background-image: linear-gradient(183deg, #00122b 60%, #0a2f63);

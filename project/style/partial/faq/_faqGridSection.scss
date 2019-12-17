@@ -1,3 +1,6 @@
+@import "../../mixin/centered-orbit";
+@import "../../mixin/planet-icon";
+
 $breakpoint-faqGrid: 920px;
 $breakpoint-faqArticleReverse: 1300px;
 
@@ -127,78 +130,6 @@ section.timeToTravel {
 div.solarSystem {
   position: relative;
 
-  .mars {
-    z-index: 2;
-    position: absolute;
-    top: calc(50% - 15px);
-    left: calc(50% - 15px);
-    width: 30px;
-    height: 30px;
-    background-image: url("/project/image/page-2/planets/mars.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    animation-name: highOrbit;
-    animation-duration: 11s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-  }
-
-  .marsOrbit {
-    z-index: 1;
-    position: absolute;
-    top: calc(50% - 120px);
-    left: calc(50% - 120px);
-    border: 1px dashed grey;
-    border-radius: 100%;
-    height: 240px;
-    width: 240px;
-  }
-
-  .sun {
-    position: absolute;
-    top: calc(50% - 24px);
-    left: calc(50% - 24px);
-
-    width: 48px;
-    height: 48px;
-    background-image: url("/project/image/page-2/planets/sun.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  .earth {
-    z-index: 2;
-    position: absolute;
-    top: calc(50% - 15px);
-    left: calc(50% - 15px);
-
-    width: 30px;
-    height: 30px;
-    background-image: url("/project/image/page-2/planets/earth.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    animation-name: lowOrbit;
-    animation-duration: 7s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-  }
-
-  .earthOrbit {
-    z-index: 1;
-    position: absolute;
-    top: calc(50% - 70px);
-    left: calc(50% - 70px);
-    height: 140px;
-    width: 140px;
-    border: 1px dashed grey;
-    border-radius: 100%;
-  }
-
   @keyframes highOrbit {
     from {
       transform: rotate(0deg) translateX(-120px) rotate(0deg);
@@ -215,5 +146,42 @@ div.solarSystem {
     to {
       transform: rotate(360deg) translateX(70px) rotate(-360deg);
     }
+  }
+
+  .mars {
+    z-index: 2;
+    @include planet-icon(15px);
+    background-image: url("/project/image/page-2/planets/mars.png");
+
+    animation-name: highOrbit;
+    animation-duration: 11s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  .marsOrbit {
+    z-index: 1;
+    @include centered-orbit(grey, 120px);
+  }
+
+  .sun {
+    @include planet-icon(24px);
+    background-image: url("/project/image/page-2/planets/sun.png");
+  }
+
+  .earth {
+    z-index: 2;
+    @include planet-icon(15px);
+    background-image: url("/project/image/page-2/planets/earth.png");
+
+    animation-name: lowOrbit;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  .earthOrbit {
+    z-index: 1;
+    @include centered-orbit(grey, 70px);
   }
 }
