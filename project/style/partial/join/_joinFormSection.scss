@@ -2,10 +2,12 @@ $breakpoint-joinForm: 920px;
 
 section.joinSection {
   text-align: center;
-  padding: 5vw 10vw 5vw 10vw;
+  padding: 3vw 10vw 5vw 10vw;
+
+  background-color: #f1f1f1;
 
   h2 {
-    padding-top: 4vh;
+    // padding-top: 4vh;
     font-size: 36px;
     font-weight: bold;
     color: #e32700;
@@ -13,7 +15,7 @@ section.joinSection {
 
   p {
     max-width: 510px;
-    margin: 0 auto 4vh auto;
+    margin: 0 auto 5vw auto;
     color: #2c4f80;
     font-size: 24px;
     font-weight: 500;
@@ -33,6 +35,8 @@ section.joinSection form {
     "motivationInput"
     "sendButton";
 
+  padding: 2vw;
+  background: white;
   box-shadow: 0 4px 15px 0 rgba(185, 185, 185, 0.5);
 
   @media only screen and (min-width: $breakpoint-joinForm) {

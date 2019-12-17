@@ -222,7 +222,7 @@ section.indexHero, section.faqHero, section.joinHero {
   height: calc(100vh - 16vh);
 }
 
-@media only screen and (min-width: 420px) {
+@media only screen and (min-width: 530px) {
   section.indexHero, section.faqHero, section.joinHero {
     height: calc(100vh - 8vh);
   }
@@ -240,7 +240,7 @@ section.indexHero div.topGradientBright, section.faqHero div.topGradientBright, 
   top: 16vh;
 }
 
-@media only screen and (min-width: 420px) {
+@media only screen and (min-width: 530px) {
   section.indexHero div.topGradientBright, section.faqHero div.topGradientBright, section.joinHero div.topGradientBright {
     -webkit-clip-path: ellipse(79% 58% at 64% 15%);
             clip-path: ellipse(79% 58% at 64% 15%);
@@ -260,7 +260,7 @@ section.indexHero div.topGradientDark, section.faqHero div.topGradientDark, sect
   top: 16vh;
 }
 
-@media only screen and (min-width: 420px) {
+@media only screen and (min-width: 530px) {
   section.indexHero div.topGradientDark, section.faqHero div.topGradientDark, section.joinHero div.topGradientDark {
     -webkit-clip-path: ellipse(78% 55% at 64% 15%);
             clip-path: ellipse(78% 55% at 64% 15%);
@@ -279,7 +279,7 @@ section.indexHero div.bottomGradientBright, section.faqHero div.bottomGradientBr
   top: 16vh;
 }
 
-@media only screen and (min-width: 420px) {
+@media only screen and (min-width: 530px) {
   section.indexHero div.bottomGradientBright, section.faqHero div.bottomGradientBright, section.joinHero div.bottomGradientBright {
     height: calc(100vh - 8vh);
     -webkit-clip-path: ellipse(80% 53% at 22% 90%);
@@ -299,7 +299,7 @@ section.indexHero div.bottomGradientDark, section.faqHero div.bottomGradientDark
   top: 16vh;
 }
 
-@media only screen and (min-width: 420px) {
+@media only screen and (min-width: 530px) {
   section.indexHero div.bottomGradientDark, section.faqHero div.bottomGradientDark, section.joinHero div.bottomGradientDark {
     height: calc(100vh - 8vh);
     -webkit-clip-path: ellipse(80% 53% at 22% 93%);
@@ -348,7 +348,7 @@ section.indexHero > div.indexMessage {
   margin: 5vh 5vw 5vh 5vw;
 }
 
-@media only screen and (min-width: 550px) {
+@media only screen and (min-width: 530px) {
   section.indexHero > div.indexMessage {
     margin: 12vh 15vw 0 15vw;
   }
@@ -579,7 +579,7 @@ section.indexHero, section.faqHero, section.joinHero {
   height: calc(100vh - 16vh);
 }
 
-@media only screen and (min-width: 420px) {
+@media only screen and (min-width: 530px) {
   section.indexHero, section.faqHero, section.joinHero {
     height: calc(100vh - 8vh);
   }
@@ -597,7 +597,7 @@ section.indexHero div.topGradientBright, section.faqHero div.topGradientBright, 
   top: 16vh;
 }
 
-@media only screen and (min-width: 420px) {
+@media only screen and (min-width: 530px) {
   section.indexHero div.topGradientBright, section.faqHero div.topGradientBright, section.joinHero div.topGradientBright {
     -webkit-clip-path: ellipse(79% 58% at 64% 15%);
             clip-path: ellipse(79% 58% at 64% 15%);
@@ -617,7 +617,7 @@ section.indexHero div.topGradientDark, section.faqHero div.topGradientDark, sect
   top: 16vh;
 }
 
-@media only screen and (min-width: 420px) {
+@media only screen and (min-width: 530px) {
   section.indexHero div.topGradientDark, section.faqHero div.topGradientDark, section.joinHero div.topGradientDark {
     -webkit-clip-path: ellipse(78% 55% at 64% 15%);
             clip-path: ellipse(78% 55% at 64% 15%);
@@ -636,7 +636,7 @@ section.indexHero div.bottomGradientBright, section.faqHero div.bottomGradientBr
   top: 16vh;
 }
 
-@media only screen and (min-width: 420px) {
+@media only screen and (min-width: 530px) {
   section.indexHero div.bottomGradientBright, section.faqHero div.bottomGradientBright, section.joinHero div.bottomGradientBright {
     height: calc(100vh - 8vh);
     -webkit-clip-path: ellipse(80% 53% at 22% 90%);
@@ -656,7 +656,7 @@ section.indexHero div.bottomGradientDark, section.faqHero div.bottomGradientDark
   top: 16vh;
 }
 
-@media only screen and (min-width: 420px) {
+@media only screen and (min-width: 530px) {
   section.indexHero div.bottomGradientDark, section.faqHero div.bottomGradientDark, section.joinHero div.bottomGradientDark {
     height: calc(100vh - 8vh);
     -webkit-clip-path: ellipse(80% 53% at 22% 93%);
@@ -705,7 +705,7 @@ section.faqHero > div.faqMessage {
   margin: 5vh 5vw 5vh 5vw;
 }
 
-@media only screen and (min-width: 550px) {
+@media only screen and (min-width: 530px) {
   section.faqHero > div.faqMessage {
     margin: 12vh 15vw 0 15vw;
   }
@@ -1010,7 +1010,7 @@ section.indexHero, section.faqHero, section.joinHero {
   height: calc(100vh - 16vh);
 }
 
-@media only screen and (min-width: 420px) {
+@media only screen and (min-width: 530px) {
   section.indexHero, section.faqHero, section.joinHero {
     height: calc(100vh - 8vh);
   }
@@ -1028,7 +1028,7 @@ section.indexHero div.topGradientBright, section.faqHero div.topGradientBright, 
   top: 16vh;
 }
 
-@media only screen and (min-width: 420px) {
+@media only screen and (min-width: 530px) {
   section.indexHero div.topGradientBright, section.faqHero div.topGradientBright, section.joinHero div.topGradientBright {
     -webkit-clip-path: ellipse(79% 58% at 64% 15%);
             clip-path: ellipse(79% 58% at 64% 15%);
@@ -1048,7 +1048,7 @@ section.indexHero div.topGradientDark, section.faqHero div.topGradientDark, sect
   top: 16vh;
 }
 
-@media only screen and (min-width: 420px) {
+@media only screen and (min-width: 530px) {
   section.indexHero div.topGradientDark, section.faqHero div.topGradientDark, section.joinHero div.topGradientDark {
     -webkit-clip-path: ellipse(78% 55% at 64% 15%);
             clip-path: ellipse(78% 55% at 64% 15%);
@@ -1067,7 +1067,7 @@ section.indexHero div.bottomGradientBright, section.faqHero div.bottomGradientBr
   top: 16vh;
 }
 
-@media only screen and (min-width: 420px) {
+@media only screen and (min-width: 530px) {
   section.indexHero div.bottomGradientBright, section.faqHero div.bottomGradientBright, section.joinHero div.bottomGradientBright {
     height: calc(100vh - 8vh);
     -webkit-clip-path: ellipse(80% 53% at 22% 90%);
@@ -1087,7 +1087,7 @@ section.indexHero div.bottomGradientDark, section.faqHero div.bottomGradientDark
   top: 16vh;
 }
 
-@media only screen and (min-width: 420px) {
+@media only screen and (min-width: 530px) {
   section.indexHero div.bottomGradientDark, section.faqHero div.bottomGradientDark, section.joinHero div.bottomGradientDark {
     height: calc(100vh - 8vh);
     -webkit-clip-path: ellipse(80% 53% at 22% 93%);
@@ -1133,25 +1133,36 @@ section.joinHero {
           align-items: flex-start;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(193, 85, 85, 0.7)), to(rgba(36, 2, 2, 0.7))), url("/project/image/page-3/hero-3.jpg");
   background-image: linear-gradient(to bottom, rgba(193, 85, 85, 0.7), rgba(36, 2, 2, 0.7)), url("/project/image/page-3/hero-3.jpg");
+  background-position: center 50%;
 }
 
 section.joinHero div.heroMessage {
-  margin: 2vh 5vw 2vh 5vw;
+  margin: 5vw;
 }
 
-@media only screen and (min-width: 550px) {
+@media only screen and (min-width: 620px) {
   section.joinHero div.heroMessage {
     margin: 12vh;
   }
 }
 
+section.joinHero div.heroMessage h1 {
+  font-size: 54px;
+}
+
+@media only screen and (min-width: 620px) {
+  section.joinHero div.heroMessage h1 {
+    font-size: 60px;
+  }
+}
+
 section.joinSection {
   text-align: center;
-  padding: 5vw 10vw 5vw 10vw;
+  padding: 3vw 10vw 5vw 10vw;
+  background-color: #f1f1f1;
 }
 
 section.joinSection h2 {
-  padding-top: 4vh;
   font-size: 36px;
   font-weight: bold;
   color: #e32700;
@@ -1159,7 +1170,7 @@ section.joinSection h2 {
 
 section.joinSection p {
   max-width: 510px;
-  margin: 0 auto 4vh auto;
+  margin: 0 auto 5vw auto;
   color: #2c4f80;
   font-size: 24px;
   font-weight: 500;
@@ -1171,6 +1182,8 @@ section.joinSection form {
   display: grid;
   grid-gap: 2vw;
       grid-template-areas: "firstNameInput" "lastNameInput" "dateOfBirthInput" "professionalInput" "primeskillInput" "motivationInput" "sendButton";
+  padding: 2vw;
+  background: white;
   -webkit-box-shadow: 0 4px 15px 0 rgba(185, 185, 185, 0.5);
           box-shadow: 0 4px 15px 0 rgba(185, 185, 185, 0.5);
 }

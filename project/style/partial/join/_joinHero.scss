@@ -1,5 +1,7 @@
 @import "../../extend/hero-section";
 
+$breakpoint-joinHero: 620px;
+
 section.joinHero {
   @extend %hero-section;
 
@@ -10,10 +12,20 @@ section.joinHero {
   background-image: linear-gradient(to bottom, rgba(193, 85, 85, 0.7), rgba(36, 2, 2, 0.7)),
     url("/project/image/page-3/hero-3.jpg");
 
+  background-position: center 50%;
+
   div.heroMessage {
-    margin: 2vh 5vw 2vh 5vw;
-    @media only screen and (min-width: $breakpoint-hero-message) {
+    // margin: 2vh 5vw 2vh 5vw;
+    margin: 5vw;
+    @media only screen and (min-width: $breakpoint-joinHero) {
       margin: 12vh;
+    }
+
+    h1 {
+      font-size: 54px;
+      @media only screen and (min-width: $breakpoint-joinHero) {
+        font-size: 60px;
+      }
     }
   }
 }
