@@ -16,9 +16,6 @@ header {
 
   background-color: $color--header-background;
 
-  // box-shadow: inset 0px -5px 1.5px -5px black;
-  // transition: all 200ms ease-in;
-
   z-index: 999;
 
   @media only screen and (min-width: $breakpoint-header) {
