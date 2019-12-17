@@ -222,7 +222,7 @@ section.indexHero, section.faqHero, section.joinHero {
   height: calc(100vh - 16vh);
 }
 
-@media only screen and (min-width: 530px) {
+@media only screen and (min-width: 420px) {
   section.indexHero, section.faqHero, section.joinHero {
     height: calc(100vh - 8vh);
   }
@@ -240,7 +240,7 @@ section.indexHero div.topGradientBright, section.faqHero div.topGradientBright, 
   top: 16vh;
 }
 
-@media only screen and (min-width: 530px) {
+@media only screen and (min-width: 420px) {
   section.indexHero div.topGradientBright, section.faqHero div.topGradientBright, section.joinHero div.topGradientBright {
     -webkit-clip-path: ellipse(79% 58% at 64% 15%);
             clip-path: ellipse(79% 58% at 64% 15%);
@@ -260,7 +260,7 @@ section.indexHero div.topGradientDark, section.faqHero div.topGradientDark, sect
   top: 16vh;
 }
 
-@media only screen and (min-width: 530px) {
+@media only screen and (min-width: 420px) {
   section.indexHero div.topGradientDark, section.faqHero div.topGradientDark, section.joinHero div.topGradientDark {
     -webkit-clip-path: ellipse(78% 55% at 64% 15%);
             clip-path: ellipse(78% 55% at 64% 15%);
@@ -274,12 +274,12 @@ section.indexHero div.bottomGradientBright, section.faqHero div.bottomGradientBr
   height: calc(100vh - 16vh);
   z-index: 1;
   background-image: linear-gradient(183deg, rgba(94, 152, 226, 0.7) 60%, rgba(21, 52, 98, 0.7));
-  -webkit-clip-path: circle(84.3% at 50% 75%);
-          clip-path: circle(84.3% at 50% 75%);
+  -webkit-clip-path: circle(84.3% at 50% 85%);
+          clip-path: circle(84.3% at 50% 85%);
   top: 16vh;
 }
 
-@media only screen and (min-width: 530px) {
+@media only screen and (min-width: 420px) {
   section.indexHero div.bottomGradientBright, section.faqHero div.bottomGradientBright, section.joinHero div.bottomGradientBright {
     height: calc(100vh - 8vh);
     -webkit-clip-path: ellipse(80% 53% at 22% 90%);
@@ -294,12 +294,12 @@ section.indexHero div.bottomGradientDark, section.faqHero div.bottomGradientDark
   height: calc(100vh - 16vh);
   z-index: 2;
   background-image: linear-gradient(183deg, #00122b 60%, #0a2f63);
-  -webkit-clip-path: circle(84.3% at 50% 80%);
-          clip-path: circle(84.3% at 50% 80%);
+  -webkit-clip-path: circle(84.3% at 50% 90%);
+          clip-path: circle(84.3% at 50% 90%);
   top: 16vh;
 }
 
-@media only screen and (min-width: 530px) {
+@media only screen and (min-width: 420px) {
   section.indexHero div.bottomGradientDark, section.faqHero div.bottomGradientDark, section.joinHero div.bottomGradientDark {
     height: calc(100vh - 8vh);
     -webkit-clip-path: ellipse(80% 53% at 22% 93%);
@@ -315,11 +315,23 @@ section.indexHero div.heroMessage, section.faqHero div.heroMessage, section.join
 }
 
 section.indexHero div.heroMessage h1, section.faqHero div.heroMessage h1, section.joinHero div.heroMessage h1 {
-  font-size: 60px;
   margin: 0 0 2vh 0;
   border-bottom: 6px solid white;
   color: white;
   text-align: left;
+  font-size: 40px;
+}
+
+@media only screen and (min-width: 321px) {
+  section.indexHero div.heroMessage h1, section.faqHero div.heroMessage h1, section.joinHero div.heroMessage h1 {
+    font-size: 52px;
+  }
+}
+
+@media only screen and (min-width: 520px) {
+  section.indexHero div.heroMessage h1, section.faqHero div.heroMessage h1, section.joinHero div.heroMessage h1 {
+    font-size: 60px;
+  }
 }
 
 section.indexHero div.heroMessage p, section.faqHero div.heroMessage p, section.joinHero div.heroMessage p {
@@ -348,7 +360,7 @@ section.indexHero > div.indexMessage {
   margin: 5vh 5vw 5vh 5vw;
 }
 
-@media only screen and (min-width: 530px) {
+@media only screen and (min-width: 520px) {
   section.indexHero > div.indexMessage {
     margin: 12vh 15vw 0 15vw;
   }
@@ -579,7 +591,7 @@ section.indexHero, section.faqHero, section.joinHero {
   height: calc(100vh - 16vh);
 }
 
-@media only screen and (min-width: 530px) {
+@media only screen and (min-width: 420px) {
   section.indexHero, section.faqHero, section.joinHero {
     height: calc(100vh - 8vh);
   }
@@ -597,7 +609,7 @@ section.indexHero div.topGradientBright, section.faqHero div.topGradientBright, 
   top: 16vh;
 }
 
-@media only screen and (min-width: 530px) {
+@media only screen and (min-width: 420px) {
   section.indexHero div.topGradientBright, section.faqHero div.topGradientBright, section.joinHero div.topGradientBright {
     -webkit-clip-path: ellipse(79% 58% at 64% 15%);
             clip-path: ellipse(79% 58% at 64% 15%);
@@ -617,7 +629,7 @@ section.indexHero div.topGradientDark, section.faqHero div.topGradientDark, sect
   top: 16vh;
 }
 
-@media only screen and (min-width: 530px) {
+@media only screen and (min-width: 420px) {
   section.indexHero div.topGradientDark, section.faqHero div.topGradientDark, section.joinHero div.topGradientDark {
     -webkit-clip-path: ellipse(78% 55% at 64% 15%);
             clip-path: ellipse(78% 55% at 64% 15%);
@@ -631,12 +643,12 @@ section.indexHero div.bottomGradientBright, section.faqHero div.bottomGradientBr
   height: calc(100vh - 16vh);
   z-index: 1;
   background-image: linear-gradient(183deg, rgba(94, 152, 226, 0.7) 60%, rgba(21, 52, 98, 0.7));
-  -webkit-clip-path: circle(84.3% at 50% 75%);
-          clip-path: circle(84.3% at 50% 75%);
+  -webkit-clip-path: circle(84.3% at 50% 85%);
+          clip-path: circle(84.3% at 50% 85%);
   top: 16vh;
 }
 
-@media only screen and (min-width: 530px) {
+@media only screen and (min-width: 420px) {
   section.indexHero div.bottomGradientBright, section.faqHero div.bottomGradientBright, section.joinHero div.bottomGradientBright {
     height: calc(100vh - 8vh);
     -webkit-clip-path: ellipse(80% 53% at 22% 90%);
@@ -651,12 +663,12 @@ section.indexHero div.bottomGradientDark, section.faqHero div.bottomGradientDark
   height: calc(100vh - 16vh);
   z-index: 2;
   background-image: linear-gradient(183deg, #00122b 60%, #0a2f63);
-  -webkit-clip-path: circle(84.3% at 50% 80%);
-          clip-path: circle(84.3% at 50% 80%);
+  -webkit-clip-path: circle(84.3% at 50% 90%);
+          clip-path: circle(84.3% at 50% 90%);
   top: 16vh;
 }
 
-@media only screen and (min-width: 530px) {
+@media only screen and (min-width: 420px) {
   section.indexHero div.bottomGradientDark, section.faqHero div.bottomGradientDark, section.joinHero div.bottomGradientDark {
     height: calc(100vh - 8vh);
     -webkit-clip-path: ellipse(80% 53% at 22% 93%);
@@ -672,11 +684,23 @@ section.indexHero div.heroMessage, section.faqHero div.heroMessage, section.join
 }
 
 section.indexHero div.heroMessage h1, section.faqHero div.heroMessage h1, section.joinHero div.heroMessage h1 {
-  font-size: 60px;
   margin: 0 0 2vh 0;
   border-bottom: 6px solid white;
   color: white;
   text-align: left;
+  font-size: 40px;
+}
+
+@media only screen and (min-width: 321px) {
+  section.indexHero div.heroMessage h1, section.faqHero div.heroMessage h1, section.joinHero div.heroMessage h1 {
+    font-size: 52px;
+  }
+}
+
+@media only screen and (min-width: 520px) {
+  section.indexHero div.heroMessage h1, section.faqHero div.heroMessage h1, section.joinHero div.heroMessage h1 {
+    font-size: 60px;
+  }
 }
 
 section.indexHero div.heroMessage p, section.faqHero div.heroMessage p, section.joinHero div.heroMessage p {
@@ -705,7 +729,7 @@ section.faqHero > div.faqMessage {
   margin: 5vh 5vw 5vh 5vw;
 }
 
-@media only screen and (min-width: 530px) {
+@media only screen and (min-width: 520px) {
   section.faqHero > div.faqMessage {
     margin: 12vh 15vw 0 15vw;
   }
@@ -1010,7 +1034,7 @@ section.indexHero, section.faqHero, section.joinHero {
   height: calc(100vh - 16vh);
 }
 
-@media only screen and (min-width: 530px) {
+@media only screen and (min-width: 420px) {
   section.indexHero, section.faqHero, section.joinHero {
     height: calc(100vh - 8vh);
   }
@@ -1028,7 +1052,7 @@ section.indexHero div.topGradientBright, section.faqHero div.topGradientBright, 
   top: 16vh;
 }
 
-@media only screen and (min-width: 530px) {
+@media only screen and (min-width: 420px) {
   section.indexHero div.topGradientBright, section.faqHero div.topGradientBright, section.joinHero div.topGradientBright {
     -webkit-clip-path: ellipse(79% 58% at 64% 15%);
             clip-path: ellipse(79% 58% at 64% 15%);
@@ -1048,7 +1072,7 @@ section.indexHero div.topGradientDark, section.faqHero div.topGradientDark, sect
   top: 16vh;
 }
 
-@media only screen and (min-width: 530px) {
+@media only screen and (min-width: 420px) {
   section.indexHero div.topGradientDark, section.faqHero div.topGradientDark, section.joinHero div.topGradientDark {
     -webkit-clip-path: ellipse(78% 55% at 64% 15%);
             clip-path: ellipse(78% 55% at 64% 15%);
@@ -1062,12 +1086,12 @@ section.indexHero div.bottomGradientBright, section.faqHero div.bottomGradientBr
   height: calc(100vh - 16vh);
   z-index: 1;
   background-image: linear-gradient(183deg, rgba(94, 152, 226, 0.7) 60%, rgba(21, 52, 98, 0.7));
-  -webkit-clip-path: circle(84.3% at 50% 75%);
-          clip-path: circle(84.3% at 50% 75%);
+  -webkit-clip-path: circle(84.3% at 50% 85%);
+          clip-path: circle(84.3% at 50% 85%);
   top: 16vh;
 }
 
-@media only screen and (min-width: 530px) {
+@media only screen and (min-width: 420px) {
   section.indexHero div.bottomGradientBright, section.faqHero div.bottomGradientBright, section.joinHero div.bottomGradientBright {
     height: calc(100vh - 8vh);
     -webkit-clip-path: ellipse(80% 53% at 22% 90%);
@@ -1082,12 +1106,12 @@ section.indexHero div.bottomGradientDark, section.faqHero div.bottomGradientDark
   height: calc(100vh - 16vh);
   z-index: 2;
   background-image: linear-gradient(183deg, #00122b 60%, #0a2f63);
-  -webkit-clip-path: circle(84.3% at 50% 80%);
-          clip-path: circle(84.3% at 50% 80%);
+  -webkit-clip-path: circle(84.3% at 50% 90%);
+          clip-path: circle(84.3% at 50% 90%);
   top: 16vh;
 }
 
-@media only screen and (min-width: 530px) {
+@media only screen and (min-width: 420px) {
   section.indexHero div.bottomGradientDark, section.faqHero div.bottomGradientDark, section.joinHero div.bottomGradientDark {
     height: calc(100vh - 8vh);
     -webkit-clip-path: ellipse(80% 53% at 22% 93%);
@@ -1103,11 +1127,23 @@ section.indexHero div.heroMessage, section.faqHero div.heroMessage, section.join
 }
 
 section.indexHero div.heroMessage h1, section.faqHero div.heroMessage h1, section.joinHero div.heroMessage h1 {
-  font-size: 60px;
   margin: 0 0 2vh 0;
   border-bottom: 6px solid white;
   color: white;
   text-align: left;
+  font-size: 40px;
+}
+
+@media only screen and (min-width: 321px) {
+  section.indexHero div.heroMessage h1, section.faqHero div.heroMessage h1, section.joinHero div.heroMessage h1 {
+    font-size: 52px;
+  }
+}
+
+@media only screen and (min-width: 520px) {
+  section.indexHero div.heroMessage h1, section.faqHero div.heroMessage h1, section.joinHero div.heroMessage h1 {
+    font-size: 60px;
+  }
 }
 
 section.indexHero div.heroMessage p, section.faqHero div.heroMessage p, section.joinHero div.heroMessage p {
@@ -1147,7 +1183,13 @@ section.joinHero div.heroMessage {
 }
 
 section.joinHero div.heroMessage h1 {
-  font-size: 54px;
+  font-size: 40px;
+}
+
+@media only screen and (min-width: 321px) {
+  section.joinHero div.heroMessage h1 {
+    font-size: 51px;
+  }
 }
 
 @media only screen and (min-width: 620px) {
@@ -1158,8 +1200,14 @@ section.joinHero div.heroMessage h1 {
 
 section.joinSection {
   text-align: center;
-  padding: 3vw 10vw 5vw 10vw;
+  padding: 3vw 2vw 5vw 2vw;
   background-color: #f1f1f1;
+}
+
+@media only screen and (min-width: 920px) {
+  section.joinSection {
+    padding: 3vw 10vw 5vw 10vw;
+  }
 }
 
 section.joinSection h2 {
@@ -1192,7 +1240,7 @@ section.joinSection form {
   section.joinSection form {
     -ms-grid-columns: 1.5fr 1.5fr 1fr;
         grid-template-columns: 1.5fr 1.5fr 1fr;
-        grid-template-areas: "firstNameInput lastNameInput dateOfBirthInput" "professionalInput primeskillInput ." "motivationInput motivationInput motivationInput" "motivationInput motivationInput motivationInput" ". sendButton .";
+        grid-template-areas: "firstNameInput lastNameInput dateOfBirthInput" "professionalInput primeskillInput ." "motivationInput motivationInput motivationInput" "motivationInput motivationInput motivationInput" "sendButton sendButton sendButton";
   }
 }
 

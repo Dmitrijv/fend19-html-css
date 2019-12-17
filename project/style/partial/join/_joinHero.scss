@@ -1,6 +1,7 @@
 @import "../../extend/hero-section";
 
 $breakpoint-joinHero: 620px;
+$breakpoint-joinHeroMessage: 620px;
 
 section.joinHero {
   @extend %hero-section;
@@ -15,14 +16,16 @@ section.joinHero {
   background-position: center 50%;
 
   div.heroMessage {
-    // margin: 2vh 5vw 2vh 5vw;
     margin: 5vw;
     @media only screen and (min-width: $breakpoint-joinHero) {
       margin: 12vh;
     }
 
     h1 {
-      font-size: 54px;
+      font-size: 40px;
+      @media only screen and (min-width: 321px) {
+        font-size: 51px;
+      }
       @media only screen and (min-width: $breakpoint-joinHero) {
         font-size: 60px;
       }
