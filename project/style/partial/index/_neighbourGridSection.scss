@@ -39,14 +39,14 @@ section.whyMars {
   grid-area: whyMars;
   .imageContainer {
     background-size: 50%;
-    background-image: url("/project/image/page-1/planet-red.png");
+    background-image: url("../image/page-1/planet-red.png");
   }
 }
 
 section.justMoveIn {
   grid-area: justMoveIn;
   .imageContainer {
-    background-image: url("/project/image/page-1/base.jpg");
+    background-image: url("../image/page-1/base.jpg");
   }
 }
 
@@ -54,7 +54,7 @@ section.sustainableSun {
   grid-area: sustainableSun;
   .imageContainer {
     background-size: 50%;
-    background-image: url("/project/image/page-1/solar.png");
+    background-image: url("../image/page-1/solar.png");
   }
 }
 

@@ -351,8 +351,8 @@ section.indexHero {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(193, 85, 85, 0.7)), to(rgba(36, 2, 2, 0.7))), url("/project/image/page-1/mars.jpg");
-  background-image: linear-gradient(to bottom, rgba(193, 85, 85, 0.7), rgba(36, 2, 2, 0.7)), url("/project/image/page-1/mars.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(193, 85, 85, 0.7)), to(rgba(36, 2, 2, 0.7))), url("../image/page-1/mars.jpg");
+  background-image: linear-gradient(to bottom, rgba(193, 85, 85, 0.7), rgba(36, 2, 2, 0.7)), url("../image/page-1/mars.jpg");
 }
 
 section.indexHero > div.indexMessage {
@@ -406,7 +406,7 @@ section.newSkySection div.imageContainer {
   -ms-grid-column: 1;
   grid-area: newSkySectionImg;
   min-height: 60vh;
-  background-image: url("/project/image/page-1/nightSky.jpeg");
+  background-image: url("../image/page-1/nightSky.jpeg");
   background-position: top;
 }
 
@@ -499,7 +499,7 @@ section.whyMars {
 
 section.whyMars .imageContainer {
   background-size: 50%;
-  background-image: url("/project/image/page-1/planet-red.png");
+  background-image: url("../image/page-1/planet-red.png");
 }
 
 section.justMoveIn {
@@ -509,7 +509,7 @@ section.justMoveIn {
 }
 
 section.justMoveIn .imageContainer {
-  background-image: url("/project/image/page-1/base.jpg");
+  background-image: url("../image/page-1/base.jpg");
 }
 
 section.sustainableSun {
@@ -520,7 +520,7 @@ section.sustainableSun {
 
 section.sustainableSun .imageContainer {
   background-size: 50%;
-  background-image: url("/project/image/page-1/solar.png");
+  background-image: url("../image/page-1/solar.png");
 }
 
 section.closestNeighbourGrid .horizontalGridSection {
@@ -720,8 +720,8 @@ section.faqHero {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(193, 85, 85, 0.7)), to(rgba(36, 2, 2, 0.7))), url("/project/image/page-2/hero-2.jpg");
-  background-image: linear-gradient(to bottom, rgba(193, 85, 85, 0.7), rgba(36, 2, 2, 0.7)), url("/project/image/page-2/hero-2.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(193, 85, 85, 0.7)), to(rgba(36, 2, 2, 0.7))), url("../image/page-2/hero-2.jpg");
+  background-image: linear-gradient(to bottom, rgba(193, 85, 85, 0.7), rgba(36, 2, 2, 0.7)), url("../image/page-2/hero-2.jpg");
 }
 
 section.faqHero > div.faqMessage {
@@ -869,7 +869,7 @@ section.purpose {
 
 section.purpose .imageContainer {
   min-width: 55%;
-  background-image: url("/project/image/page-2/nicolas-lobos.jpg");
+  background-image: url("../image/page-2/nicolas-lobos.jpg");
 }
 
 section.timeToTravel {
@@ -950,7 +950,7 @@ div.solarSystem .mars {
   left: calc(50% - 15px);
   width: calc(2 * 15px);
   height: calc(2 * 15px);
-  background-image: url("/project/image/page-2/planets/mars.png");
+  background-image: url("../image/page-2/planets/mars.png");
   -webkit-animation-name: highOrbit;
           animation-name: highOrbit;
   -webkit-animation-duration: 11s;
@@ -981,7 +981,7 @@ div.solarSystem .sun {
   left: calc(50% - 24px);
   width: calc(2 * 24px);
   height: calc(2 * 24px);
-  background-image: url("/project/image/page-2/planets/sun.png");
+  background-image: url("../image/page-2/planets/sun.png");
 }
 
 div.solarSystem .earth {
@@ -994,7 +994,7 @@ div.solarSystem .earth {
   left: calc(50% - 15px);
   width: calc(2 * 15px);
   height: calc(2 * 15px);
-  background-image: url("/project/image/page-2/planets/earth.png");
+  background-image: url("../image/page-2/planets/earth.png");
   -webkit-animation-name: lowOrbit;
           animation-name: lowOrbit;
   -webkit-animation-duration: 7s;
@@ -1165,8 +1165,8 @@ section.joinHero {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(193, 85, 85, 0.7)), to(rgba(36, 2, 2, 0.7))), url("/project/image/page-3/hero-3.jpg");
-  background-image: linear-gradient(to bottom, rgba(193, 85, 85, 0.7), rgba(36, 2, 2, 0.7)), url("/project/image/page-3/hero-3.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(193, 85, 85, 0.7)), to(rgba(36, 2, 2, 0.7))), url("../image/page-3/hero-3.jpg");
+  background-image: linear-gradient(to bottom, rgba(193, 85, 85, 0.7), rgba(36, 2, 2, 0.7)), url("../image/page-3/hero-3.jpg");
   background-position: center 50%;
 }
 

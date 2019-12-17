@@ -110,7 +110,7 @@ section.purpose {
   grid-area: purpose;
   .imageContainer {
     min-width: 55%;
-    background-image: url("/project/image/page-2/nicolas-lobos.jpg");
+    background-image: url("../image/page-2/nicolas-lobos.jpg");
   }
 }
 
@@ -151,7 +151,7 @@ div.solarSystem {
   .mars {
     z-index: 2;
     @include planet-icon(15px);
-    background-image: url("/project/image/page-2/planets/mars.png");
+    background-image: url("../image/page-2/planets/mars.png");
 
     animation-name: highOrbit;
     animation-duration: 11s;
@@ -166,13 +166,13 @@ div.solarSystem {
 
   .sun {
     @include planet-icon(24px);
-    background-image: url("/project/image/page-2/planets/sun.png");
+    background-image: url("../image/page-2/planets/sun.png");
   }
 
   .earth {
     z-index: 2;
     @include planet-icon(15px);
-    background-image: url("/project/image/page-2/planets/earth.png");
+    background-image: url("../image/page-2/planets/earth.png");
 
     animation-name: lowOrbit;
     animation-duration: 7s;
