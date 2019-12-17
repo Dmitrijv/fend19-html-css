@@ -15,7 +15,6 @@ section.faqSection {
       "timeToTravel";
 
     @media only screen and (min-width: $breakpoint-faqGrid) {
-      // grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: auto auto auto;
       grid-template-areas:
         "whyMove risks risks"
