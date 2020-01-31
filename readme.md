@@ -4,17 +4,16 @@
 
 ![preview](/readme/marsone.png)
 
-Designskissens till tre vyerför desktop konverteras till en fullt responsiv webbplats. Arbetet utgår från principen progressive enhancement vilket i det här fallet innebär följande:
+Three desktop views were converted to a fully responsive webpage. All work on the project was performed following Progressive Enhancement principle which means that a basic (mobile first) wireframe with placeholder text and images was crearte first. Desktop version was then developed using real images and text content.
 
 ## Travel
 
 ![preview](/readme/travel.jpg)
 
-En Zeplin wireframe konverteras till HTML och CSS. Layouten utformas med Grid med och Flexbox. Placeholder.com används för bilder.
+A Zeplin wireframe was converted to HTML and CSS. Layout was designed using Grid and Flexbox. Placeholder.com website was used to generate images.
 
 ## Blog
 
 ![preview](/readme/blog.png)
 
-En enkel blogg som med några inlägg. Sidan ska minst innehålla:\
-Rubriker, bild, text, listor (t.ex. favoritlåtar eller lag), Tabell med topplista (t.ex. mest läst, flest delningar)
+A simple blog page with some example posts. Includes headings, pictures, text, lists, tables and other elements.
