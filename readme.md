@@ -4,7 +4,7 @@
 
 ![preview](/readme/marsone.png)
 
-Three desktop views were converted to a fully responsive webpage. All work on the project was performed following Progressive Enhancement principle which means that a basic (mobile first) wireframe with placeholder text and images was crearted first. Desktop version was then developed using real images and text content.
+Three desktop views were converted to a fully responsive webpage. All work on the project was performed following Progressive Enhancement principle which means that a basic (mobile first) wireframe with placeholder text and images was created first. Desktop version was then developed using real images and text.
 
 ## Travel
 
